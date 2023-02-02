@@ -34,6 +34,7 @@
 
 .carousel {
   display: flex;
+  margin-bottom: 150px;
 }
 
 .carousel .container-carousel {
@@ -76,4 +77,26 @@
 .action-buttons span {
   padding-left: 10px;
   align-items: flex-end;
+}
+
+.footer-page {
+  background-color: darkgoldenrod;
+  width: 100%;
+  height: 230px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 65%;
+}
+
+.social-media p {
+  margin-left: 5px;
+}
+
+.copyright {
+  text-align: center;
 }
