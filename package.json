@@ -1,0 +1,11 @@
+{
+  "name": "pp_ecommerce-front",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Marcos9868/pp_ecommerce_front.git",
+  "author": "Marcos9868 <marcos_m_ferreira@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
