@@ -1,0 +1,54 @@
+// Game Item
+.items-list {
+  @include flex(row, space-between, start);
+  gap: 2rem;
+  margin-bottom: 4rem;
+
+  &__item {
+    @include flex(column, start, start);
+    width: 100%;
+    max-width: 27.8rem;
+    &__image {
+      margin-bottom: 1rem;
+      overflow: hidden;
+      border-radius: 1rem;
+
+      .image-item {
+        object-fit: cover;
+        width: 22rem;
+        height: 30rem;
+        transition: all 0.2s ease-in;
+        box-shadow: inset 0px 0px;
+      }
+      &:hover .image-item {
+        transform: scale(1.05);
+      }
+    }
+    &__info {
+      h3 a {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 3rem;
+        color: $main-color;
+      }
+
+      span {
+        display: block;
+      }
+      .publisher {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        color: rgba($main-color, 0.5);
+        margin-bottom: 0.7rem;
+      }
+      .price {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 3rem;
+        color: $main-color;
+      }
+    }
+  }
+}

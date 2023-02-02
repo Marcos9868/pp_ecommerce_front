@@ -1,0 +1,22 @@
+{
+  "name": "pp_ecommerce_front",
+  "version": "1.0.0",
+  "description": "Projeto Prático - E-commerce de Games",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcos9868/pp_ecommerce_front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marcos9868/pp_ecommerce_front/issues"
+  },
+  "homepage": "https://github.com/Marcos9868/pp_ecommerce_front#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

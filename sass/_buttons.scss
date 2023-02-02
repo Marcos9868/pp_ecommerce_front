@@ -1,0 +1,39 @@
+// Game item - Like Button
+.items-list__item__image {
+  position: relative;
+  .like-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    &:active {
+      background-color: red;
+      background: url("../assets/img/full-heart-img.svg") no-repeat;
+    }
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    &:checked {
+      background: url("../assets/img/full-heart-img.svg") no-repeat;
+    }
+  }
+
+  & label {
+    z-index: 3;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url("../assets/img/heart-img.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+}
