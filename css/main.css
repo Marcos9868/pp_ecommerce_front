@@ -75,6 +75,42 @@ img {
       line-height: 3rem;
       color: #2e3a59; }
 
+.carousel {
+  display: flex;
+  margin-bottom: 150px; }
+  .carousel .container-carousel {
+    display: flex;
+    width: 70%;
+    height: 350px;
+    background-color: gray;
+    margin: 0 auto;
+    margin-top: 35px;
+    border-radius: 12px; }
+    .carousel .container-carousel .image {
+      width: 70%;
+      height: 100%; }
+      .carousel .container-carousel .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px 0 0 12px; }
+    .carousel .container-carousel .promo-title {
+      background-color: black;
+      color: whitesmoke;
+      text-align: center;
+      margin-left: 0.75rem; }
+    .carousel .container-carousel .promo-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 280px;
+      background-color: blueviolet; }
+    .carousel .container-carousel .action-buttons {
+      padding: 9px; }
+      .carousel .container-carousel .action-buttons span {
+        padding-left: 10px;
+        align-items: flex-end; }
+
 .items-list__item__image {
   position: relative; }
   .items-list__item__image .like-btn {
