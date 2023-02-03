@@ -55,51 +55,43 @@
 
 // Carousel
 .carousel {
-  display: flex;
-  margin-bottom: 150px;
+  margin: 0 auto; 
+  height: 350px;
+  width: 70%;
+  background-color: darkmagenta;
+  padding: 0;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+  border-radius: 12px;
 
-  .container-carousel {
-    display: flex;
-    width: 70%;
-    height: 350px;
-    background-color: gray;
-    margin: 0 auto;
-    margin-top: 35px;
-    border-radius: 12px;
+  .container {
+    width: 100%;
+    height: 100%;
 
-    .image {
-      width: 70%;
-      height: 100%;
+    .carousel-container {
+      display: flex;
+      width: 100%;
+      height: 90%;
 
       img {
-        width: 100%;
         height: 100%;
-        border-radius: 12px 0 0 12px;
+        width: 100%;
       }
     }
 
-    .promo-title {
-      background-color: black;
-      color: whitesmoke;
-      text-align: center;
-      margin-left: 0.75rem;
-    }
-    
-    .promo-content {
+    .carousel-keys {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      height: 280px;
-      background-color: blueviolet;
-    }
-    
-    .action-buttons {
-      padding: 9px;
-
+      padding: 5px 0;
       span {
-        padding-left: 10px;
-        align-items: flex-end;
+        
+      }
+  
+      .dots {
+        width: 50%;
+        height: 15px;
+        margin: 0 auto;
+        background-color: green;
+        color: red;
       }
     }
   }
