@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-family: "Inter", sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+html,
+body {
+  overflow-x: hidden; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+.container {
+  width: 100%;
+  max-width: 123.1rem;
+  padding: 0 1.5rem;
+  margin: 0 auto; }
+
+.items-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+  margin-bottom: 4rem; }
+  .items-list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    max-width: 27.8rem; }
+    .items-list__item__image {
+      margin-bottom: 1rem;
+      overflow: hidden;
+      border-radius: 1rem; }
+      .items-list__item__image .image-item {
+        object-fit: cover;
+        width: 22rem;
+        height: 30rem;
+        transition: all 0.2s ease-in;
+        box-shadow: inset 0px 0px; }
+      .items-list__item__image:hover .image-item {
+        transform: scale(1.05); }
+    .items-list__item__info h3 a {
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 3rem;
+      color: #2e3a59; }
+    .items-list__item__info span {
+      display: block; }
+    .items-list__item__info .publisher {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+      color: rgba(46, 58, 89, 0.5);
+      margin-bottom: 0.7rem; }
+    .items-list__item__info .price {
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 3rem;
+      color: #2e3a59; }
+
+.items-list__item__image {
+  position: relative; }
+  .items-list__item__image .like-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+    border: none;
+    background-color: transparent;
+    cursor: pointer; }
+    .items-list__item__image .like-btn:active {
+      background-color: red;
+      background: url("../assets/img/full-heart-img.svg") no-repeat; }
+  .items-list__item__image input[type="checkbox"] {
+    appearance: none;
+    width: 2.5rem;
+    height: 2.5rem; }
+    .items-list__item__image input[type="checkbox"]:checked {
+      background: url("../assets/img/full-heart-img.svg") no-repeat; }
+  .items-list__item__image label {
+    z-index: 3;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url("../assets/img/heart-img.svg");
+    background-repeat: no-repeat;
+    cursor: pointer; }
