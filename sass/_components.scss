@@ -88,7 +88,6 @@
 
       span {
         display: block;
-        
       }
       .publisher {
         font-style: italic;
@@ -103,8 +102,7 @@
         font-size: 2rem;
         line-height: 3rem;
         color: $main-color;
-        del{
-
+        del {
           text-decoration: line-through;
           font-weight: 400;
 
@@ -150,5 +148,5 @@
         }
       }
     }
-  } 
+  }
 }
