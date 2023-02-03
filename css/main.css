@@ -75,36 +75,6 @@ img {
       line-height: 3rem;
       color: #2e3a59; }
 
-.carousel {
-  margin: 4rem 0; }
-  .carousel .container .slide {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border-radius: 1.6rem; }
-    .carousel .container .slide .left {
-      grid-column: 1/3; }
-    .carousel .container .slide .right {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: start;
-      padding: 2rem;
-      background-color: #7b789d; }
-      .carousel .container .slide .right .down {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center; }
-        .carousel .container .slide .right .down .cta-btn {
-          padding: 1.1rem 6rem;
-          background-color: #403e53;
-          border-radius: 0.5rem; }
-        .carousel .container .slide .right .down .slide-btns {
-          display: flex;
-          gap: 2.5rem;
-          cursor: pointer; }
-
 .items-list__item__image {
   position: relative; }
   .items-list__item__image .like-btn {
@@ -134,38 +104,3 @@ img {
     background-image: url("../assets/img/heart-img.svg");
     background-repeat: no-repeat;
     cursor: pointer; }
-
-.navbar {
-  background-color: #d9d9d9; }
-  .navbar nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    padding: 2rem 0; }
-    .navbar nav ul li a {
-      font-weight: 400;
-      font-size: 1.7rem;
-      line-height: 2.4rem;
-      color: black;
-      padding: 2rem 4rem;
-      transition: all 0.2s ease-in; }
-      .navbar nav ul li a:hover {
-        background-color: #c4c4c4; }
-
-.promotions .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 48.3rem 48.3rem;
-  gap: 4rem; }
-  .promotions .container div {
-    color: #ccc; }
-  .promotions .container .banner {
-    width: 100%;
-    background-color: #7b789d;
-    border-radius: 1.6rem;
-    grid-column: 1 / 4; }
-  .promotions .container .banner-menor {
-    grid-column: 2;
-    background-color: #7b789d;
-    border-radius: 1.6rem; }

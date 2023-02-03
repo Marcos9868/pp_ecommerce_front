@@ -46,3 +46,51 @@
     }
   }
 }
+//seção promotions
+.promotions{
+  margin-bottom: 6.2rem;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  .container{
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 44.3rem 44.3rem;
+  }
+ 
+
+
+  .banner{  
+    position: relative;
+      width: 100%;
+      grid-column: 1 / 3;
+      object-fit: cover;
+
+    h4{
+      position: absolute;
+      bottom: 20rem;
+      left: 50%;
+      transform: translatex(-50%);
+
+      color: rgb(190, 60, 0);
+      font-weight: bolder;
+      font-size: 3rem;
+    }
+
+   img{
+    border-radius: 1.6rem;
+  }
+  }
+
+  .small-banner{
+    img{
+      border-radius: 1.6rem;
+      object-fit: cover;
+    }
+  }
+
+ 
+} 
