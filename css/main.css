@@ -75,6 +75,35 @@ img {
       line-height: 3rem;
       color: #2e3a59; }
 
+.carousel {
+  margin: 0 auto;
+  height: 350px;
+  width: 70%;
+  background-color: darkmagenta;
+  padding: 0;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+  border-radius: 12px; }
+  .carousel .container {
+    width: 100%;
+    height: 100%; }
+    .carousel .container .carousel-container {
+      display: flex;
+      width: 100%;
+      height: 90%; }
+      .carousel .container .carousel-container img {
+        height: 100%;
+        width: 100%; }
+    .carousel .container .carousel-keys {
+      display: flex;
+      padding: 5px 0; }
+      .carousel .container .carousel-keys .dots {
+        width: 50%;
+        height: 15px;
+        margin: 0 auto;
+        background-color: green;
+        color: red; }
+
 .items-list__item__image {
   position: relative; }
   .items-list__item__image .like-btn {

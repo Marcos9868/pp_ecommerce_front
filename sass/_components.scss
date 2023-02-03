@@ -52,3 +52,47 @@
     }
   }
 }
+
+// Carousel
+.carousel {
+  margin: 0 auto; 
+  height: 350px;
+  width: 70%;
+  background-color: darkmagenta;
+  padding: 0;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+  border-radius: 12px;
+
+  .container {
+    width: 100%;
+    height: 100%;
+
+    .carousel-container {
+      display: flex;
+      width: 100%;
+      height: 90%;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .carousel-keys {
+      display: flex;
+      padding: 5px 0;
+      span {
+        
+      }
+  
+      .dots {
+        width: 50%;
+        height: 15px;
+        margin: 0 auto;
+        background-color: green;
+        color: red;
+      }
+    }
+  }
+}
