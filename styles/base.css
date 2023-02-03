@@ -34,13 +34,69 @@
 
 .carousel {
   display: flex;
+  margin-bottom: 150px;
 }
 
 .carousel .container-carousel {
+  display: flex;
   width: 70%;
   height: 350px;
   background-color: darkred;
   margin: 0 auto;
   margin-top: 35px;
   border-radius: 12px;
+}
+
+.carousel .container-carousel .image {
+  width: 70%;
+  height: 100%;
+  background-color: darkgreen;
+  border-radius: 12px 0 0 12px;
+}
+
+.promo-title {
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  margin-left: 0.75rem;
+}
+
+.promo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 280px;
+  background-color: blueviolet;
+}
+
+.action-buttons {
+  padding: 9px;
+}
+
+.action-buttons span {
+  padding-left: 10px;
+  align-items: flex-end;
+}
+
+.footer-page {
+  background-color: darkgoldenrod;
+  width: 100%;
+  height: 230px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 65%;
+}
+
+.social-media p {
+  margin-left: 5px;
+}
+
+.copyright {
+  text-align: center;
 }
