@@ -22,28 +22,15 @@
   justify-content: space-between;
 }
 
-.navbar .items-navbar {
-  display: flex;
-  width: 100%;
-  height: 65px;
-  background-color: darkblue;
-  list-style: none;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
 .carousel {
   display: flex;
-  margin-bottom: 150px;
 }
 
 .carousel .container-carousel {
   display: flex;
-  width: 70%;
   height: 350px;
   background-color: darkred;
   margin: 0 auto;
-  margin-top: 35px;
   border-radius: 12px;
 }
 
