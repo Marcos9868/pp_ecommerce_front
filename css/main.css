@@ -76,40 +76,33 @@ img {
       color: #2e3a59; }
 
 .carousel {
-  display: flex;
-  margin-bottom: 150px; }
-  .carousel .container-carousel {
-    display: flex;
-    width: 70%;
-    height: 350px;
-    background-color: gray;
-    margin: 0 auto;
-    margin-top: 35px;
-    border-radius: 12px; }
-    .carousel .container-carousel .image {
-      width: 70%;
-      height: 100%; }
-      .carousel .container-carousel .image img {
-        width: 100%;
-        height: 100%;
-        border-radius: 12px 0 0 12px; }
-    .carousel .container-carousel .promo-title {
-      background-color: black;
-      color: whitesmoke;
-      text-align: center;
-      margin-left: 0.75rem; }
-    .carousel .container-carousel .promo-content {
+  margin: 0 auto;
+  height: 350px;
+  width: 70%;
+  background-color: darkmagenta;
+  padding: 0;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+  border-radius: 12px; }
+  .carousel .container {
+    width: 100%;
+    height: 100%; }
+    .carousel .container .carousel-container {
       display: flex;
-      flex-direction: column;
-      align-items: center;
       width: 100%;
-      height: 280px;
-      background-color: blueviolet; }
-    .carousel .container-carousel .action-buttons {
-      padding: 9px; }
-      .carousel .container-carousel .action-buttons span {
-        padding-left: 10px;
-        align-items: flex-end; }
+      height: 90%; }
+      .carousel .container .carousel-container img {
+        height: 100%;
+        width: 100%; }
+    .carousel .container .carousel-keys {
+      display: flex;
+      padding: 5px 0; }
+      .carousel .container .carousel-keys .dots {
+        width: 50%;
+        height: 15px;
+        margin: 0 auto;
+        background-color: green;
+        color: red; }
 
 .items-list__item__image {
   position: relative; }
