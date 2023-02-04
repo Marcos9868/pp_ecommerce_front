@@ -233,23 +233,6 @@ img {
       .navbar nav ul li a:hover {
         background-color: #c4c4c4; }
 
-.promotions .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 48.3rem 48.3rem;
-  gap: 4rem; }
-  .promotions .container div {
-    color: #ccc; }
-  .promotions .container .banner {
-    width: 100%;
-    background-color: #7b789d;
-    border-radius: 1.6rem;
-    grid-column: 1 / 4; }
-  .promotions .container .banner-menor {
-    grid-column: 2;
-    background-color: #7b789d;
-    border-radius: 1.6rem; }
-
 .promotions {
   margin-bottom: 6.2rem; }
   .promotions img {
@@ -278,3 +261,27 @@ img {
   .promotions .small-banner img {
     border-radius: 1.6rem;
     object-fit: cover; }
+
+footer {
+  background-color: #D9D9D9;
+  padding: 12.5rem 0; }
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem; }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; }
+  footer #rodape-politicas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    font-weight: 500;
+    font-size: 20px; }
