@@ -1,8 +1,13 @@
 header {
-  padding: 3.5rem 0;
+  @include flex(column, space-between, center);
+  padding: 3.5rem 0 0 0;
   background-color: #d9d9d9;
-  .container {
+
+  .header-up {
     @include flex(row, space-between, center);
+    padding-bottom: 2.1rem;
+    border-bottom: 1px solid #cac7e2;
+
     .logo-store {
       h1 {
         font-size: 3.6rem;
@@ -39,6 +44,54 @@ header {
     .menu-user {
       @include flex(row, space-between, center);
       gap: 2rem;
+    }
+  }
+
+  // SUBMENU NAVBAR
+  .header-down {
+    background-color: #d9d9d9;
+    nav {
+      ul {
+        @include flex(row, start, center);
+        padding: 2rem 0;
+        li {
+          a {
+            font-weight: 400;
+            font-size: 1.7rem;
+            line-height: 2.4rem;
+            color: black;
+            padding: 2rem 4rem;
+            transition: all 0.2s ease-in;
+            &:hover {
+              background-color: #c4c4c4;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Navbar - Submenu
+.navbar {
+  background-color: #d9d9d9;
+  nav {
+    ul {
+      @include flex(row, start, center);
+      padding: 2rem 0;
+      li {
+        a {
+          font-weight: 400;
+          font-size: 1.7rem;
+          line-height: 2.4rem;
+          color: black;
+          padding: 2rem 4rem;
+          transition: all 0.2s ease-in;
+          &:hover {
+            background-color: #c4c4c4;
+          }
+        }
+      }
     }
   }
 }
