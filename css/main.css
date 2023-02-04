@@ -169,3 +169,45 @@ img {
     grid-column: 2;
     background-color: #7b789d;
     border-radius: 1.6rem; }
+
+header {
+  padding: 3.5rem 0;
+  background-color: #d9d9d9; }
+  header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    header .container .logo-store h1 {
+      font-size: 3.6rem;
+      font-weight: 400; }
+      header .container .logo-store h1 span {
+        font-size: 3.6rem;
+        font-weight: bold; }
+    header .container .category-devices {
+      width: 343px; }
+      header .container .category-devices .list-category {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2.0rem;
+        font-weight: 500; }
+    header .container input[type="search"] {
+      background-color: #C4C2DC;
+      padding: 2rem;
+      width: 100%;
+      max-width: 36.6rem;
+      height: 4.6rem;
+      background-image: url("../assets/img/header/lupaInput.svg");
+      background-position: 1rem 1rem;
+      background-repeat: no-repeat;
+      background-position: center right 2rem;
+      padding-right: 30px;
+      border-radius: 1rem; }
+    header .container .menu-user {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem; }
