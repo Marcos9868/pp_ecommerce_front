@@ -8,6 +8,7 @@
     @include flex(column, start, start);
     width: 100%;
     max-width: 27.8rem;
+
     &__image {
       margin-bottom: 1rem;
       overflow: hidden;
@@ -20,10 +21,12 @@
         transition: all 0.2s ease-in;
         box-shadow: inset 0px 0px;
       }
+
       &:hover .image-item {
         transform: scale(1.05);
       }
     }
+
     &__info {
       h3 a {
         font-weight: 500;
@@ -35,6 +38,7 @@
       span {
         display: block;
       }
+
       .publisher {
         font-style: italic;
         font-weight: 400;
@@ -43,6 +47,7 @@
         color: rgba($main-color, 0.5);
         margin-bottom: 0.7rem;
       }
+
       .price {
         font-weight: 700;
         font-size: 2rem;
@@ -62,6 +67,7 @@
     @include flex(column, start, start);
     width: 100%;
     max-width: 27.8rem;
+
     &__image {
       margin-bottom: 1rem;
       overflow: hidden;
@@ -74,10 +80,12 @@
         transition: all 0.2s ease-in;
         box-shadow: inset 0px 0px;
       }
+
       &:hover .image-item {
         transform: scale(1.05);
       }
     }
+
     &__info {
       h3 a {
         font-weight: 500;
@@ -89,6 +97,7 @@
       span {
         display: block;
       }
+
       .publisher {
         font-style: italic;
         font-weight: 400;
@@ -97,11 +106,13 @@
         color: rgba($main-color, 0.5);
         margin-bottom: 0.7rem;
       }
+
       .price {
         font-weight: 700;
         font-size: 2rem;
         line-height: 3rem;
         color: $main-color;
+
         del {
           text-decoration: line-through;
           font-weight: 400;
@@ -118,35 +129,4 @@
 .carousel {
   margin: 4rem 0;
 
-  .container {
-    .slide {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      border-radius: 1.6rem;
-
-      .left {
-        grid-column: 1/3;
-      }
-
-      .right {
-        @include flex(column, space-between, start);
-        padding: 2rem;
-        background-color: #7b789d;
-        .down {
-          width: 100%;
-          @include flex(row, space-between, center);
-          .cta-btn {
-            padding: 1.1rem 6rem;
-            background-color: #403e53;
-            border-radius: 0.5rem;
-          }
-          .slide-btns {
-            display: flex;
-            gap: 2.5rem;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-  }
 }
