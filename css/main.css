@@ -188,24 +188,6 @@ img {
     background-repeat: no-repeat;
     cursor: pointer; }
 
-.navbar {
-  background-color: #d9d9d9; }
-  .navbar nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    padding: 2rem 0; }
-    .navbar nav ul li a {
-      font-weight: 400;
-      font-size: 1.7rem;
-      line-height: 2.4rem;
-      color: black;
-      padding: 2rem 4rem;
-      transition: all 0.2s ease-in; }
-      .navbar nav ul li a:hover {
-        background-color: #c4c4c4; }
-
 .promotions .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -251,3 +233,86 @@ img {
   .promotions .small-banner img {
     border-radius: 1.6rem;
     object-fit: cover; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.5rem 0 0 0;
+  background-color: #d9d9d9; }
+  header .header-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2.1rem;
+    border-bottom: 1px solid #cac7e2; }
+    header .header-up .logo-store h1 {
+      font-size: 3.6rem;
+      font-weight: 400; }
+      header .header-up .logo-store h1 span {
+        font-size: 3.6rem;
+        font-weight: bold; }
+    header .header-up .category-devices {
+      width: 343px; }
+      header .header-up .category-devices .list-category {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: 500; }
+    header .header-up input[type="search"] {
+      background-color: #c4c2dc;
+      padding: 2rem;
+      width: 100%;
+      max-width: 36.6rem;
+      height: 4.6rem;
+      background-image: url("../assets/img/header/lupaInput.svg");
+      background-position: 1rem 1rem;
+      background-repeat: no-repeat;
+      background-position: center right 2rem;
+      padding-right: 30px;
+      border-radius: 1rem; }
+    header .header-up .menu-user {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem; }
+  header .header-down {
+    background-color: #d9d9d9; }
+    header .header-down nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      padding: 2rem 0; }
+      header .header-down nav ul li a {
+        font-weight: 400;
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+        color: black;
+        padding: 2rem 4rem;
+        transition: all 0.2s ease-in; }
+        header .header-down nav ul li a:hover {
+          background-color: #c4c4c4; }
+
+.navbar {
+  background-color: #d9d9d9; }
+  .navbar nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 2rem 0; }
+    .navbar nav ul li a {
+      font-weight: 400;
+      font-size: 1.7rem;
+      line-height: 2.4rem;
+      color: black;
+      padding: 2rem 4rem;
+      transition: all 0.2s ease-in; }
+      .navbar nav ul li a:hover {
+        background-color: #c4c4c4; }
