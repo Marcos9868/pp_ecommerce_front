@@ -1,14 +1,144 @@
-footer
+// header
 
-<footer class="footer-page">
-    <div class="social-media">
-      <p>Instagram</p>
-      <p>Discord</p>
-      <p>Facebook</p>
-      <p>Linkedin</p>
-      <p>Twitter</p>
+header {
+  @include flex(column, space-between, center);
+  padding: 3.5rem 0 0 0;
+  background-color: #d9d9d9;
+
+  .header-up {
+    @include flex(row, space-between, center);
+    padding-bottom: 2.1rem;
+    border-bottom: 1px solid #cac7e2;
+
+    .logo-store {
+      h1 {
+        font-size: 3.6rem;
+        font-weight: 400;
+        span {
+          font-size: 3.6rem;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .category-devices {
+      width: 343px;
+      .list-category {
+        @include flex(row, space-between, center);
+        font-size: 2rem;
+        font-weight: 500;
+      }
+    }
+    input[type="search"] {
+      background-color: #c4c2dc;
+      padding: 2rem;
+      width: 100%;
+      max-width: 36.6rem;
+      height: 4.6rem;
+      background-image: url("../assets/img/header/lupaInput.svg");
+      background-position: 1rem 1rem;
+      background-repeat: no-repeat;
+      background-position: center right 2rem;
+      padding-right: 30px;
+      border-radius: 1rem;
+    }
+
+    .menu-user {
+      @include flex(row, space-between, center);
+      gap: 2rem;
+    }
+  }
+
+  // SUBMENU NAVBAR
+  .header-down {
+    background-color: #d9d9d9;
+    nav {
+      ul {
+        @include flex(row, start, center);
+        padding: 2rem 0;
+        li {
+          a {
+            font-weight: 400;
+            font-size: 1.7rem;
+            line-height: 2.4rem;
+            color: black;
+            padding: 2rem 4rem;
+            transition: all 0.2s ease-in;
+            &:hover {
+              background-color: #c4c4c4;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Navbar - Submenu
+.navbar {
+  background-color: #d9d9d9;
+  nav {
+    ul {
+      @include flex(row, start, center);
+      padding: 2rem 0;
+      li {
+        a {
+          font-weight: 400;
+          font-size: 1.7rem;
+          line-height: 2.4rem;
+          color: black;
+          padding: 2rem 4rem;
+          transition: all 0.2s ease-in;
+          &:hover {
+            background-color: #c4c4c4;
+          }
+        }
+      }
+    }
+  }
+}
+
+<header class="head-store">
+    <div class="container">
+
+      <div class="header-up">
+
+        <!-- LOGO -->
+        <div class="logo-store">
+          <h1>Pixel<span>Play</span></h1>
+        </div>
+
+        <!-- MAIN MENU LINKS -->
+        <div class="category-devices">
+          <ul class="list-category">
+            <li>Windows</li>
+            <li>Xbox</li>
+            <li>Playstation</li>
+          </ul>
+
+        </div>
+
+        <!-- SEARCH BAR -->
+        <div>
+          <input type="search" name="search-bar" id="search-bar" placeholder="Pesquisar">
+        </div>
+        <!-- CART AND LOGIN ICONS -->
+        <div class="menu-user">
+          <a href="#"><img src="./assets/img/header/user.svg" alt="iconPerfil"></a>
+          <a href="#"><img src="./assets/img/header/sacola.svg" alt="iconSacola"></a>
+        </div>
+      </div>
+
+      <!-- SUBMENU NAVBAR -->
+      <div class="header-down">
+        <nav>
+          <ul class="items-navbar">
+            <li><a href="#">Playstation 3</a></li>
+            <li><a href="#">Playstation 4</a></li>
+            <li><a href="#">Playstation 5</a></li>
+          </ul>
+        </nav>
+      </div>
+
     </div>
-    <div class="copyright">
-      <p>Todos os direitos reservados</p>
-    </div>
-  </footer>
+  </header>
