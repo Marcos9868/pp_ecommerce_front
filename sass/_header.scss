@@ -35,7 +35,8 @@ header {
           color: black;
 
           &:hover {
-            color: rgb(37, 35, 35);
+            color: rgb(56, 53, 53);
+            border: 0 0 0.5px 0.5px solid rgb(56, 53, 53);
           }
         }
       }
