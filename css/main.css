@@ -131,8 +131,9 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-radius: 1.6rem; }
-    .carousel .container .slide .left {
-      grid-column: 1/3; }
+    .carousel .container .slide .glider-contain {
+      grid-column: 1/3;
+      height: 50rem; }
     .carousel .container .slide .right {
       display: flex;
       flex-direction: column;
@@ -343,3 +344,26 @@ header {
       transition: all 0.2s ease-in; }
       .navbar nav ul li a:hover {
         background-color: #c4c4c4; }
+
+main {
+  width: 100%;
+  height: 100vh;
+  margin-top: 5rem;
+  margin-bottom: 10rem; }
+  main .container {
+    display: grid;
+    grid-template-columns: 33.6rem 2fr;
+    gap: 3rem; }
+  main .pages-filter {
+    background-color: lightgrey;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 2.6rem; }
+  main aside {
+    background-color: lightgrey;
+    width: 100%; }
+
+footer {
+  background-color: aliceblue;
+  width: 100%;
+  height: 30rem; }

@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/glider.css">
   <title>Games Store</title>
 </head>
 
@@ -65,8 +66,16 @@
     <div class="container">
 
       <div class="slide">
-        <div class="left">
-          <img src="./assets/img/games/codmw3-logo.jpeg" alt="Slide Img">
+
+        <div class="glider-contain">
+          <div class="glider">
+            <img src="./assets/img/slides/cod.png" alt="Slide Img">
+            <img src="./assets/img/slides/crash.png" alt="Slide Img">
+            <img src="./assets/img/slides/ghost-of-tsushima.png" alt="Slide Img">
+            <img src="./assets/img/slides/starfield.png" alt="Slide Img">
+
+            <div role="tablist" class="dots"></div>
+          </div>
         </div>
 
         <div class="right">
@@ -78,10 +87,10 @@
           <div class="down">
             <button class="cta-btn" type="button">CTA</button>
             <div class="slide-btns">
-              <button type="button">
+              <button class="glider-prev" type="button">
                 <img src="./assets/img/arrow-left.svg" alt="Left">
               </button>
-              <button type="button">
+              <button class="glider-next" type="button">
                 <img src="./assets/img/arrow-right.svg" alt="Left">
               </button>
             </div>
@@ -412,6 +421,20 @@
     </div>
   </section>
 
+  <script src="scripts/glider.js"></script>
+  <script>
+    new Glider(document.querySelector('.glider'), {
+      slidesToShow: 1,
+      dots: '#dots',
+      draggable: true,
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+      },
+      dragVelocity: 2,
+      scrollLock: true,
+    });
+  </script>
 </body>
 
 </html>

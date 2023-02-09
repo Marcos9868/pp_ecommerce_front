@@ -1,0 +1,30 @@
+main {
+  width: 100%;
+  height: 100vh;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+
+  .container {
+    display: grid;
+    grid-template-columns: 33.6rem 2fr;
+    gap: 3rem;
+  }
+
+  .pages-filter {
+    background-color: lightgrey;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 2.6rem;
+  }
+
+  aside {
+    background-color: lightgrey;
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: aliceblue;
+  width: 100%;
+  height: 30rem;
+}
