@@ -13,9 +13,13 @@ header {
         font-size: 3.6rem;
         font-weight: 400;
 
-        span {
-          font-size: 3.6rem;
-          font-weight: bold;
+        a {
+          span {
+            font-size: 3.6rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+          }
         }
       }
     }
