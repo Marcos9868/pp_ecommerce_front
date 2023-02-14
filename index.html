@@ -27,7 +27,7 @@
         <!-- MAIN MENU LINKS -->
         <div class="category-devices">
           <ul class="list-category">
-            <li><a href="/pages/categories/pc.html">PC</a></li>
+            <li><a href="./pages/categories/pc.html">PC</a></li>
             <li><a href="/pages/categories/xbox.html">Xbox</a></li>
             <li><a href="/pages/categories/playstation.html">Playstation</a></li>
           </ul>
@@ -333,7 +333,7 @@
           <div class="items-list__item__image">
             <label for="item-6"></label>
             <input id="item-6" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/product-img.png" alt="Item Image"></a>
+            <a href="#"><img class="image-item openModal" src="./assets/img/games/product-img.png"  alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
@@ -349,7 +349,7 @@
           <div class="items-list__item__image">
             <label for="item-7"></label>
             <input id="item-7" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/product-img.png" alt="Item Image"></a>
+            <a href="#"><img class="image-item openModal" src="./assets/img/games/product-img.png"  alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
@@ -365,7 +365,7 @@
           <div class="items-list__item__image">
             <label for="item-8"></label>
             <input id="item-8" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/product-img.png" alt="Item Image"></a>
+            <a href="#"><img class="image-item openModal" src="./assets/img/games/product-img.png"  alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
@@ -393,24 +393,44 @@
           </div>
         </div>
         <!-- ITEM 5 -->
-        <div class="items-list__item">
+        <div class="items-list__item" >
           <div class="items-list__item__image">
             <label for="item-10"></label>
             <input id="item-10" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/product-img.png" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="./assets/img/games/product-img.png"  alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h3>
-              <a href="#">Lorem Ipsum sit Amet</a>
+              <a href="#" class="modal-game">Lorem Ipsum sit Amet</a>
             </h3>
             <span class="publisher">Publisher Name</span>
             <span class="price">R$300</span>
           </div>
         </div>
       </div>
+    
+      <dialog class="modal" id="modal">
+          <div class="container">
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-1"></label>
+              <input id="item-1" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="./assets/img/games/cod.jpg" alt="Item Image"></a>
+            </div>
 
-    </div>
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">Call of Duty</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+        </div>
+            <button class="closeModal">close</button>
+      </dialog>
+
   </section>
   <footer class="footer-page">
     <div class="container">
@@ -431,5 +451,6 @@
   </footer>
   <script src="./scripts/glider.js"></script>
   <script src="./scripts/carousel.js"></script>
+  <script src="./scripts/modal.js"></script>
 </body>
 </html>
