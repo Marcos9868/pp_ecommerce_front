@@ -40,9 +40,27 @@
         </div>
         <!-- CART AND LOGIN ICONS -->
         <div class="menu-user">
-          <a href="#"><img src="./assets/img/header/user.svg" alt="iconPerfil"></a>
-          <a href="#"><img src="./assets/img/header/sacola.svg" alt="iconSacola"></a>
+          <a href="#"><img class="openModalLogin" src="./assets/img/header/user.svg" alt="iconPerfil"></a>
+          <a href="#"><img class="openModalSacola" src="./assets/img/header/sacola.svg" alt="iconSacola"></a>
         </div>
+
+        <dialog class="modalPerfil" id="modalPerfil">
+          <form>
+            <label for="fname">Login:</label><br>
+            <input type="text" id="fname" name="login"><br>
+            <label for="lname">Senha:</label><br>
+            <input type="password" id="lname" name="senha">
+            <button class="closeModalLogin">Close</button>
+          </form>
+
+          <dialog class="modalSacola" id="modalSacola">
+            <h2>Aqui ficarão os itens da sacola</h2>
+            <p>compra, quantidade e produto</p>
+            <button class="closeModalSacola">Fechar</button>
+          </dialog>
+
+        </dialog>
+        <dialog class="modalSacola" id="modalSacola"></dialog>
       </div>
 
       <!-- SUBMENU NAVBAR -->
