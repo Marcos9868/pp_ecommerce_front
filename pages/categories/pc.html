@@ -84,7 +84,8 @@
           </div>
           <div class="price-range">
             <h5>Preço</h5>
-            <input type="range" name="price-range" id="price-range">
+            <input type="range" name="price-range" id="price-range" min="5" max="500" onchange="showPrice()">
+            <span>R$:</span>
             <button>Aplicar Filtro</button>
           </div>
           <div class="game-industries">
@@ -270,6 +271,7 @@
       <h4> © 2023 PixelPlay - Todos os direitos reservados.</h4>
     </div>
   </footer>
+  <script src="../../scripts/price-range.js" defer></script>
 </body>
 
 </html>
