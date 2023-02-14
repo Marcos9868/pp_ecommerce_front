@@ -20,9 +20,17 @@ html {
 html,
 body {
   overflow-x: hidden;
+  background-color: $background;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+// GRID DOS ITEMS
+.items-list {
+  margin-bottom: 4rem;
+  @include flex(row, space-between, start);
+  gap: 2rem;
 }

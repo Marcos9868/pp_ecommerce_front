@@ -1,43 +1,131 @@
-.promotions {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 48.3rem 48.3rem;
-    gap: 4rem;
-
-    div {
-      color: #ccc;
-    }
-
-    .banner {
+// Carousel
+.carousel {
+  .slide {
+    position: relative;
+    margin-bottom: 4rem;
+    &-images {
+      color: $brand-white;
       width: 100%;
-      background-color: #7b789d;
-      border-radius: 1.6rem;
-      grid-column: 1 / 4;
+      height: 55rem;
+      position: relative;
+      img {
+        width: 100%;
+        height: 55rem;
+        object-fit: cover;
+        border-radius: 1.6rem;
+      }
+      &::after {
+        content: "";
+        width: 70rem;
+        height: inherit;
+        background: linear-gradient(
+          270.07deg,
+          #0d212d 6.01%,
+          rgba(13, 33, 45, 0) 95.44%
+        );
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 1.5rem;
+      }
     }
 
-    .banner-menor {
-      grid-column: 2;
-      background-color: #7b789d;
-      border-radius: 1.6rem;
+    .slide-info {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      max-width: 53rem;
+      top: 0;
+      right: 0;
+      padding: 0 5rem;
+      padding-bottom: 7rem;
+      @include flex(column, space-between, start);
+
+      &__promotion {
+        background-color: $brand-red;
+        padding: 1.2rem 2rem;
+        display: inline-block;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        color: $brand-white;
+
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.4rem;
+
+        bold {
+          font-weight: 900;
+          font-size: 2rem;
+        }
+      }
+
+      h2 {
+        font-family: "Inter";
+        color: $brand-white;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.4rem;
+      }
+
+      p {
+        font-family: "Inter";
+        color: $brand-white;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+      }
+
+      // BOTÂO COMPRAR E SETAS DO SLIDES
+      .btn-arrows {
+        @include flex(row, space-between, center);
+        width: 100%;
+        .arrows {
+          @include flex(row, space-between, center);
+          gap: 5rem;
+          cursor: pointer;
+
+          img {
+            transition: all 0.2s ease-in;
+            &:hover {
+              filter: brightness(0%) saturate(0%) contrast(0%) invert(29%);
+              -webkit-filter: brightness(0%) saturate(0%) contrast(0%)
+                invert(29%);
+              -moz-filter: brightness(0%) saturate(0%) contrast(0%) invert(29%);
+            }
+          }
+        }
+      }
     }
+  }
+}
+
+// Section Game List
+.game-list {
+  h3,
+  span {
+    margin-bottom: 4rem;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: $brand-white;
+    text-align: center;
+  }
+  span {
+    color: $brand-blue;
+    font-weight: 900;
   }
 }
 
 //seção promotions
 .promotions {
-  margin-bottom: 6.2rem;
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
-
+  margin-bottom: 4rem;
   .container {
     display: grid;
     gap: 4rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 44.3rem 44.3rem;
+    grid-template-rows: auto auto;
   }
 
   .banner {
@@ -63,32 +151,155 @@
   }
 
   .small-banner {
+    position: relative;
+    height: 54rem;
+
     img {
+      width: 100%;
+      height: 100%;
       border-radius: 1.6rem;
       object-fit: cover;
     }
+    a {
+      position: absolute;
+      bottom: 5rem;
+    }
+
+    &__promotion {
+      background-color: $brand-red;
+      padding: 1.2rem 2rem;
+      display: inline-block;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      color: $brand-white;
+
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      bold {
+        font-weight: 900;
+        font-size: 2rem;
+      }
+    }
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: linear-gradient(360deg, #2e3a59 6.88%, rgba(0, 0, 0, 0) 60%);
+      bottom: 0;
+      border-radius: 1.6rem;
+    }
+  }
+
+  .promotion__products {
+    @include flex(row, space-between, center);
+  }
+}
+
+// GAME RECOMMENDS SECTION
+.game-recommends {
+  margin-bottom: 7rem;
+  h3,
+  span {
+    margin-bottom: 4rem;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: $brand-white;
+    text-align: center;
+  }
+  span {
+    color: $brand-blue;
+    font-weight: 900;
   }
 }
 
 footer {
-  background-color: #9e9da7;
-  padding: 12.5rem 0;
-
+  background-color: $brand-white;
+  padding: 3rem 0;
   .container {
-    @include flex(column, center, center);
-    gap: 4rem;
+    @include flex(column, space-between, start);
+  }
+  .up {
+    border-bottom: 1px solid rgba($brand-very-dark-blue, 0.3);
+    width: 100%;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+
+    nav {
+      @include flex(row, space-between, center);
+
+      ul {
+        @include flex(row, start, center);
+        li {
+          a {
+            color: $brand-very-dark-blue;
+            transition: all 0.2s ease-in;
+            font-weight: 500;
+            font-size: 1.7rem;
+            padding: 2rem 3.5rem;
+            &:hover {
+              color: $brand-blue;
+              background-color: $gray-100;
+            }
+          }
+        }
+      }
+      .language {
+        @include flex(row, space-between, center);
+        gap: 0.4rem;
+        cursor: pointer;
+        padding: 2rem;
+        background-color: $gray-100;
+        transition: all 0.3s ease-in;
+        border-radius: 0.5rem;
+        p {
+          margin-right: 1.5rem;
+        }
+
+        &:hover {
+          background-color: #cfcfcf;
+        }
+      }
+    }
   }
 
-  ul {
-    @include flex(row, center, center);
-    gap: 3rem;
+  .down {
+    margin-bottom: 7rem;
+    width: 100%;
+    .social-medias {
+      @include flex(column, center, center);
+      h4 {
+        margin-bottom: 2.3rem;
+      }
+      ul {
+        @include flex(row, center, center);
+        gap: 2.7rem;
+      }
+    }
   }
 
-  #rodape-politicas {
-    @include flex(row, center, center);
-    gap: 10rem;
-
-    font-weight: 500;
-    font-size: 20px;
+  .copy {
+    width: 100%;
+    text-align: center;
+    p {
+      font-weight: 500;
+      font-size: 1.7rem;
+      line-height: 2.4rem;
+      span {
+        color: $brand-blue;
+        font-size: 1.7rem;
+        font-weight: 600;
+      }
+    }
   }
 }
