@@ -560,7 +560,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 59.3rem;
-  background: linear-gradient(180deg, rgba(21, 29, 39, 0) 25.36%, #151d27 100%), url("../assets/img/header/header-bacgrounds/hogwarts-legacy.jpg");
+  background: url("../assets/img/header/header-bacgrounds/hogwarts-legacy.jpg");
   background-repeat: no-repeat;
   background-color: #fff;
   background-position: top;
@@ -776,7 +776,3 @@ main {
             cursor: pointer; }
             main aside .aside-container .game-industries ul li:hover {
               color: gray; }
-
-.modal .container {
-  width: 800px;
-  height: 800px; }

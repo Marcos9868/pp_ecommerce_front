@@ -30,7 +30,7 @@
         <!-- LOGO -->
         <div class="logo-store">
           <a href="../../index.html">
-            <img src="./assets/img/header/logo-pixelplay.svg" alt="Logo PixelPlay">
+            <img src="../.../../assets/img/header/logo-pixelplay.svg" alt="Logo PixelPlay">
           </a>
         </div>
 
@@ -50,10 +50,28 @@
         </div>
         <!-- CART AND LOGIN ICONS -->
         <div class="menu-user">
-          <a href="#"><img src="./assets/img/header/user-i.svg" alt="iconPerfil"></a>
-          <a href="#"><img src="./assets/img/header/cart-i.svg" alt="iconSacola"></a>
+          <a href="#"><img class="openModalLogin" src="../.../../assets/img/header/user-i.svg" alt="iconPerfil"></a>
+          <a href="#"><img class="openModalSacola" src="../.../../assets/img/header/cart-i.svg" alt="iconSacola"></a>
         </div>
 
+        <dialog class="modalPerfil" id="modalPerfil">
+          <form>
+            <label for="fname">Login:</label><br>
+            <input type="text" id="fname" name="login"><br>
+            <label for="lname">Senha:</label><br>
+            <input type="password" id="lname" name="senha">
+            <button class="closeModalLogin">Close</button>
+          </form>
+
+          <dialog class="modalSacola" id="modalSacola">
+            <h2>Aqui ficarão os itens da sacola</h2>
+            <p>compra, quantidade e produto</p>
+            <button class="closeModalSacola">Fechar</button>
+          </dialog>
+
+        </dialog>
+        <dialog class="modalSacola" id="modalSacola"></dialog>
+      </div>
         <!-- Check-out button -->
         <a href="#" class="btn btn-primary">Conferir</a>
       </div>
@@ -65,7 +83,7 @@
 
       <div class="slide">
         <div class="slide-images">
-          <img src="./assets/img/slides/ghost-of-tsushima.jpg" alt="Slide Img">
+          <img src="../../assets/img/slides/ghost-of-tsushima.jpg" alt="Slide Img">
         </div>
 
         <div class="slide-info">
@@ -76,8 +94,8 @@
           <div class="btn-arrows">
             <a href="#" class="btn">Comprar</a>
             <div class="arrows">
-              <img src="./assets/img/arrow-left.svg" alt="Arrow left">
-              <img src="./assets/img/arrow-right.svg" alt="Arrow Right">
+              <img src="../../assets/img/arrow-left.svg" alt="Arrow left">
+              <img src="../../assets/img/arrow-right.svg" alt="Arrow Right">
             </div>
           </div>
         </div>
@@ -101,16 +119,16 @@
           <div class="items-list__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/cod.jpg" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/cod.jpg" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Call of Duty - Modern Warf...</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -129,16 +147,16 @@
           <div class="items-list__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/anno-1800.webp" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/anno-1800.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Anno 1800</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -157,16 +175,16 @@
           <div class="items-list__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/civilization-platinum-edition.jpg" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/civilization-platinum-edition.jpg" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Civilization lV</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -185,16 +203,16 @@
           <div class="items-list__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/crash-4.webp" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/crash-4.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Crash Bandicoot 4 - I'ts Ab...</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -213,16 +231,16 @@
           <div class="items-list__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/death-strading.webp" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/death-strading.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Death Stranding</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -246,16 +264,16 @@
           <div class="items-list__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/elden-ring.webp" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/elden-ring.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Elden Ring</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -274,16 +292,16 @@
           <div class="items-list__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/ghostoftsushima.jpg" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/ghostoftsushima.jpg" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Ghost of Tsushima</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -302,16 +320,16 @@
           <div class="items-list__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/gow.webp" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/gow.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">God Of War: Ragnarök</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -330,16 +348,16 @@
           <div class="items-list__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/hife-rush.jpg" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/hife-rush.jpg" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Hi-Fi Rush</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -358,16 +376,16 @@
           <div class="items-list__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/limbo.webp" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/limbo.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Limbo</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -386,11 +404,11 @@
   <section class="promotions">
     <div class="container">
       <div class="banner">
-        <img src="./assets/img/promotions-section/banner-01.png" alt="Banner da seção Promotions" />
+        <img src="../../assets/img/promotions-section/banner-01.png" alt="Banner da seção Promotions" />
       </div>
 
       <div class="small-banner">
-        <img src="./assets/img/games/gow.webp" alt="Small Banner" />
+        <img src="../../assets/img/games/gow.webp" alt="Small Banner" />
         <a href="#" class="btn btn-primary">Comprar</a>
         <span class="small-banner__promotion">PROMOÇÃO <bold>50% OFF</bold></span>
       </div>
@@ -403,16 +421,16 @@
           <div class="promotion__products__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/spiderman-miles-morales.webp" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/spiderman-miles-morales.webp" alt="Item Image"></a>
           </div>
 
           <div class="promotion__products__item__info">
             <h4><a href="#">Spider Man - Miles...</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -431,16 +449,16 @@
           <div class="promotion__products__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/no-mans-sky.jpg" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/no-mans-sky.jpg" alt="Item Image"></a>
           </div>
 
           <div class="promotion__products__item__info">
             <h4><a href="#">No Man's Sky</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -471,16 +489,16 @@
           <div class="items-list__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/little-nightmares.webp" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/little-nightmares.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Little Nightmares</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -499,16 +517,16 @@
           <div class="items-list__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/naruto-ninja-storm-4.webp" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/naruto-ninja-storm-4.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Naruto: Ultimate Ninja S. 4</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -527,16 +545,16 @@
           <div class="items-list__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/no-mans-sky.jpg" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/no-mans-sky.jpg" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">No Man's Sky</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -555,16 +573,16 @@
           <div class="items-list__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/resident-evil-4-remae.webp" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/resident-evil-4-remae.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Resident Evil 4 Remake</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -583,16 +601,16 @@
           <div class="items-list__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/starfield.jpg" alt="Item Image"></a>
+            <a href="#"><img class="image-item" src="../../assets/img/games/starfield.jpg" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Starfield</a></h4>
             <span class="publisher">Publisher Name</span>
             <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
             </div>
 
             <div class="discount-price">
@@ -625,9 +643,9 @@
           </ul>
 
           <div class="language">
-            <img src="./assets/img/language-selector-i.svg" alt="language Icon">
-            <p>Portugês</p>
-            <img src="./assets/img/arrow-down-i.svg" alt="language Arrow Down Icon">
+            <img src="../../assets/img/language-selector-i.svg" alt="language Icon">
+            <p>Português</p>
+            <img src="../../assets/img/arrow-down-i.svg" alt="language Arrow Down Icon">
           </div>
         </nav>
       </div>
@@ -639,31 +657,31 @@
           <ul>
             <li>
               <a href="#">
-                <img src="./assets/img/instagram-i.svg" alt="Instagram Icon">
+                <img src="../../assets/img/instagram-i.svg" alt="Instagram Icon">
               </a>
             </li>
 
             <li>
               <a href="#">
-                <img src="./assets/img/facebook-i.svg" alt="Facebook Icon">
+                <img src="../../assets/img/facebook-i.svg" alt="Facebook Icon">
               </a>
             </li>
 
             <li>
               <a href="#">
-                <img src="./assets/img/discord-i.svg" alt="Discord Icon">
+                <img src="../../assets/img/discord-i.svg" alt="Discord Icon">
               </a>
             </li>
 
             <li>
               <a href="#">
-                <img src="./assets/img/linkedin-i.svg" alt="LinkedIn Icon">
+                <img src="../../assets/img/linkedin-i.svg" alt="LinkedIn Icon">
               </a>
             </li>
 
             <li>
               <a href="#">
-                <img src="./assets/img/twitter-i.svg" alt="Twitter Icon">
+                <img src="../../assets/img/twitter-i.svg" alt="Twitter Icon">
               </a>
             </li>
           </ul>

@@ -1,8 +1,7 @@
 header {
   @include flex(column, space-between, center);
   padding-bottom: 59.3rem;
-  background: linear-gradient(180deg, rgba(21, 29, 39, 0) 25.36%, #151d27 100%),
-    url("../assets/img/header/header-bacgrounds/hogwarts-legacy.jpg");
+  background: url("../assets/img/header/header-bacgrounds/hogwarts-legacy.jpg");
 
   background-repeat: no-repeat;
   background-color: $brand-white;

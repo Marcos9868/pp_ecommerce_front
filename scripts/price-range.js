@@ -1,5 +1,6 @@
-function showPrice() {
-  let priceRange = document.getElementById('price-range').value;
+let priceRange = document.getElementById('price-range');
+let spanPrice = document.getElementById('price-span');
 
-  console.log(priceRange);
+const showPrice = () => {
+  spanPrice.innerHTML = `R$ ${priceRange}`
 }
