@@ -2,9 +2,11 @@ header {
   @include flex(column, space-between, center);
   padding-bottom: 59.3rem;
   background: linear-gradient(180deg, rgba(21, 29, 39, 0) 25.36%, #151d27 100%),
-    url("../assets/img/header/header-bacgrounds/hogwarts-legacy.jpg") no-repeat;
+    url("../assets/img/header/header-bacgrounds/hogwarts-legacy.jpg");
+
+  background-repeat: no-repeat;
   background-color: $brand-white;
-  background-position: center;
+  background-position: top;
   background-size: cover;
 
   position: relative;
@@ -12,6 +14,19 @@ header {
   animation-duration: 6s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    background: linear-gradient(
+      180deg,
+      rgba(21, 29, 39, 0) 25.36%,
+      #151d27 100%
+    );
+    bottom: 0;
+  }
 
   .container {
     background-color: $brand-white;
