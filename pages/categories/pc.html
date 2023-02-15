@@ -1,186 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
-    />
-    <link rel="stylesheet" href="../../css/main.css" />
-    <title>Pixel Play Store - PC</title>
-  </head>
 
-  <body>
-    <header class="head-store">
-      <div class="container">
-        <div class="header-up">
-          <!-- LOGO -->
-          <div class="logo-store">
-            <h1>
-              <a href="../../index.html"><span>Pixel</span><span>Play</span></a>
-            </h1>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" />
+  <link rel="stylesheet" href="../../css/main.css" />
+  <title>Pixel Play Store - PC</title>
+</head>
 
-          <!-- MAIN MENU LINKS -->
-          <div class="category-devices">
-            <ul class="list-category">
-              <li><a href="/pages/categories/pc.html">PC</a></li>
-              <li><a href="/pages/categories/xbox.html">Xbox</a></li>
-              <li>
-                <a href="/pages/categories/playstation.html">Playstation</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- SEARCH BAR -->
-          <div>
-            <input
-              type="search"
-              name="search-bar"
-              id="search-bar"
-              placeholder="Pesquisar"
-            />
-          </div>
-          <!-- CART AND LOGIN ICONS -->
-          <div class="menu-user">
-            <a href="#"
-              ><img src="../../assets/img/header/user.svg" alt="iconPerfil"
-            /></a>
-            <a href="#"
-              ><img src="../../assets/img/header/sacola.svg" alt="iconSacola"
-            /></a>
-          </div>
+<body>
+  <header class="head-store">
+    <div class="container">
+      <div class="header-up">
+        <!-- LOGO -->
+        <div class="logo-store">
+          <h1>
+            <a href="../../index.html"><span>Pixel</span><span>Play</span></a>
+          </h1>
         </div>
 
-        <!-- SUBMENU NAVBAR -->
-        <div class="header-down">
-          <nav>
-            <ul class="items-navbar">
-              <li><a href="#">Playstation 3</a></li>
-              <li><a href="#">Playstation 4</a></li>
-              <li><a href="#">Playstation 5</a></li>
-            </ul>
-          </nav>
+        <!-- MAIN MENU LINKS -->
+        <div class="category-devices">
+          <ul class="list-category">
+            <li><a href="/pages/categories/pc.html">PC</a></li>
+            <li><a href="/pages/categories/xbox.html">Xbox</a></li>
+            <li>
+              <a href="/pages/categories/playstation.html">Playstation</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SEARCH BAR -->
+        <div>
+          <input type="search" name="search-bar" id="search-bar" placeholder="Pesquisar" />
+        </div>
+        <!-- CART AND LOGIN ICONS -->
+        <div class="menu-user">
+          <a href="#"><img src="../../assets/img/header/user.svg" alt="iconPerfil" /></a>
+          <a href="#"><img src="../../assets/img/header/sacola.svg" alt="iconSacola" /></a>
         </div>
       </div>
-    </header>
-    <main>
-      <div class="container">
-        <aside>
-          <h3>Início > PC</h3>
-          <div class="aside-container">
-            <div class="filter">
-              <div class="filter-dropdown">
-                <h5>Filtros Aplicados</h5>
-                <span id="button" class="setinha"
-                  ><svg
-                    viewBox="0 0 40 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.908 0.879001C1.47058 0.316587 2.23351 0.000640869 3.029 0.000640869C3.82449 0.000640869 4.58742 0.316587 5.15 0.879001L20 15.729L34.85 0.879001C35.4158 0.332526 36.1736 0.030142 36.9602 0.0369773C37.7468 0.0438125 38.4992 0.35932 39.0555 0.915544C39.6117 1.47177 39.9272 2.22421 39.934 3.0108C39.9409 3.79739 39.6385 4.55519 39.092 5.121L22.121 22.092C21.5584 22.6544 20.7955 22.9704 20 22.9704C19.2045 22.9704 18.4416 22.6544 17.879 22.092L0.908 5.121C0.345586 4.55842 0.0296402 3.79549 0.0296402 3C0.0296402 2.20451 0.345586 1.44158 0.908 0.879001Z"
-                      fill="white"
-                    />
-                  </svg>
-                </span>
-              </div>
-              <ul>
-                <li>Gênero</li>
-                <li>Menor Preço</li>
-                <li>Mais Votados</li>
-              </ul>
-            </div>
 
-            <div class="game-categories">
-              <div class="filter-dropdown">
-                <h5>Categorias</h5>
-                <span id="button2" class="setinha"
-                  ><svg
-                    viewBox="0 0 40 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.908 0.879001C1.47058 0.316587 2.23351 0.000640869 3.029 0.000640869C3.82449 0.000640869 4.58742 0.316587 5.15 0.879001L20 15.729L34.85 0.879001C35.4158 0.332526 36.1736 0.030142 36.9602 0.0369773C37.7468 0.0438125 38.4992 0.35932 39.0555 0.915544C39.6117 1.47177 39.9272 2.22421 39.934 3.0108C39.9409 3.79739 39.6385 4.55519 39.092 5.121L22.121 22.092C21.5584 22.6544 20.7955 22.9704 20 22.9704C19.2045 22.9704 18.4416 22.6544 17.879 22.092L0.908 5.121C0.345586 4.55842 0.0296402 3.79549 0.0296402 3C0.0296402 2.20451 0.345586 1.44158 0.908 0.879001Z"
-                      fill="white"
-                    />
-                  </svg>
-                </span>
-              </div>
-              <ul>
-                <li>RPG</li>
-                <li>FPS</li>
-                <li>Ação</li>
-                <li>Aventura</li>
-                <li>Corrida</li>
-              </ul>
+      <!-- SUBMENU NAVBAR -->
+      <div class="header-down">
+        <nav>
+          <ul class="items-navbar">
+            <li><a href="#">Playstation 3</a></li>
+            <li><a href="#">Playstation 4</a></li>
+            <li><a href="#">Playstation 5</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <aside>
+        <h3>Início > PC</h3>
+        <div class="aside-container">
+          <div class="filter">
+            <div class="filter-dropdown">
+              <h5>Filtros Aplicados</h5>
+              <span id="button" class="setinha"><svg viewBox="0 0 40 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.908 0.879001C1.47058 0.316587 2.23351 0.000640869 3.029 0.000640869C3.82449 0.000640869 4.58742 0.316587 5.15 0.879001L20 15.729L34.85 0.879001C35.4158 0.332526 36.1736 0.030142 36.9602 0.0369773C37.7468 0.0438125 38.4992 0.35932 39.0555 0.915544C39.6117 1.47177 39.9272 2.22421 39.934 3.0108C39.9409 3.79739 39.6385 4.55519 39.092 5.121L22.121 22.092C21.5584 22.6544 20.7955 22.9704 20 22.9704C19.2045 22.9704 18.4416 22.6544 17.879 22.092L0.908 5.121C0.345586 4.55842 0.0296402 3.79549 0.0296402 3C0.0296402 2.20451 0.345586 1.44158 0.908 0.879001Z" fill="white" />
+                </svg>
+              </span>
             </div>
-            <div class="price-range">
-              <div class="filter-dropdown">
-                <h5>Preço</h5>
-                <span id="button4" class="setinha"
-                  ><svg
-                    viewBox="0 0 40 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.908 0.879001C1.47058 0.316587 2.23351 0.000640869 3.029 0.000640869C3.82449 0.000640869 4.58742 0.316587 5.15 0.879001L20 15.729L34.85 0.879001C35.4158 0.332526 36.1736 0.030142 36.9602 0.0369773C37.7468 0.0438125 38.4992 0.35932 39.0555 0.915544C39.6117 1.47177 39.9272 2.22421 39.934 3.0108C39.9409 3.79739 39.6385 4.55519 39.092 5.121L22.121 22.092C21.5584 22.6544 20.7955 22.9704 20 22.9704C19.2045 22.9704 18.4416 22.6544 17.879 22.092L0.908 5.121C0.345586 4.55842 0.0296402 3.79549 0.0296402 3C0.0296402 2.20451 0.345586 1.44158 0.908 0.879001Z"
-                      fill="white"
-                    />
-                  </svg>
-                </span>
-              </div>
-
-              <input type="range" name="price-range" id="price-range" />
-              <button>Aplicar Filtro</button>
-            </div>
-            <div class="game-industries">
-              <div class="filter-dropdown">
-                <h5>Desenvolvedoras</h5>
-                <span id="button3" class="setinha"
-                  ><svg
-                    viewBox="0 0 40 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.908 0.879001C1.47058 0.316587 2.23351 0.000640869 3.029 0.000640869C3.82449 0.000640869 4.58742 0.316587 5.15 0.879001L20 15.729L34.85 0.879001C35.4158 0.332526 36.1736 0.030142 36.9602 0.0369773C37.7468 0.0438125 38.4992 0.35932 39.0555 0.915544C39.6117 1.47177 39.9272 2.22421 39.934 3.0108C39.9409 3.79739 39.6385 4.55519 39.092 5.121L22.121 22.092C21.5584 22.6544 20.7955 22.9704 20 22.9704C19.2045 22.9704 18.4416 22.6544 17.879 22.092L0.908 5.121C0.345586 4.55842 0.0296402 3.79549 0.0296402 3C0.0296402 2.20451 0.345586 1.44158 0.908 0.879001Z"
-                      fill="white"
-                    />
-                  </svg>
-                </span>
-              </div>
-
-              <ul>
-                <li>Activision</li>
-                <li>Ubisoft</li>
-                <li>EA Games</li>
-                <li>Valve Corporation</li>
-              </ul>
-            </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <ul>
+              <li>Gênero</li>
+              <li>Menor Preço</li>
+              <li>Mais Votados</li>
+            </ul>
           </div>
-        </aside>
 
-        <section>
-          <!-- GRID PRODUTOS -->
-          <div class="pages-filter">
-            <!-- FILTRO DE PAGINAS -->
+          <div class="game-categories">
+            <div class="filter-dropdown">
+              <h5>Categorias</h5>
+              <span id="button2" class="setinha"><svg viewBox="0 0 40 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.908 0.879001C1.47058 0.316587 2.23351 0.000640869 3.029 0.000640869C3.82449 0.000640869 4.58742 0.316587 5.15 0.879001L20 15.729L34.85 0.879001C35.4158 0.332526 36.1736 0.030142 36.9602 0.0369773C37.7468 0.0438125 38.4992 0.35932 39.0555 0.915544C39.6117 1.47177 39.9272 2.22421 39.934 3.0108C39.9409 3.79739 39.6385 4.55519 39.092 5.121L22.121 22.092C21.5584 22.6544 20.7955 22.9704 20 22.9704C19.2045 22.9704 18.4416 22.6544 17.879 22.092L0.908 5.121C0.345586 4.55842 0.0296402 3.79549 0.0296402 3C0.0296402 2.20451 0.345586 1.44158 0.908 0.879001Z" fill="white" />
+                </svg>
+              </span>
+            </div>
+            <ul>
+              <li>RPG</li>
+              <li>FPS</li>
+              <li>Ação</li>
+              <li>Aventura</li>
+              <li>Corrida</li>
+            </ul>
           </div>
+          <div class="price-range">
+            <div class="filter-dropdown">
+              <h5>Preço</h5>
+              <span id="button4" class="setinha"><svg viewBox="0 0 40 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.908 0.879001C1.47058 0.316587 2.23351 0.000640869 3.029 0.000640869C3.82449 0.000640869 4.58742 0.316587 5.15 0.879001L20 15.729L34.85 0.879001C35.4158 0.332526 36.1736 0.030142 36.9602 0.0369773C37.7468 0.0438125 38.4992 0.35932 39.0555 0.915544C39.6117 1.47177 39.9272 2.22421 39.934 3.0108C39.9409 3.79739 39.6385 4.55519 39.092 5.121L22.121 22.092C21.5584 22.6544 20.7955 22.9704 20 22.9704C19.2045 22.9704 18.4416 22.6544 17.879 22.092L0.908 5.121C0.345586 4.55842 0.0296402 3.79549 0.0296402 3C0.0296402 2.20451 0.345586 1.44158 0.908 0.879001Z" fill="white" />
+                </svg>
+              </span>
+            </div>
+
+            <input type="range" name="price-range" id="price-range" />
+            <button>Aplicar Filtro</button>
+          </div>
+          <div class="game-industries">
+            <div class="filter-dropdown">
+              <h5>Desenvolvedoras</h5>
+              <span id="button3" class="setinha"><svg viewBox="0 0 40 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.908 0.879001C1.47058 0.316587 2.23351 0.000640869 3.029 0.000640869C3.82449 0.000640869 4.58742 0.316587 5.15 0.879001L20 15.729L34.85 0.879001C35.4158 0.332526 36.1736 0.030142 36.9602 0.0369773C37.7468 0.0438125 38.4992 0.35932 39.0555 0.915544C39.6117 1.47177 39.9272 2.22421 39.934 3.0108C39.9409 3.79739 39.6385 4.55519 39.092 5.121L22.121 22.092C21.5584 22.6544 20.7955 22.9704 20 22.9704C19.2045 22.9704 18.4416 22.6544 17.879 22.092L0.908 5.121C0.345586 4.55842 0.0296402 3.79549 0.0296402 3C0.0296402 2.20451 0.345586 1.44158 0.908 0.879001Z" fill="white" />
+                </svg>
+              </span>
+            </div>
+
+            <ul>
+              <li>Activision</li>
+              <li>Ubisoft</li>
+              <li>EA Games</li>
+              <li>Valve Corporation</li>
+            </ul>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </aside>
+
+      <section>
+        <!-- GRID PRODUTOS -->
+        <div class="pages-filter">
+          <!-- FILTRO DE PAGINAS -->
+        </div>
 
           <!-- LIST ONE -->
           <div class="items-list">
@@ -358,8 +312,207 @@
           </div>
         </section>
       </div>
+<<<<<<< HEAD
 
     </div>
+  </header>
+  <main>
+    <div class="container">
+
+      <aside>
+        <h3>Início > PC</h3>
+        <div class="aside-container">
+          <div class="filter">
+            <h5>Filtros Aplicados</h5>
+            <ul>
+              <li>Gênero</li>
+              <li>Menor Preço</li>
+              <li>Mais Votados</li>
+            </ul>
+          </div>
+          <div class="game-categories">
+            <h5>Categorias</h5>
+            <ul>
+              <li>RPG</li>
+              <li>FPS</li>
+              <li>Ação</li>
+              <li>Aventura</li>
+              <li>Corrida</li>
+            </ul>
+          </div>
+          <div class="price-range">
+            <h5>Preço</h5>
+            <input type="range" name="price-range" id="price-range" min="5" max="500" onchange="showPrice()">
+            <span>R$:</span>
+            <button>Aplicar Filtro</button>
+          </div>
+          <div class="game-industries">
+            <h5>Desenvolvedoras</h5>
+            <ul>
+              <li>Activision</li>
+              <li>Ubisoft</li>
+              <li>EA Games</li>
+              <li>Valve Corporation</li>
+            </ul>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </aside>
+
+      <section>
+        <!-- GRID PRODUTOS -->
+        <div class="pages-filter">
+          <!-- FILTRO DE PAGINAS -->
+        </div>
+
+        <!-- LIST ONE -->
+        <div class="items-list">
+
+          <!-- ITEM 1 -->
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-1"></label>
+              <input id="item-1" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/cod.jpg" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">Call of Duty</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+          <!-- ITEM 2 -->
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-2"></label>
+              <input id="item-2" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/gow.webp" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">God Of War: Ragnarök</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+          <!-- ITEM 3 -->
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-3"></label>
+              <input id="item-3" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/crash-4.webp" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">Crash Bandicoot 4 ...</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+          <!-- ITEM 4 -->
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-4"></label>
+              <input id="item-4" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/elden-ring.webp" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">Elden Ring</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+
+        </div>
+        <!-- LIST TWO -->
+        <div class="items-list">
+
+          <!-- ITEM 1 -->
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-1"></label>
+              <input id="item-1" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/cod.jpg" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">Call of Duty</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+          <!-- ITEM 2 -->
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-2"></label>
+              <input id="item-2" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/gow.webp" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">God Of War: Ragnarök</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+          <!-- ITEM 3 -->
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-3"></label>
+              <input id="item-3" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/crash-4.webp" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">Crash Bandicoot 4 ...</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+          <!-- ITEM 4 -->
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-4"></label>
+              <input id="item-4" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/elden-ring.webp" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">Elden Ring</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+
   </main>
   <footer class="footer-page">
     <div class="container">
@@ -379,7 +532,29 @@
     </div>
   </footer>
   <script src="../../scripts/price-range.js" defer></script>
-  <script src="../../scripts/categoriesPC.js" defer></script>
 </body>
 
 </html>
+=======
+    </main>
+    <footer class="footer-page">
+      <div class="container">
+        <ul>
+          <li><img src="../../assets/img/instagram.png" alt="" /></li>
+          <li><img src="../../assets/img/facebook.png" alt="" /></li>
+          <li><img src="../../assets/img/LinkedIn.png" alt="" /></li>
+          <li><img src="../../assets/img/discord.png" alt="" /></li>
+          <li><img src="../../assets/img/Twitter.png" alt="" /></li>
+        </ul>
+        <ul id="rodape-politicas">
+          <li>Ajuda</li>
+          <li>Políticas</li>
+          <li>Institucional</li>
+        </ul>
+        <h4>© 2023 PixelPlay - Todos os direitos reservados.</h4>
+      </div>
+    </footer>
+    <script src="../../scripts/categoriesPC.js" defer></script>
+  </body>
+</html>
+>>>>>>> 5388c9506c24c80cb3dcbd1a16af6af5759a8389

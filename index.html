@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,35 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- FAVICON -->
+
+  <link rel="icon" href="favicon.png" type="image">
+
+  <!-- MAIN CSS -->
   <link rel="stylesheet" href="css/main.css">
+
+  <!-- GLIDER CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
   <link rel="stylesheet" type="text/css" href="css/glider.css">
   <title>Pixel Play Store - Home</title>
 </head>
+
 <body>
-  <header class="head-store">
+  <header>
     <div class="container">
-
-      <div class="header-up">
-
+      <div class="container-box">
         <!-- LOGO -->
         <div class="logo-store">
-          <h1><a href="../../index.html"><span>Pixel</span><span>Play</span></a></h1>
+          <a href="../../index.html">
+            <img src="./assets/img/header/logo-pixelplay.svg" alt="Logo PixelPlay">
+          </a>
         </div>
 
         <!-- MAIN MENU LINKS -->
         <div class="category-devices">
-          <ul class="list-category">
+          <ul>
             <li><a href="./pages/categories/pc.html">PC</a></li>
             <li><a href="/pages/categories/xbox.html">Xbox</a></li>
             <li><a href="/pages/categories/playstation.html">Playstation</a></li>
@@ -35,7 +45,7 @@
         </div>
 
         <!-- SEARCH BAR -->
-        <div>
+        <div class="search-container">
           <input type="search" name="search-bar" id="search-bar" placeholder="Pesquisar">
         </div>
         <!-- CART AND LOGIN ICONS -->
@@ -62,64 +72,54 @@
         </dialog>
         <dialog class="modalSacola" id="modalSacola"></dialog>
       </div>
+          <a href="#"><img src="./assets/img/header/user-i.svg" alt="iconPerfil"></a>
+          <a href="#"><img src="./assets/img/header/cart-i.svg" alt="iconSacola"></a>
+        </div>
 
-      <!-- SUBMENU NAVBAR -->
-      <div class="header-down">
-        <nav>
-          <ul class="items-navbar">
-            <li><a href="#">Playstation 3</a></li>
-            <li><a href="#">Playstation 4</a></li>
-            <li><a href="#">Playstation 5</a></li>
-          </ul>
-        </nav>
+        <!-- Check-out button -->
+        <a href="#" class="btn btn-primary">Conferir</a>
       </div>
-
     </div>
   </header>
+
   <section class="carousel">
     <div class="container">
 
       <div class="slide">
-
-        <div class="glider-contain">
-          <div class="glider">
-            <img src="./assets/img/slides/cod.png" alt="Slide Img">
-            <img src="./assets/img/slides/crash.png" alt="Slide Img">
-            <img src="./assets/img/slides/ghost-of-tsushima.png" alt="Slide Img">
-            <img src="./assets/img/slides/starfield.png" alt="Slide Img">
-            <div role="tablist" class="dots"></div>
-          </div>
+        <div class="slide-images">
+          <img src="./assets/img/slides/ghost-of-tsushima.jpg" alt="Slide Img">
         </div>
 
-        <div class="right">
-          <div class="text">
-            <h2>LOREM ISPUM</h2>
-            <p>Lörem ipsum ång tande eller dypp, jörask, sprita flossa. Sirat pafarade endomodern, seren.Mitik syninde i makror påsk: epifaktisk i sonde ett krojöling. Ned reren, nede, lat i förlåtturné att stenosat.</p>
-          </div>
+        <div class="slide-info">
+          <span class="slide-info__promotion">PROMOÇÃO <bold>50% OFF</bold></span>
+          <h2>SOBRE O JOGO:</h2>
+          <p>Ghost of Tsushima é um jogo de ação e aventura em mundo aberto no Japão feudal, onde o jogador assume o papel do samurai Jin Sakai que luta contra a invasão mongol em Tsushima. O jogo oferece opções para o jogador criar alianças, aprender novas habilidades e escolher entre ser um samurai ou um "fantasma" que utiliza táticas não convencionais para vencer.</p>
 
-          <div class="down">
-            <button class="cta-btn" type="button">CTA</button>
-            <div class="slide-btns">
-              <button class="glider-prev" type="button">
-                <img src="./assets/img/arrow-left.svg" alt="Left">
-              </button>
-              <button class="glider-next" type="button">
-                <img src="./assets/img/arrow-right.svg" alt="Left">
-              </button>
+          <div class="btn-arrows">
+            <a href="#" class="btn">Comprar</a>
+            <div class="arrows">
+              <img src="./assets/img/arrow-left.svg" alt="Arrow left">
+              <img src="./assets/img/arrow-right.svg" alt="Arrow Right">
             </div>
           </div>
         </div>
       </div>
+
+    </div>
     </div>
   </section>
+
   <section class="game-list">
     <div class="container">
+
+      <h3>PROMOÇÕES <span>IMPERDÍVEIS</span></h3>
 
       <!-- LIST ONE -->
       <div class="items-list">
 
         <!-- ITEM 1 -->
         <div class="items-list__item">
+
           <div class="items-list__item__image">
             <label for="item-1"></label>
             <input id="item-1" class="like-btn" type="checkbox">
@@ -127,79 +127,135 @@
           </div>
 
           <div class="items-list__item__info">
-            <h3>
-              <a href="#">Call of Duty</a>
-            </h3>
+            <h4><a href="#">Call of Duty - Modern Warf...</a></h4>
             <span class="publisher">Publisher Name</span>
-            <span class="price">R$300</span>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
           </div>
+
+          <a href="#" class="btn btn-product">Comprar</a>
+
         </div>
+
         <!-- ITEM 2 -->
         <div class="items-list__item">
+
           <div class="items-list__item__image">
-            <label for="item-2"></label>
-            <input id="item-2" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/gow.webp" alt="Item Image"></a>
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
+            <a href="#"><img class="image-item" src="./assets/img/games/anno-1800.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
-            <h3>
-              <a href="#">God Of War: Ragnarök</a>
-            </h3>
+            <h4><a href="#">Anno 1800</a></h4>
             <span class="publisher">Publisher Name</span>
-            <span class="price">R$300</span>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
           </div>
+
+          <a href="#" class="btn btn-product">Comprar</a>
+
         </div>
+
         <!-- ITEM 3 -->
         <div class="items-list__item">
+
           <div class="items-list__item__image">
-            <label for="item-3"></label>
-            <input id="item-3" class="like-btn" type="checkbox">
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
+            <a href="#"><img class="image-item" src="./assets/img/games/civilization-platinum-edition.jpg" alt="Item Image"></a>
+          </div>
+
+          <div class="items-list__item__info">
+            <h4><a href="#">Civilization lV</a></h4>
+            <span class="publisher">Publisher Name</span>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-product">Comprar</a>
+
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="items-list__item">
+
+          <div class="items-list__item__image">
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/crash-4.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
-            <h3>
-              <a href="#">Crash Bandicoot 4 ...</a>
-            </h3>
+            <h4><a href="#">Crash Bandicoot 4 - I'ts Ab...</a></h4>
             <span class="publisher">Publisher Name</span>
-            <span class="price">R$300</span>
-          </div>
-        </div>
-        <!-- ITEM 4 -->
-        <div class="items-list__item">
-          <div class="items-list__item__image">
-            <label for="item-4"></label>
-            <input id="item-4" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/elden-ring.webp" alt="Item Image"></a>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
           </div>
 
-          <div class="items-list__item__info">
-            <h3>
-              <a href="#">Elden Ring</a>
-            </h3>
-            <span class="publisher">Publisher Name</span>
-            <span class="price">R$300</span>
-          </div>
+          <a href="#" class="btn btn-product">Comprar</a>
+
         </div>
+
         <!-- ITEM 5 -->
         <div class="items-list__item">
+
           <div class="items-list__item__image">
-            <label for="item-5"></label>
-            <input id="item-5" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/ghostoftsushima.jpg" alt="Item Image"></a>
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
+            <a href="#"><img class="image-item" src="./assets/img/games/death-strading.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
-            <h3>
-              <a href="#">Ghost of Tsushima</a>
-            </h3>
+            <h4><a href="#">Death Stranding</a></h4>
             <span class="publisher">Publisher Name</span>
-            <span class="price">R$300</span>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
           </div>
+
+          <a href="#" class="btn btn-product">Comprar</a>
+
         </div>
-
-
 
       </div>
 
@@ -208,267 +264,447 @@
 
         <!-- ITEM 1 -->
         <div class="items-list__item">
+
           <div class="items-list__item__image">
-            <label for="item-11"></label>
-            <input id="item-11" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/product-img.png" alt="Item Image"></a>
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
+            <a href="#"><img class="image-item" src="./assets/img/games/elden-ring.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
-            <h3>
-              <a href="#">Lorem Ipsum sit Amet</a>
-            </h3>
+            <h4><a href="#">Elden Ring</a></h4>
             <span class="publisher">Publisher Name</span>
-            <span class="price">R$300</span>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
           </div>
+
+          <a href="#" class="btn btn-product">Comprar</a>
+
         </div>
+
         <!-- ITEM 2 -->
         <div class="items-list__item">
+
           <div class="items-list__item__image">
-            <label for="item-12"></label>
-            <input id="item-12" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/product-img.png" alt="Item Image"></a>
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
+            <a href="#"><img class="image-item" src="./assets/img/games/ghostoftsushima.jpg" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
-            <h3>
-              <a href="#">Lorem Ipsum sit Amet</a>
-            </h3>
+            <h4><a href="#">Ghost of Tsushima</a></h4>
             <span class="publisher">Publisher Name</span>
-            <span class="price">R$300</span>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
           </div>
+
+          <a href="#" class="btn btn-product">Comprar</a>
+
         </div>
+
         <!-- ITEM 3 -->
         <div class="items-list__item">
+
           <div class="items-list__item__image">
-            <label for="item-13"></label>
-            <input id="item-13" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/product-img.png" alt="Item Image"></a>
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
+            <a href="#"><img class="image-item" src="./assets/img/games/gow.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
-            <h3>
-              <a href="#">Lorem Ipsum sit Amet</a>
-            </h3>
+            <h4><a href="#">God Of War: Ragnarök</a></h4>
             <span class="publisher">Publisher Name</span>
-            <span class="price">R$300</span>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
           </div>
+
+          <a href="#" class="btn btn-product">Comprar</a>
+
         </div>
+
         <!-- ITEM 4 -->
         <div class="items-list__item">
+
           <div class="items-list__item__image">
-            <label for="item-14"></label>
-            <input id="item-14" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/product-img.png" alt="Item Image"></a>
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
+            <a href="#"><img class="image-item" src="./assets/img/games/hife-rush.jpg" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
-            <h3>
-              <a href="#">Lorem Ipsum sit Amet</a>
-            </h3>
+            <h4><a href="#">Hi-Fi Rush</a></h4>
             <span class="publisher">Publisher Name</span>
-            <span class="price">R$300</span>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
           </div>
+
+          <a href="#" class="btn btn-product">Comprar</a>
+
         </div>
+
         <!-- ITEM 5 -->
         <div class="items-list__item">
+
           <div class="items-list__item__image">
-            <label for="item-15"></label>
-            <input id="item-15" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/product-img.png" alt="Item Image"></a>
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
+            <a href="#"><img class="image-item" src="./assets/img/games/limbo.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
-            <h3>
-              <a href="#">Lorem Ipsum sit Amet</a>
-            </h3>
+            <h4><a href="#">Limbo</a></h4>
             <span class="publisher">Publisher Name</span>
-            <span class="price">R$300</span>
-          </div>
-        </div>
-      </div>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
 
-    </div>
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-product">Comprar</a>
+
+        </div>
+
+      </div>
   </section>
+
   <section class="promotions">
     <div class="container">
       <div class="banner">
-        <img src="./assets/img/games/spacebackground.jpg" alt="background do espaço sideral" />
-        <h4>PROMOÇÃO SIDERAL 50% OFF</h4>
+        <img src="./assets/img/promotions-section/banner-01.png" alt="Banner da seção Promotions" />
       </div>
 
       <div class="small-banner">
-        <img src="./assets/img/games/death-strading.webp" alt="" />
+        <img src="./assets/img/games/gow.webp" alt="Small Banner" />
+        <a href="#" class="btn btn-primary">Comprar</a>
+        <span class="small-banner__promotion">PROMOÇÃO <bold>50% OFF</bold></span>
       </div>
 
-      <div class="items-list">
-        <div class="items-list__item_V2">
-          <div class="items-list__item_V2__image">
-            <label for="promotion-1"></label>
-            <input id="promotion-1" class="like-btn" type="checkbox" />
-            <a href="#"><img class="image-item" src="./assets/img/games/starfield.jpg" alt="Item Image" /></a>
+      <div class="promotion__products">
+
+        <!-- PROMOTION PRODUCT 1 -->
+        <div class="promotion__products__item">
+
+          <div class="promotion__products__item__image">
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
+            <a href="#"><img class="image-item" src="./assets/img/games/spiderman-miles-morales.webp" alt="Item Image"></a>
           </div>
-          <div class="items-list__item_V2__info">
-            <h3>
-              <a href="#">Starfield</a>
-            </h3>
+
+          <div class="promotion__products__item__info">
+            <h4><a href="#">Spider Man - Miles...</a></h4>
             <span class="publisher">Publisher Name</span>
-            <span class="price">
-              R$300
-              <del>R$400</del>
-            </span>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
           </div>
+
+          <a href="#" class="btn btn-product">Comprar</a>
+
         </div>
 
-        <div class="items-list__item_V2">
-          <div class="items-list__item_V2__image">
-            <label for="promotion-2"></label>
-            <input id="promotion-2" class="like-btn" type="checkbox" />
-            <a href="#"><img class="image-item" src="./assets/img/games/no-mans-sky.jpg" alt="Item Image" /></a>
-          </div>
-          <div class="items-list__item_V2__info">
-            <h3>
-              <a href="#">No Man's Sky</a>
-            </h3>
-            <span class="publisher">Publisher Name</span>
+        <!-- PROMOTION PRODUCT 2 -->
+        <div class="promotion__products__item">
 
-            <span class="price">
-              R$300
-              <del>R$400</del>
-            </span>
+          <div class="promotion__products__item__image">
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
+            <a href="#"><img class="image-item" src="./assets/img/games/no-mans-sky.jpg" alt="Item Image"></a>
           </div>
+
+          <div class="promotion__products__item__info">
+            <h4><a href="#">No Man's Sky</a></h4>
+            <span class="publisher">Publisher Name</span>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-product">Comprar</a>
+
         </div>
+
       </div>
     </div>
   </section>
+
   <section class="game-recommends">
     <div class="container">
 
+      <h3>RECOMENDAÇÕES DA<span> PIXELPLAY</span></h3>
+
+      <!-- LIST ONE -->
       <div class="items-list">
 
         <!-- ITEM 1 -->
         <div class="items-list__item">
+
           <div class="items-list__item__image">
-            <label for="item-6"></label>
-            <input id="item-6" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item openModal" src="./assets/img/games/product-img.png"  alt="Item Image"></a>
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
+            <a href="#"><img class="image-item" src="./assets/img/games/little-nightmares.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
-            <h3>
-              <a href="#">Lorem Ipsum sit Amet</a>
-            </h3>
+            <h4><a href="#">Little Nightmares</a></h4>
             <span class="publisher">Publisher Name</span>
-            <span class="price">R$300</span>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
           </div>
+
+          <a href="#" class="btn btn-product">Comprar</a>
+
         </div>
+
         <!-- ITEM 2 -->
         <div class="items-list__item">
+
           <div class="items-list__item__image">
-            <label for="item-7"></label>
-            <input id="item-7" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item openModal" src="./assets/img/games/product-img.png"  alt="Item Image"></a>
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
+            <a href="#"><img class="image-item" src="./assets/img/games/naruto-ninja-storm-4.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
-            <h3>
-              <a href="#">Lorem Ipsum sit Amet</a>
-            </h3>
+            <h4><a href="#">Naruto: Ultimate Ninja S. 4</a></h4>
             <span class="publisher">Publisher Name</span>
-            <span class="price">R$300</span>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
           </div>
+
+          <a href="#" class="btn btn-product">Comprar</a>
+
         </div>
+
         <!-- ITEM 3 -->
         <div class="items-list__item">
+
           <div class="items-list__item__image">
-            <label for="item-8"></label>
-            <input id="item-8" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item openModal" src="./assets/img/games/product-img.png"  alt="Item Image"></a>
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
+            <a href="#"><img class="image-item" src="./assets/img/games/no-mans-sky.jpg" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
-            <h3>
-              <a href="#">Lorem Ipsum sit Amet</a>
-            </h3>
+            <h4><a href="#">No Man's Sky</a></h4>
             <span class="publisher">Publisher Name</span>
-            <span class="price">R$300</span>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
           </div>
+
+          <a href="#" class="btn btn-product">Comprar</a>
+
         </div>
+
         <!-- ITEM 4 -->
         <div class="items-list__item">
+
           <div class="items-list__item__image">
-            <label for="item-9"></label>
-            <input id="item-9" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/product-img.png" alt="Item Image"></a>
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
+            <a href="#"><img class="image-item" src="./assets/img/games/resident-evil-4-remae.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
-            <h3>
-              <a href="#">Lorem Ipsum sit Amet</a>
-            </h3>
+            <h4><a href="#">Resident Evil 4 Remake</a></h4>
             <span class="publisher">Publisher Name</span>
-            <span class="price">R$300</span>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
           </div>
+
+          <a href="#" class="btn btn-product">Comprar</a>
+
         </div>
+
         <!-- ITEM 5 -->
-        <div class="items-list__item" >
+        <div class="items-list__item">
+
           <div class="items-list__item__image">
-            <label for="item-10"></label>
-            <input id="item-10" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/product-img.png"  alt="Item Image"></a>
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
+            <a href="#"><img class="image-item" src="./assets/img/games/starfield.jpg" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
-            <h3>
-              <a href="#" class="modal-game">Lorem Ipsum sit Amet</a>
-            </h3>
+            <h4><a href="#">Starfield</a></h4>
             <span class="publisher">Publisher Name</span>
-            <span class="price">R$300</span>
+            <div class="platforms">
+              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
           </div>
+
+          <a href="#" class="btn btn-product">Comprar</a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+
+      <div class="up">
+        <nav>
+          <ul>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Carreiras</a></li>
+            <li><a href="#">Publishers</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+
+          <div class="language">
+            <img src="./assets/img/language-selector-i.svg" alt="language Icon">
+            <p>Portugês</p>
+            <img src="./assets/img/arrow-down-i.svg" alt="language Arrow Down Icon">
+          </div>
+        </nav>
+      </div>
+
+      <div class="down">
+        <div class="social-medias">
+
+          <h4>Acompanhe Nas Redes Sociais:</h4>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./assets/img/instagram-i.svg" alt="Instagram Icon">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="./assets/img/facebook-i.svg" alt="Facebook Icon">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="./assets/img/discord-i.svg" alt="Discord Icon">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="./assets/img/linkedin-i.svg" alt="LinkedIn Icon">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="./assets/img/twitter-i.svg" alt="Twitter Icon">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    
-      <dialog class="modal" id="modal">
-          <div class="container">
-          <div class="items-list__item">
-            <div class="items-list__item__image">
-              <label for="item-1"></label>
-              <input id="item-1" class="like-btn" type="checkbox">
-              <a href="#"><img class="image-item" src="./assets/img/games/cod.jpg" alt="Item Image"></a>
-            </div>
 
-            <div class="items-list__item__info">
-              <h3>
-                <a href="#">Call of Duty</a>
-              </h3>
-              <span class="publisher">Publisher Name</span>
-              <span class="price">R$300</span>
-            </div>
-          </div>
-        </div>
-            <button class="closeModal">close</button>
-      </dialog>
+      <div class="copy">
+        <p>&copy; 2023 <span>PixelPlay</span> - Todos os direitos reservados.</p>
+      </div>
 
-  </section>
-  <footer class="footer-page">
-    <div class="container">
-      <ul>
-        <li><img src="./assets/img/instagram.png" alt=""></li>
-        <li><img src="./assets/img/facebook.png" alt=""></li>
-        <li><img src="./assets/img/LinkedIn.png" alt=""></li>
-        <li><img src="./assets/img/discord.png" alt=""></li>
-        <li><img src="./assets/img/Twitter.png" alt=""></li>
-      </ul>
-      <ul id="rodape-politicas">
-        <li>Ajuda</li>
-        <li>Políticas</li>
-        <li>Institucional</li>
-      </ul>
-      <h4> © 2023 PixelPlay - Todos os direitos reservados.</h4>
     </div>
   </footer>
+
+
+  <!-- SCRIPTS -->
+  <script src="./scripts/base.js"></script>
   <script src="./scripts/glider.js"></script>
   <script src="./scripts/carousel.js"></script>
   <script src="./scripts/modal.js"></script>
 </body>
+
 </html>

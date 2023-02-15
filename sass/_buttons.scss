@@ -1,4 +1,4 @@
-// Game item - Like Button
+// LIKE BUTTON
 .items-list__item__image {
   position: relative;
   .like-btn {
@@ -38,8 +38,8 @@
   }
 }
 
-//Variação promotion
-.items-list__item_V2__image {
+// LIKE BUTTON ON PROMOTION SECTION
+.promotion__products__item__image {
   position: relative;
   .like-btn {
     position: absolute;
@@ -76,4 +76,37 @@
     background-repeat: no-repeat;
     cursor: pointer;
   }
+}
+
+// BTN PRIMARY
+.btn {
+  padding: 1.7rem 4rem;
+  background-color: $brand-green;
+  border-radius: 5px;
+  color: $brand-white;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  transition: all 0.2s ease-in;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #498d00;
+  }
+}
+
+.btn-primary {
+  position: absolute;
+  bottom: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// BTN PRODUCTS
+.btn-product {
+  width: 100%;
+  text-align: center;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }

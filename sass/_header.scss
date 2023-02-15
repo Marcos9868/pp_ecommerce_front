@@ -1,97 +1,125 @@
 header {
   @include flex(column, space-between, center);
-  padding: 3.5rem 0 0 0;
-  background-color: #d9d9d9;
+  padding-bottom: 59.3rem;
+  background: linear-gradient(180deg, rgba(21, 29, 39, 0) 25.36%, #151d27 100%),
+    url("../assets/img/header/header-bacgrounds/hogwarts-legacy.jpg") no-repeat;
+  background-color: $brand-white;
+  background-position: center;
+  background-size: cover;
 
-  .header-up {
+  position: relative;
+  animation-name: scaleAnimation;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+
+  .container {
+    background-color: $brand-white;
+    max-width: 100%;
+    padding: 3rem 0;
+  }
+
+  // Container que está dentro do header
+  .container-box {
     @include flex(row, space-between, center);
-    padding-bottom: 2.1rem;
-    border-bottom: 1px solid #cac7e2;
+  }
 
-    .logo-store {
-      h1 {
-        font-size: 3.6rem;
-        font-weight: 400;
+  .logo-store {
+    h1 {
+      font-size: 3.6rem;
+      font-weight: 400;
 
-        a {
-          span {
-            font-size: 3.6rem;
-            font-weight: italic;
-            text-decoration: none;
-            color: black;
-          }
+      a {
+        span {
+          font-size: 3.6rem;
+          font-weight: bold;
+          text-decoration: none;
+          color: black;
         }
       }
     }
+  }
 
-    .category-devices {
-      width: 343px;
+  .category-devices {
+    margin-left: -6rem;
+    ul {
+      @include flex(row, start, center);
 
-      .list-category {
-        @include flex(row, space-between, center);
-        font-size: 2rem;
-        font-weight: 500;
-
+      font-size: 2rem;
+      font-weight: 500;
+      li {
         a {
           text-decoration: none;
           outline: none;
           cursor: pointer;
           color: black;
+          padding: 2rem 3rem;
+          transition: all 0.2s ease-in;
+          border-radius: 0.5rem;
 
           &:hover {
             color: rgb(56, 53, 53);
             border: 0 0 0.5px 0.5px solid rgb(56, 53, 53);
+            background-color: $gray-100;
           }
         }
       }
     }
+  }
 
+  .search-container {
+    width: 100%;
+    max-width: 56.6rem;
     input[type="search"] {
-      background-color: #c4c2dc;
+      background-color: $gray-100;
       padding: 2rem;
+
       width: 100%;
       max-width: 36.6rem;
       height: 4.6rem;
-      background-image: url("../assets/img/header/lupaInput.svg");
+      background-image: url("../assets/img/header/search-i.svg");
       background-position: 1rem 1rem;
       background-repeat: no-repeat;
       background-position: center right 2rem;
       padding-right: 30px;
       border-radius: 1rem;
-    }
-
-    .menu-user {
-      @include flex(row, space-between, center);
-      gap: 2rem;
-    }
-  }
-
-  // SUBMENU NAVBAR
-  .header-down {
-    background-color: #d9d9d9;
-
-    nav {
-      ul {
-        @include flex(row, start, center);
-        padding: 2rem 0;
-
-        li {
-          a {
-            font-weight: 400;
-            font-size: 1.7rem;
-            line-height: 2.4rem;
-            color: black;
-            padding: 2rem 4rem;
-            transition: all 0.2s ease-in;
-
-            &:hover {
-              background-color: #c4c4c4;
-            }
-          }
-        }
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.4);
       }
     }
   }
+
+  .menu-user {
+    @include flex(row, space-between, center);
+    gap: 2rem;
+  }
+
+  // SUBMENU NAVBAR
+  // .header-down {
+  //   background-color: #d9d9d9;
+
+  //   nav {
+  //     ul {
+  //       @include flex(row, start, center);
+  //       padding: 2rem 0;
+
+  //       li {
+  //         a {
+  //           font-weight: 400;
+  //           font-size: 1.7rem;
+  //           line-height: 2.4rem;
+  //           color: black;
+  //           padding: 2rem 4rem;
+  //           transition: all 0.2s ease-in;
+
+  //           &:hover {
+  //             background-color: #c4c4c4;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 // Navbar - Submenu

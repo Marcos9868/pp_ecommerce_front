@@ -1,9 +1,13 @@
-@keyframe animacaoDropdown{
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
+// BACKGROUND HEADER SCALE ANIMATION
+
+@keyframes scaleAnimation {
+  0% {
+    // background-position: top;
+    background-size: 110%;
   }
 
+  100% {
+    // background-position: center;
+    background-size: 100%;
+  }
 }
