@@ -314,7 +314,7 @@ header {
       font-weight: 400; }
       header .header-up .logo-store h1 a span {
         font-size: 3.6rem;
-        font-weight: bold;
+        font-weight: italic;
         text-decoration: none;
         color: black; }
     header .header-up .category-devices {
@@ -507,4 +507,7 @@ main {
             cursor: pointer; }
             main aside .aside-container .game-industries ul li:hover {
               color: gray; }
-  
+
+.modal .container {
+  width: 800px;
+  height: 800px; }

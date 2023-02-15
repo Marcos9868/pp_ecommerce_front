@@ -29,12 +29,12 @@ main {
       flex-direction: column;
       gap: 2rem;
 
-      .filter.active{
+      .filter.active {
         height: auto;
         background-color: #cac7e2;
         border-radius: 1rem;
         padding: 1.35rem;
-       }
+      }
 
       .filter {
         background-color: #cac7e2;
@@ -44,21 +44,21 @@ main {
         overflow: hidden;
         position: relative;
 
-        
-         
-      
-        &-dropdown{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
 
-        .setinha SVG{
+
+
+        &-dropdown {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .setinha SVG {
             width: 2rem;
-        }
+          }
 
         }
 
-        
+
         ul {
           padding: 0.75rem 0 0 2.5rem;
 
@@ -66,20 +66,20 @@ main {
             transition: 0.15s;
             cursor: pointer;
             font-weight: 500;
-            
+
             &:hover {
               color: gray;
             }
           }
         }
 
-       
+
 
       }
-      
 
 
-      .game-categories.active{
+
+      .game-categories.active {
         background-color: #cac7e2;
         border-radius: 1rem;
         padding: 1.35rem;
@@ -109,7 +109,8 @@ main {
           }
         }
       }
-      .price-range.active{
+
+      .price-range.active {
         background-color: #cac7e2;
         border-radius: 1rem;
         padding: 1.35rem;
@@ -119,6 +120,7 @@ main {
         height: auto;
         font-weight: 500;
       }
+
       .price-range {
         background-color: #cac7e2;
         border-radius: 1rem;
@@ -146,13 +148,14 @@ main {
         }
       }
 
-      .game-industries.active{
+      .game-industries.active {
         background-color: #cac7e2;
         border-radius: 1rem;
         padding: 1.35rem;
         height: auto;
         font-weight: 500;
       }
+
       .game-industries {
         background-color: #cac7e2;
         border-radius: 1rem;
@@ -167,7 +170,7 @@ main {
           li {
             transition: 0.15s;
             cursor: pointer;
-            
+
             &:hover {
               color: gray;
             }
@@ -177,5 +180,3 @@ main {
     }
   }
 }
-
-
