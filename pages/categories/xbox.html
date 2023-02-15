@@ -1,12 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" />
+  <link rel="stylesheet" href="../../css/main.css" />
   <title>Pixel Play Store - Xbox</title>
 </head>
 <body>
-  
+  <header>
+    <div class="container">
+      <div class="container-box">
+        <!-- LOGO -->
+        <div class="logo-store">
+          <a href="../../index.html">
+            <img src="../../assets/img/header/logo-pixelplay.svg" alt="Logo PixelPlay">
+          </a>
+        </div>
+
+        <!-- MAIN MENU LINKS -->
+        <div class="category-devices">
+          <ul>
+            <li><a href="./pages/categories/pc.html">PC</a></li>
+            <li><a href="/pages/categories/xbox.html">Xbox</a></li>
+            <li><a href="/pages/categories/playstation.html">Playstation</a></li>
+          </ul>
+
+        </div>
+
+        <!-- SEARCH BAR -->
+        <div class="search-container">
+          <input type="search" name="search-bar" id="search-bar" placeholder="Pesquisar">
+        </div>
+        <!-- CART AND LOGIN ICONS -->
+        <div class="menu-user">
+          <a href="#"><img class="openModalLogin" src="../../assets/img/header/user-i.svg" alt="iconPerfil"></a>
+          <a href="#"><img class="openModalSacola" src="../../assets/img/header/cart-i.svg" alt="iconSacola"></a>
+        </div>
+
+        <dialog class="modalPerfil" id="modalPerfil">
+          <form>
+            <label for="fname">Login:</label><br>
+            <input type="text" id="fname" name="login"><br>
+            <label for="lname">Senha:</label><br>
+            <input type="password" id="lname" name="senha">
+            <button class="closeModalLogin">Close</button>
+          </form>
+
+          <dialog class="modalSacola" id="modalSacola">
+            <h2>Aqui ficarão os itens da sacola</h2>
+            <p>compra, quantidade e produto</p>
+            <button class="closeModalSacola">Fechar</button>
+          </dialog>
+
+        </dialog>
+        <dialog class="modalSacola" id="modalSacola"></dialog>
+      </div>
+        <!-- Check-out button -->
+        <a href="#" class="btn btn-primary">Conferir</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+
+      <aside>
+        <h3>Início > Xbox</h3>
+        <div class="aside-container">
+          <div class="filter">
+            <h5>Filtros Aplicados</h5>
+            <ul>
+              <li>Gênero</li>
+              <li>Menor Preço</li>
+              <li>Mais Votados</li>
+            </ul>
+          </div>
+          <div class="game-categories">
+            <h5>Categorias</h5>
+            <ul>
+              <li>RPG</li>
+              <li>FPS</li>
+              <li>Ação</li>
+              <li>Aventura</li>
+              <li>Corrida</li>
+            </ul>
+          </div>
+          <div class="price-range">
+            <h5>Preço</h5>
+            <input type="range" name="price-range" id="price-range" min="5" max="500" onchange="showPrice()">
+            <span>R$:</span>
+            <button>Aplicar Filtro</button>
+          </div>
+          <div class="game-industries">
+            <h5>Desenvolvedoras</h5>
+            <ul>
+              <li>Activision</li>
+              <li>Ubisoft</li>
+              <li>EA Games</li>
+              <li>Valve Corporation</li>
+            </ul>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </aside>
+
+      <section>
+        <!-- GRID PRODUTOS -->
+        <div class="pages-filter">
+          <!-- FILTRO DE PAGINAS -->
+        </div>
+
+        <!-- LIST ONE -->
+        <div class="items-list">
+
+          <!-- ITEM 1 -->
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-1"></label>
+              <input id="item-1" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/cod.jpg" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">Call of Duty</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+          <!-- ITEM 2 -->
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-2"></label>
+              <input id="item-2" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/gow.webp" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">God Of War: Ragnarök</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+          <!-- ITEM 3 -->
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-3"></label>
+              <input id="item-3" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/crash-4.webp" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">Crash Bandicoot 4 ...</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+          <!-- ITEM 4 -->
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-4"></label>
+              <input id="item-4" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/elden-ring.webp" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">Elden Ring</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+
+        </div>
+        <!-- LIST TWO -->
+        <div class="items-list">
+
+          <!-- ITEM 1 -->
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-1"></label>
+              <input id="item-1" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/cod.jpg" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">Call of Duty</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+          <!-- ITEM 2 -->
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-2"></label>
+              <input id="item-2" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/gow.webp" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">God Of War: Ragnarök</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+          <!-- ITEM 3 -->
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-3"></label>
+              <input id="item-3" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/crash-4.webp" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">Crash Bandicoot 4 ...</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+          <!-- ITEM 4 -->
+          <div class="items-list__item">
+            <div class="items-list__item__image">
+              <label for="item-4"></label>
+              <input id="item-4" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/elden-ring.webp" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h3>
+                <a href="#">Elden Ring</a>
+              </h3>
+              <span class="publisher">Publisher Name</span>
+              <span class="price">R$300</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+
+  </main>
+  <footer>
+    <div class="container">
+
+      <div class="up">
+        <nav>
+          <ul>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Carreiras</a></li>
+            <li><a href="#">Publishers</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+
+          <div class="language">
+            <img src="../../assets/img/language-selector-i.svg" alt="language Icon">
+            <p>Portugês</p>
+            <img src="../../assets/img/arrow-down-i.svg" alt="language Arrow Down Icon">
+          </div>
+        </nav>
+      </div>
+
+      <div class="down">
+        <div class="social-medias">
+
+          <h4>Acompanhe Nas Redes Sociais:</h4>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="../../assets/img/instagram-i.svg" alt="Instagram Icon">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="../../assets/img/facebook-i.svg" alt="Facebook Icon">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="../../assets/img/discord-i.svg" alt="Discord Icon">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="../../assets/img/linkedin-i.svg" alt="LinkedIn Icon">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="../../assets/img/twitter-i.svg" alt="Twitter Icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copy">
+        <p>&copy; 2023 <span>PixelPlay</span> - Todos os direitos reservados.</p>
+      </div>
+
+    </div>
+  </footer>
+  <script src="../../scripts/price-range.js" defer></script>
+  <script src="../../scripts/categoriesPC.js"></script>
 </body>
 </html>
