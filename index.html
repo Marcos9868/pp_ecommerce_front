@@ -55,18 +55,21 @@
         </div>
 
         <dialog class="modalPerfil" id="modalPerfil">
-          <form>
-            <label for="fname">Login:</label><br>
-            <input type="text" id="fname" name="login"><br>
-            <label for="lname">Senha:</label><br>
-            <input type="password" id="lname" name="senha">
-            <button class="closeModalLogin">Close</button>
-          </form>
+          <div class="container">
 
-          <dialog class="modalSacola" id="modalSacola">
-            <h2>Aqui ficarão os itens da sacola</h2>
-            <p>compra, quantidade e produto</p>
-            <button class="closeModalSacola">Fechar</button>
+            <form>
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname"><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname">
+            </form>
+      
+              <div class="slide-info">
+                  <a href="#" class="btn closeModalLogin">Comprar</a>
+            </div>
+      
+          </div>
+          </div>
           </dialog>
 
         </dialog>
@@ -624,6 +627,39 @@
         </div>
 
       </div>
+
+      <dialog class="modalGame" id="modalGame">
+
+        <div class="items-list__item">
+
+          <div class="items-list__item__image">
+            <label for="item-1"></label>
+            <input id="item-1" class="like-btn" type="checkbox">
+            <a href="#"><img class="image-item" src="../../assets/img/games/starfield.jpg" alt="Item Image"></a>
+          </div>
+
+          <div class="items-list__item__info">
+            <h4><a href="#">Starfield</a></h4>
+            <span class="publisher">Publisher Name</span>
+            <div class="platforms">
+              <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+              <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+              <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+            </div>
+
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-product closeModalGame">Comprar</a>
+
+        </div>
+
+      </div>
+
+      </dialog>
 
     </div>
   </section>
