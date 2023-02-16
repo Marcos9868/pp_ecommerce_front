@@ -1,6 +1,6 @@
 //MODAL lOGIN
 
-/*
+
 const modalLogin = document.querySelector('#modalPerfil')
 const openModalLogin = document.querySelector('.openModalLogin')
 const closeModalLogin = document.querySelector('.closeModalLogin')
@@ -11,7 +11,7 @@ openModalLogin.addEventListener('click', ()=>{
 
 closeModalLogin.addEventListener('click', ()=>{
     modalLogin.close()
-})*/
+})
 
 /* 
 const modalSacola = document.querySelector('#modalSacola')
@@ -29,16 +29,16 @@ closeModalSacola.addEventListener('click', ()=>{
 
 
 //MODAL GAME
-const modal = document.querySelector('#modal')
-const closeModal = document.querySelector('.closeModal')
+const modalGame = document.querySelector('#modalGame')
+const closeModalGame = document.querySelector('.closeModalGame')
 const imgGame = document.querySelectorAll('.image-item')
 
 imgGame.forEach(function(item){
     item.addEventListener('click', ()=>{
-        modal.showModal()
+        modalGame.showModal()
     })
 })
 
-closeModal.addEventListener('click', ()=>{
-    modal.close()
+closeModalGame.addEventListener('click', ()=>{
+    modalGame.close()
 })
