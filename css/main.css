@@ -559,7 +559,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 59.3rem;
+  padding-bottom: 49.3rem;
   background: url("../assets/img/header/header-bacgrounds/hogwarts-legacy.jpg");
   background-repeat: no-repeat;
   background-color: #fff;
@@ -594,27 +594,25 @@ header {
       font-weight: bold;
       text-decoration: none;
       color: black; }
-  header .category-devices {
-    margin-left: -6rem; }
-    header .category-devices ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: start;
-      align-items: center;
-      font-size: 2rem;
-      font-weight: 500; }
-      header .category-devices ul li a {
-        text-decoration: none;
-        outline: none;
-        cursor: pointer;
-        color: black;
-        padding: 2rem 3rem;
-        transition: all 0.2s ease-in;
-        border-radius: 0.5rem; }
-        header .category-devices ul li a:hover {
-          color: #383535;
-          border: 0 0 0.5px 0.5px solid #383535;
-          background-color: #efefef; }
+  header .category-devices ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500; }
+    header .category-devices ul li a {
+      text-decoration: none;
+      outline: none;
+      cursor: pointer;
+      color: black;
+      padding: 2rem 3rem;
+      transition: all 0.2s ease-in;
+      border-radius: 0.5rem; }
+      header .category-devices ul li a:hover {
+        color: #383535;
+        border: 0 0 0.5px 0.5px solid #383535;
+        background-color: #efefef; }
   header .search-container {
     width: 100%;
     max-width: 56.6rem; }
@@ -637,7 +635,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem; }
+    gap: 2rem;
+    width: 20rem; }
 
 .navbar {
   background-color: #d9d9d9; }

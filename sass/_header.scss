@@ -1,6 +1,6 @@
 header {
   @include flex(column, space-between, center);
-  padding-bottom: 59.3rem;
+  padding-bottom: 49.3rem;
   background: url("../assets/img/header/header-bacgrounds/hogwarts-legacy.jpg");
 
   background-repeat: no-repeat;
@@ -55,7 +55,6 @@ header {
   }
 
   .category-devices {
-    margin-left: -6rem;
     ul {
       @include flex(row, start, center);
 
@@ -106,6 +105,7 @@ header {
   .menu-user {
     @include flex(row, space-between, center);
     gap: 2rem;
+    width: 20rem;
   }
 
   // SUBMENU NAVBAR

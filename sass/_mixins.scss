@@ -6,8 +6,6 @@
   align-items: $align;
 }
 
-
-
 // Responsive
 @mixin responsive($width) {
   @media screen and (max-width: $width) {
