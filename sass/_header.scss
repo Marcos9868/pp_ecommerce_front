@@ -106,28 +106,27 @@ header {
   // }
 }
 
-// Navbar - Submenu
-.navbar {
-  background-color: #d9d9d9;
-
-  nav {
+// SUBMENU
+.submenu {
+  display: none; //ALTERAR DISPLAy
+  width: 100%;
+  z-index: 3;
+  background-color: $brand-very-dark-blue;
+  padding: 3rem 0;
+  position: absolute;
+  top: 11rem;
+  .playstation-menu {
+    width: 100%;
     ul {
-      @include flex(row, start, center);
-      padding: 2rem 0;
-
-      li {
-        a {
-          font-weight: 400;
-          font-size: 1.7rem;
-          line-height: 2.4rem;
-          color: black;
-          padding: 2rem 4rem;
-          transition: all 0.2s ease-in;
-
-          &:hover {
-            background-color: #c4c4c4;
-          }
-        }
+    @include flex(row, center, center);
+    gap: 7rem;
+    }
+    img {
+      padding: 2rem;
+      transition: all .1s ease-in;
+      &:hover {
+        transform: scale(1.07);
+        opacity: 0.6;
       }
     }
   }
