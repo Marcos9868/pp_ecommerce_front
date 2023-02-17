@@ -1,10 +1,4 @@
 
-    
- dialog .items-list__item {
-    @include flex(column, space-between, center);
-    width: 100%;
-    max-width: 80rem;
-    background-color: #d1d8e2;
-    border-radius: 1rem;
-    height: 40.8rem;
-    }
+.modalItemList{
+      max-width: 80rem;
+}

@@ -778,13 +778,6 @@ main {
             main aside .aside-container .game-industries ul li:hover {
               color: gray; }
 
-dialog .items-list__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+.modalItemList {
   max-width: 80rem;
-  background-color: #d1d8e2;
-  border-radius: 1rem;
-  height: 40.8rem; }
+  background: blue; }

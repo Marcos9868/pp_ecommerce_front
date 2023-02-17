@@ -34,11 +34,14 @@ const closeModalGame = document.querySelector('.closeModalGame')
 const imgGame = document.querySelectorAll('.image-item')
 
 imgGame.forEach(function(item){
-    item.addEventListener('click', ()=>{
+    item.addEventListener('click', (e)=>{
+        e.preventDefault()
         modalGame.showModal()
     })
 })
 
-closeModalGame.addEventListener('click', ()=>{
+
+closeModalGame.addEventListener('click', (e)=>{
+    e.preventDefault()
     modalGame.close()
 })
