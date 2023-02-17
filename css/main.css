@@ -48,6 +48,18 @@ img {
   0% { }
   100% { } }
 
+@keyframes fadein {
+  from {
+    transform: translateX(0);
+    opacity: 0; }
+  to {
+    opacity: 1;
+    transform: translateX(300px); } }
+
+.js-slideImageAnimation {
+  transition: opacity 0.5s ease-in-out;
+  animation: fadein 2s; }
+
 .items-list__item {
   display: flex;
   flex-direction: column;
@@ -385,19 +397,51 @@ img {
       justify-content: space-between;
       align-items: center;
       width: 100%; }
-      .carrossel .slide .slide-info .btn-arrows .arrows {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 5rem;
-        cursor: pointer; }
-        .carrossel .slide .slide-info .btn-arrows .arrows img {
-          transition: all 0.2s ease-in; }
-          .carrossel .slide .slide-info .btn-arrows .arrows img:hover {
-            filter: brightness(0%) saturate(0%) contrast(0%) invert(29%);
-            -webkit-filter: brightness(0%) saturate(0%) contrast(0%) invert(29%);
-            -moz-filter: brightness(0%) saturate(0%) contrast(0%) invert(29%); }
+
+.carrossel .arrows {
+  position: absolute;
+  right: 7.7rem;
+  bottom: 8.4rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  cursor: pointer; }
+  .carrossel .arrows img {
+    transition: all 0.2s ease-in; }
+    .carrossel .arrows img:hover {
+      filter: brightness(0%) saturate(0%) contrast(0%) invert(29%);
+      -webkit-filter: brightness(0%) saturate(0%) contrast(0%) invert(29%);
+      -moz-filter: brightness(0%) saturate(0%) contrast(0%) invert(29%); }
+
+.carrossel .autoplay-progress {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #0aaefe; }
+  .carrossel .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: #0aaefe;
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg); }
 
 .game-list h3,
 .game-list span {
@@ -779,5 +823,4 @@ main {
               color: gray; }
 
 .modalItemList {
-  max-width: 80rem;
-  background: blue; }
+  max-width: 80rem; }

@@ -11,15 +11,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
   <!-- FAVICON -->
-
   <link rel="icon" href="favicon.png" type="image">
 
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="css/main.css">
 
-  <!-- GLIDER CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-  <link rel="stylesheet" type="text/css" href="css/glider.css">
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
   <title>Pixel Play Store - Home</title>
 </head>
 
@@ -82,11 +81,100 @@
     <div class="container">
 
       <div class="slide">
-        <div class="slide-images">
-          <img src="./assets/img/slides/ghost-of-tsushima.jpg" alt="Slide Img">
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+
+            <!-- SLIDE 1 -->
+            <div class="swiper-slide">
+              <div class="slide-images">
+                <img src="./assets/img/slides/ghost-of-tsushima.jpg" alt="Slide Img">
+              </div>
+
+              <div class="slide-info">
+                <span class="slide-info__promotion">PROMOÇÃO <bold>50% OFF</bold></span>
+                <h2>SOBRE O JOGO:</h2>
+                <p>Ghost of Tsushima é um jogo de ação e aventura em mundo aberto no Japão feudal, onde o jogador assume o papel do samurai Jin Sakai que luta contra a invasão mongol em Tsushima. O jogo oferece opções para o jogador criar alianças, aprender novas habilidades e escolher entre ser um samurai ou um "fantasma" que utiliza táticas não convencionais para vencer.</p>
+
+                <div class="btn-arrows">
+                  <a href="#" class="btn">Comprar</a>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="swiper-slide">
+              <div class="slide-images">
+                <img src="./assets/img/slides/cod.png" alt="Slide Img">
+              </div>
+
+              <div class="slide-info">
+                <span class="slide-info__promotion">PROMOÇÃO <bold>50% OFF</bold></span>
+                <h2>SOBRE O JOGO:</h2>
+                <p>Ghost of Tsushima é um jogo de ação e aventura em mundo aberto no Japão feudal, onde o jogador assume o papel do samurai Jin Sakai que luta contra a invasão mongol em Tsushima. O jogo oferece opções para o jogador criar alianças, aprender novas habilidades e escolher entre ser um samurai ou um "fantasma" que utiliza táticas não convencionais para vencer.</p>
+
+                <div class="btn-arrows">
+                  <a href="#" class="btn">Comprar</a>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="swiper-slide">
+              <div class="slide-images">
+                <img src="./assets/img/slides/crash.png" alt="Slide Img">
+              </div>
+
+              <div class="slide-info">
+                <span class="slide-info__promotion">PROMOÇÃO <bold>50% OFF</bold></span>
+                <h2>SOBRE O JOGO:</h2>
+                <p>Ghost of Tsushima é um jogo de ação e aventura em mundo aberto no Japão feudal, onde o jogador assume o papel do samurai Jin Sakai que luta contra a invasão mongol em Tsushima. O jogo oferece opções para o jogador criar alianças, aprender novas habilidades e escolher entre ser um samurai ou um "fantasma" que utiliza táticas não convencionais para vencer.</p>
+
+                <div class="btn-arrows">
+                  <a href="#" class="btn">Comprar</a>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 4 -->
+            <div class="swiper-slide">
+              <div class="slide-images">
+                <img src="./assets/img/slides/starfield.png" alt="Slide Img">
+              </div>
+
+              <div class="slide-info">
+                <span class="slide-info__promotion">PROMOÇÃO <bold>50% OFF</bold></span>
+                <h2>SOBRE O JOGO:</h2>
+                <p>Ghost of Tsushima é um jogo de ação e aventura em mundo aberto no Japão feudal, onde o jogador assume o papel do samurai Jin Sakai que luta contra a invasão mongol em Tsushima. O jogo oferece opções para o jogador criar alianças, aprender novas habilidades e escolher entre ser um samurai ou um "fantasma" que utiliza táticas não convencionais para vencer.</p>
+
+                <div class="btn-arrows">
+                  <a href="#" class="btn">Comprar</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
 
-        <div class="slide-info">
+        <div class="arrows">
+          <img class="js-prevButton" src="./assets/img/arrow-left.svg" alt="Arrow left">
+          <img class="js-nextButton" src="./assets/img/arrow-right.svg" alt="Arrow Right">
+        </div>
+
+        <!-- AUTOPLAY PROGRESS -->
+        <div class="autoplay-progress">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span></span>
+        </div>
+
+        <!-- <div class="slide-info">
           <span class="slide-info__promotion">PROMOÇÃO <bold>50% OFF</bold></span>
           <h2>SOBRE O JOGO:</h2>
           <p>Ghost of Tsushima é um jogo de ação e aventura em mundo aberto no Japão feudal, onde o jogador assume o papel do samurai Jin Sakai que luta contra a invasão mongol em Tsushima. O jogo oferece opções para o jogador criar alianças, aprender novas habilidades e escolher entre ser um samurai ou um "fantasma" que utiliza táticas não convencionais para vencer.</p>
@@ -98,7 +186,7 @@
               <img class="js-nextButton" src="./assets/img/arrow-right.svg" alt="Arrow Right">
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
 
     </div>
@@ -731,9 +819,39 @@
 
   <!-- SCRIPTS -->
   <script src="./scripts/base.js"></script>
-  <script src="./scripts/glider.js"></script>
-  <script src="./scripts/carousel.js"></script>
   <script src="./scripts/modal.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    const progressCircle = document.querySelector('.autoplay-progress svg');
+    const progressContent = document.querySelector('.autoplay-progress span');
+    var swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.js-nextButton',
+        prevEl: '.js-prevButton',
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty('--progress', 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        },
+      },
+    });
+  </script>
+
 </body>
 
 </html>
