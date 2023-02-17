@@ -46,9 +46,9 @@ img {
 
 @keyframes scaleAnimation {
   0% {
-    background-position: top; }
+    transform: scale(1); }
   100% {
-    background-position: center; } }
+    transform: scale(1.1); } }
 
 .items-list__item {
   display: flex;
@@ -295,20 +295,44 @@ img {
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
 
-.carousel .slide {
+.hero {
+  height: 65rem;
+  overflow: hidden;
+  position: relative; }
+  .hero img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: -30rem;
+    animation-name: scaleAnimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    transform: scale(1.1); }
+  .hero::after {
+    content: "";
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(21, 29, 39, 0) 25.36%, #151d27 100%);
+    bottom: 0; }
+  .hero .btn {
+    z-index: 5; }
+
+.carrossel .slide {
   position: relative;
   margin-bottom: 4rem; }
-  .carousel .slide-images {
+  .carrossel .slide-images {
     color: #fff;
     width: 100%;
     height: 55rem;
     position: relative; }
-    .carousel .slide-images img {
+    .carrossel .slide-images img {
       width: 100%;
       height: 55rem;
       object-fit: cover;
       border-radius: 1.6rem; }
-    .carousel .slide-images::after {
+    .carrossel .slide-images::after {
       content: "";
       width: 70rem;
       height: inherit;
@@ -317,7 +341,7 @@ img {
       top: 0;
       right: 0;
       border-radius: 1.5rem; }
-  .carousel .slide .slide-info {
+  .carrossel .slide .slide-info {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -330,7 +354,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
     align-items: start; }
-    .carousel .slide .slide-info__promotion {
+    .carrossel .slide .slide-info__promotion {
       background-color: #ff3433;
       padding: 1.2rem 2rem;
       display: inline-block;
@@ -341,37 +365,37 @@ img {
       font-weight: 400;
       font-size: 2rem;
       line-height: 2.4rem; }
-      .carousel .slide .slide-info__promotion bold {
+      .carrossel .slide .slide-info__promotion bold {
         font-weight: 900;
         font-size: 2rem; }
-    .carousel .slide .slide-info h2 {
+    .carrossel .slide .slide-info h2 {
       font-family: "Inter";
       color: #fff;
       font-weight: 700;
       font-size: 2rem;
       line-height: 2.4rem; }
-    .carousel .slide .slide-info p {
+    .carrossel .slide .slide-info p {
       font-family: "Inter";
       color: #fff;
       font-weight: 400;
       font-size: 1.8rem;
       line-height: 2.2rem; }
-    .carousel .slide .slide-info .btn-arrows {
+    .carrossel .slide .slide-info .btn-arrows {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       width: 100%; }
-      .carousel .slide .slide-info .btn-arrows .arrows {
+      .carrossel .slide .slide-info .btn-arrows .arrows {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         gap: 5rem;
         cursor: pointer; }
-        .carousel .slide .slide-info .btn-arrows .arrows img {
+        .carrossel .slide .slide-info .btn-arrows .arrows img {
           transition: all 0.2s ease-in; }
-          .carousel .slide .slide-info .btn-arrows .arrows img:hover {
+          .carrossel .slide .slide-info .btn-arrows .arrows img:hover {
             filter: brightness(0%) saturate(0%) contrast(0%) invert(29%);
             -webkit-filter: brightness(0%) saturate(0%) contrast(0%) invert(29%);
             -moz-filter: brightness(0%) saturate(0%) contrast(0%) invert(29%); }
@@ -555,37 +579,13 @@ footer {
         font-weight: 600; }
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 49.3rem;
-  background: url("../assets/img/header/header-bacgrounds/hogwarts-legacy.jpg");
-  background-repeat: no-repeat;
-  background-color: #fff;
-  background-position: top;
-  background-size: cover;
-  position: relative;
-  animation-name: scaleAnimation;
-  animation-duration: 6s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out; }
-  header::before {
-    content: "";
-    width: 100%;
-    height: 90%;
-    position: absolute;
-    background: linear-gradient(180deg, rgba(21, 29, 39, 0) 25.36%, #151d27 100%);
-    bottom: 0; }
+  background-color: #fff; }
   header .container {
-    background-color: #fff;
-    max-width: 100%;
-    padding: 3rem 0; }
-  header .container-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    padding: 3rem 0; }
   header .logo-store h1 {
     font-size: 3.6rem;
     font-weight: 400; }
@@ -635,8 +635,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
-    width: 20rem; }
+    gap: 2rem; }
 
 .navbar {
   background-color: #d9d9d9; }
@@ -775,3 +774,14 @@ main {
             cursor: pointer; }
             main aside .aside-container .game-industries ul li:hover {
               color: gray; }
+
+dialog .items-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 80rem;
+  background-color: #d1d8e2;
+  border-radius: 1rem;
+  height: 40.8rem; }

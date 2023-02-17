@@ -1,11 +1,12 @@
-// BACKGROUND HEADER SCALE ANIMATION
-
+// HERO BACKGROUND SCALE ANIMATION
 @keyframes scaleAnimation {
   0% {
-    background-position: top;
+    transform: scale(1);
   }
 
   100% {
-    background-position: center;
+    transform: scale(1.1);
   }
 }
+
+// SLIDE IMAGES ANIMATION

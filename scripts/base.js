@@ -1,18 +1,74 @@
-const listImages = [
-  "../../assets/img/header/header-backgrounds/crash.jpg",
-  "../../assets/img/header/header-backgrounds/ghost-of-tsushima.webp",
-  "../../assets/img/header/header-backgrounds/hogwarts-legacy.jpg",
-  "../../assets/img/header/header-backgrounds/starfield.jpg",
-  "../../assets/img/header/header-backgrounds/cod.jpg",
-];
+// HERO IMAGE BACKGROUNDS
+function heroBackground() {
+  const listImages = [
+    '../assets/img/hero-background/crash.jpg',
+    '../assets/img/hero-background/ghost-of-tsushima.webp',
+    '../assets/img/hero-background/hogwarts-legacy.jpg',
+    '../assets/img/hero-background/starfield.jpg',
+    '../assets/img/hero-background/cod.jpg',
+  ];
 
-const headerEl = document.querySelector(".js-header-bg");
-const headerElStyles = window.getComputedStyle(headerEl);
-const headerImage = headerElStyles.getPropertyValue("background-image");
-let imagePath = headerImage.replace('url("', "").replace('")', "");
+  const heroImage = document.querySelector('.js-hero-image');
+  const changeImage = Math.floor(Math.random() * listImages.length);
 
-console.log(headerEl);
+  heroImage.src = listImages[changeImage];
+}
+heroBackground();
 
-const changeImage = Math.floor(Math.random() * listImages.length);
+// CARROSSEL
+function carrossel() {
+  const slideListImages = [
+    '../assets/img/hero-background/crash.jpg',
+    '../assets/img/hero-background/ghost-of-tsushima.webp',
+    '../assets/img/hero-background/hogwarts-legacy.jpg',
+    '../assets/img/hero-background/starfield.jpg',
+    '../assets/img/hero-background/cod.jpg',
+  ];
+  const slideImage = document.querySelector('.slide-images img');
+  const prevButton = document.querySelector('.js-prevButton');
+  const nextButton = document.querySelector('.js-nextButton');
 
-headerEl.style.backgroundImage = `url('${listImages[changeImage]}')`;
+  console.log(prevButton);
+
+  let currentIndex = 0;
+  let intervalId = null;
+
+  function currentImage() {
+    slideImage.src = slideListImages[currentIndex];
+  }
+
+  function changeSlideImage() {
+    currentIndex++;
+    if (currentIndex >= slideListImages.length) {
+      currentIndex = 0;
+    }
+    currentImage();
+  }
+
+  function prevSlideBtn() {
+    console.log('prev-btn clickekd');
+    currentIndex--;
+
+    if (currentIndex < 0) {
+      currentIndex = slideListImages.length - 1;
+    }
+    currentImage();
+  }
+  function nextSlideBtn() {
+    console.log('next-btn clickekd');
+    currentIndex++;
+
+    if (currentIndex >= slideListImages.length) {
+      currentIndex = 0;
+    }
+    currentImage();
+  }
+
+  prevButton.addEventListener('click', prevSlideBtn);
+  nextButton.addEventListener('click', nextSlideBtn);
+
+  console.log(prevButton);
+
+  setInterval(changeSlideImage, 5000);
+}
+carrossel();
