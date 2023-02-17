@@ -1,21 +1,21 @@
-// Hero Section
+// HERO SECTION
 .hero {
-  height: 65rem;
+  height: 85rem;
   overflow: hidden;
-  // object-fit: cover;
   position: relative;
+  // margin-top: -30rem;
 
   img {
     width: 100%;
+    height: 100%; 
     object-fit: cover;
+    object-position: center;
     position: absolute;
-    margin-top: -30rem;
     animation-name: scaleAnimation;
     animation-duration: 5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     transform: scale(1.10);
-
   }
 
 
@@ -37,7 +37,7 @@
   }
 }
 
-// CARROSSEL Section
+// CARROSSEL SECTION
 .carrossel {
   .slide {
     position: relative;
@@ -119,22 +119,58 @@
       .btn-arrows {
         @include flex(row, space-between, center);
         width: 100%;
-        .arrows {
-          @include flex(row, space-between, center);
-          gap: 5rem;
-          cursor: pointer;
-
-          img {
-            transition: all 0.2s ease-in;
-            &:hover {
-              filter: brightness(0%) saturate(0%) contrast(0%) invert(29%);
-              -webkit-filter: brightness(0%) saturate(0%) contrast(0%)
-                invert(29%);
-              -moz-filter: brightness(0%) saturate(0%) contrast(0%) invert(29%);
-            }
-          }
-        }
       }
+    }
+  }
+
+  // PREVIOUS AND NEXT BUTTONS
+  .arrows {
+    position: absolute;
+    right: 7.7rem;
+    bottom: 8.4rem;
+    z-index: 2;
+    @include flex(row, space-between, center);
+    gap: 5rem;
+    cursor: pointer;
+  
+    img {
+      transition: all 0.2s ease-in;
+      &:hover {
+        filter: brightness(0%) saturate(0%) contrast(0%) invert(29%);
+        -webkit-filter: brightness(0%) saturate(0%) contrast(0%)
+          invert(29%);
+        -moz-filter: brightness(0%) saturate(0%) contrast(0%) invert(29%);
+      }
+    }
+  }
+  // AUTOPLAY PROGRESS
+  .autoplay-progress {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: $brand-blue;
+  
+    & svg {
+      --progress: 0;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      stroke-width: 4px;
+      stroke: $brand-blue;
+      fill: none;
+      stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+      stroke-dasharray: 125.6;
+      transform: rotate(-90deg);
     }
   }
 }
@@ -164,7 +200,7 @@
   }
 }
 
-//PROMOTION SECTION
+// PROMOTION SECTION
 .promotions {
   margin-bottom: 4rem;
   .container {
@@ -273,6 +309,7 @@
   }
 }
 
+// FOOTER
 footer {
   background-color: $brand-white;
   padding: 3rem 0;
@@ -297,6 +334,7 @@ footer {
             font-weight: 500;
             font-size: 1.7rem;
             padding: 2rem 3.5rem;
+            border-radius: 0.5rem;
             &:hover {
               color: $brand-blue;
               background-color: $gray-100;
