@@ -38,17 +38,15 @@ img {
   padding: 0 1.5rem;
   margin: 0 auto; }
 
-.container-box {
-  width: 100%;
-  max-width: 133.5rem;
-  padding: 0 1.5rem;
-  margin: 0 auto; }
-
 @keyframes scaleAnimation {
   0% {
     transform: scale(1); }
   100% {
     transform: scale(1.1); } }
+
+@keyframes slideAnimation {
+  0% { }
+  100% { } }
 
 .items-list__item {
   display: flex;
@@ -296,14 +294,15 @@ img {
   border-top-left-radius: 0; }
 
 .hero {
-  height: 65rem;
+  height: 85rem;
   overflow: hidden;
   position: relative; }
   .hero img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
     position: absolute;
-    margin-top: -30rem;
     animation-name: scaleAnimation;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -531,7 +530,8 @@ footer {
           transition: all 0.2s ease-in;
           font-weight: 500;
           font-size: 1.7rem;
-          padding: 2rem 3.5rem; }
+          padding: 2rem 3.5rem;
+          border-radius: 0.5rem; }
           footer .up nav ul li a:hover {
             color: #0aaefe;
             background-color: #efefef; }
@@ -579,13 +579,16 @@ footer {
         font-weight: 600; }
 
 header {
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: 9999;
+  position: absolute;
+  width: 100%;
+  padding: 3rem 0; }
   header .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 3rem 0; }
+    align-items: center; }
   header .logo-store h1 {
     font-size: 3.6rem;
     font-weight: 400; }
@@ -610,7 +613,7 @@ header {
       transition: all 0.2s ease-in;
       border-radius: 0.5rem; }
       header .category-devices ul li a:hover {
-        color: #383535;
+        color: #0aaefe;
         border: 0 0 0.5px 0.5px solid #383535;
         background-color: #efefef; }
   header .search-container {

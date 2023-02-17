@@ -1,13 +1,13 @@
 header {
   background-color: $brand-white;
+  z-index: 9999;
+  position: absolute;
+  width: 100%;
+  padding: 3rem 0;
   
   .container {
     @include flex(row, space-between, center);
-    padding: 3rem 0;
   }
-
-  // Container que está dentro do header
-
 
   .logo-store {
     h1 {
@@ -42,7 +42,7 @@ header {
           border-radius: 0.5rem;
 
           &:hover {
-            color: rgb(56, 53, 53);
+            color: $brand-blue;
             border: 0 0 0.5px 0.5px solid rgb(56, 53, 53);
             background-color: $gray-100;
           }
