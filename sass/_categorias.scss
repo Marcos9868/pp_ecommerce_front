@@ -17,6 +17,17 @@ main {
     margin-bottom: 2.6rem;
   }
 
+  section {
+    padding: 3rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+
+    .items-list {
+      margin-top: 1rem;
+      margin-right: 2rem;
+    }
+  }
+
   aside {
     width: 100%;
 
