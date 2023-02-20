@@ -864,7 +864,51 @@ main {
             main aside .aside-container .game-industries ul li:hover {
               color: gray; }
 
-.modalItemList {
-  max-width: 80rem;
-  align-items: center;
-  justify-content: center; }
+dialog {
+  margin: 10%;
+  width: 110rem;
+  height: 60rem;
+  margin-bottom: 40rem;
+  border-radius: 15px;
+  background-color: #263241; }
+  dialog .modalItemList {
+    max-width: 100%;
+    height: 100%; }
+    dialog .modalItemList .clear {
+      clear: both; }
+    dialog .modalItemList .modalHeader {
+      top: 30px; }
+      dialog .modalItemList .modalHeader p {
+        color: white;
+        font-size: 18px;
+        float: right;
+        margin-right: 20px;
+        margin-top: 42px; }
+      dialog .modalItemList .modalHeader .close {
+        float: right;
+        margin-right: 15px;
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+        margin-top: -8px;
+        cursor: pointer; }
+      dialog .modalItemList .modalHeader label, dialog .modalItemList .modalHeader input[type=checkbox] {
+        margin-top: 35px; }
+      dialog .modalItemList .modalHeader h4 a {
+        color: white;
+        font-size: 60px;
+        float: left;
+        padding-left: 15px;
+        text-decoration: none; }
+    dialog .modalItemList .modalImage {
+      max-width: 45rem; }
+      dialog .modalItemList .modalImage .container {
+        top: 30px; }
+        dialog .modalItemList .modalImage .container a img {
+          max-width: 20%;
+          border-radius: 10px;
+          float: right;
+          padding: 10px; }
+        dialog .modalItemList .modalImage .container .first img {
+          max-width: 70%;
+          float: left; }

@@ -13,7 +13,7 @@ closeModalLogin.addEventListener('click', ()=>{
     modalLogin.close()
 })
 
-/* 
+
 const modalSacola = document.querySelector('#modalSacola')
 const openModalSacola = document.querySelector('.openModalSacola')
 const closeModalSacola = document.querySelector('.closeModalSacola')
@@ -24,7 +24,7 @@ openModalSacola.addEventListener('click', ()=>{
 
 closeModalSacola.addEventListener('click', ()=>{
     modalSacola.close()
-})*/
+})
 
 
 
