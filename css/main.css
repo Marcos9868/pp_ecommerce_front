@@ -138,6 +138,15 @@ img {
         font-size: 2rem;
         line-height: 2.4rem;
         color: #fff; }
+  .items-list__item .btn-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem; }
+    .items-list__item .btn-product img {
+      display: inline-block;
+      max-width: 1.8rem; }
 
 .promotion__products .promotion__products__item {
   display: flex;
@@ -218,6 +227,15 @@ img {
         font-size: 2.5rem;
         line-height: 2.4rem;
         color: #fff; }
+  .promotion__products .promotion__products__item .btn-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem; }
+    .promotion__products .promotion__products__item .btn-product img {
+      display: inline-block;
+      max-width: 1.8rem; }
 
 .items-list__item__image {
   position: relative; }
@@ -884,6 +902,174 @@ dialog {
           border-radius: 10px;
           float: right;
           padding: 10px; }
-        dialog .modalItemList .modalImage .container .first img {
-          max-width: 70%;
-          float: left; }
+        dialog .modalItemList .modalImage .container .first {
+          width: 86rem;
+          height: 47rem; }
+          dialog .modalItemList .modalImage .container .first img {
+            max-width: 100%;
+            float: left; }
+
+.products-images {
+  padding-top: 15rem;
+  margin-bottom: 4rem; }
+  .products-images .product-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 2.6rem; }
+    .products-images .product-title h2 {
+      font-size: 4rem; }
+    .products-images .product-title span {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem; }
+  .products-images .product-images {
+    display: grid;
+    grid-template-columns: 75% 25%; }
+    .products-images .product-images .main-image {
+      width: 100%;
+      height: 59.2rem;
+      padding-right: 2rem; }
+      .products-images .product-images .main-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1.6rem; }
+    .products-images .product-images .image-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem; }
+      .products-images .product-images .image-list img {
+        max-width: 100%;
+        border-radius: 1rem;
+        height: 18rem;
+        object-fit: cover; }
+
+.about-product {
+  width: 100%;
+  margin-bottom: 10rem; }
+  .about-product .container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: space-between;
+    row-gap: 2.4rem; }
+  .about-product .sinopse {
+    grid-row: 1 / 3;
+    color: #fff;
+    padding-right: 10rem; }
+    .about-product .sinopse h3 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 2rem; }
+  .about-product .product-price {
+    width: 100%;
+    background-color: #263241;
+    border-radius: 1.6rem;
+    padding: 2rem; }
+    .about-product .product-price .up {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3.2rem; }
+      .about-product .product-price .up .product-name h4 {
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        color: #fff; }
+      .about-product .product-price .up .product-name span {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        color: rgba(255, 255, 255, 0.51);
+        font-style: italic; }
+    .about-product .product-price .down {
+      width: 100%; }
+      .about-product .product-price .down .discount-price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3.3rem;
+        margin-bottom: 3.2rem; }
+        .about-product .product-price .down .discount-price .discount {
+          text-align: center;
+          width: 30%;
+          display: inline-block;
+          margin: 0;
+          padding: 1rem;
+          font-weight: 400;
+          font-size: 2rem;
+          line-height: 2.4rem;
+          color: #fff;
+          background-color: #ff3433;
+          border-radius: 0.5rem; }
+        .about-product .product-price .down .discount-price .price {
+          width: 70%;
+          padding: 1rem 3rem;
+          background-color: #364659;
+          border-radius: 0.5rem;
+          font-weight: 700;
+          font-size: 2rem;
+          line-height: 2.4rem;
+          text-align: center;
+          color: #fff; }
+  .about-product .btn-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: .5rem; }
+
+.product-info {
+  background-color: #263241;
+  border-radius: 1.6rem;
+  padding: 2rem;
+  color: #fff;
+  grid-row: 2 / -1; }
+  .product-info .primary-info li {
+    margin-bottom: 1rem; }
+    .product-info .primary-info li h4 {
+      font-weight: 400; }
+      .product-info .primary-info li h4 span {
+        font-weight: 700; }
+  .product-info .primary-info .categories ul {
+    margin-top: 1.5rem; }
+    .product-info .primary-info .categories ul li {
+      display: inline-block;
+      background-color: #354658;
+      padding: .3rem 1rem;
+      border-radius: .4rem; }
+      .product-info .primary-info .categories ul li a {
+        color: #fff; }
+  .product-info .languages li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+
+.minimum-requirements {
+  background-color: #354658;
+  padding: 2rem;
+  border-radius: 1.6rem;
+  color: #fff;
+  margin-right: 10rem; }
+  .minimum-requirements h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .minimum-requirements ul {
+    padding: 2rem 0; }
+  .minimum-requirements .up {
+    margin-bottom: 2rem; }

@@ -89,6 +89,16 @@
       }
     }
   }
+
+  .btn-product {
+    @include flex(row, center, center);
+    gap: .6rem;
+
+    img {
+      display:  inline-block;
+      max-width: 1.8rem;
+    }
+  }
 }
 
 // PRODUCT ITEM ON PROMOTION SECTION
@@ -182,6 +192,16 @@
           line-height: 2.4rem;
           color: $brand-white;
         }
+      }
+    }
+
+    .btn-product {
+      @include flex(row, center, center);
+      gap: .6rem;
+  
+      img {
+        display:  inline-block;
+        max-width: 1.8rem;
       }
     }
   }
