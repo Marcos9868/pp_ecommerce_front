@@ -758,17 +758,18 @@ main {
       margin-top: 15rem; }
       main aside .aside-container .filter.active {
         height: auto;
-        background-color: #cac7e2;
+        background-color: #263241;
         border-radius: 1rem;
         padding: 1.35rem; }
       main aside .aside-container .filter {
-        background-color: #cac7e2;
+        background-color: #263241;
         border-radius: 1rem;
         padding: 1rem;
         height: 5rem;
         overflow: hidden;
         position: relative;
-        transition: 0.5s; }
+        transition: 0.5s;
+        color: #FFF; }
         main aside .aside-container .filter-dropdown {
           display: flex;
           align-items: center;
@@ -779,42 +780,53 @@ main {
           padding: 0.75rem 0 0 2.5rem; }
           main aside .aside-container .filter ul li {
             transition: 0.15s;
-            cursor: pointer;
-            font-weight: 500; }
+            cursor: pointer; }
             main aside .aside-container .filter ul li:hover {
               color: gray; }
       main aside .aside-container .game-categories.active {
-        background-color: #cac7e2;
+        background-color: #263241;
         border-radius: 1rem;
         padding: 1.35rem;
-        height: auto;
-        font-weight: 500; }
+        height: auto; }
       main aside .aside-container .game-categories {
-        background-color: #cac7e2;
+        background-color: #263241;
         border-radius: 1rem;
         padding: 1rem;
         height: 5rem;
         overflow: hidden;
         position: relative;
-        transition: 0.5s; }
+        transition: 0.5s;
+        color: #FFF; }
+        main aside .aside-container .game-categories h5 {
+          margin-bottom: 2rem; }
         main aside .aside-container .game-categories ul {
-          padding: 0.75rem 0 0 2.5rem; }
+          padding-bottom: 0.75rem;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 1rem; }
           main aside .aside-container .game-categories ul li {
+            padding: 0.4rem;
+            width: max-content;
+            line-height: 2rem;
+            text-align: center;
             transition: 0.15s;
-            cursor: pointer; }
+            cursor: pointer;
+            border-radius: 0.7rem;
+            background-color: #354658; }
             main aside .aside-container .game-categories ul li:hover {
               color: gray; }
       main aside .aside-container .price-range.active {
-        background-color: #cac7e2;
+        background-color: #263241;
         border-radius: 1rem;
         padding: 1.35rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
         height: auto;
-        font-weight: 500; }
+        color: #FFF; }
       main aside .aside-container .price-range {
-        background-color: #cac7e2;
+        background-color: #263241;
         border-radius: 1rem;
         padding: 1rem;
         display: flex;
@@ -823,7 +835,8 @@ main {
         height: 4.7rem;
         overflow: hidden;
         position: relative;
-        transition: 0.5s; }
+        transition: 0.5s;
+        color: #FFF; }
         main aside .aside-container .price-range button {
           height: 3.5rem;
           border: none;
@@ -831,29 +844,41 @@ main {
           outline: none;
           cursor: pointer;
           transition: 0.2s;
-          background-color: #1a1ac5;
+          background-color: #0aadfec4;
           color: whitesmoke; }
           main aside .aside-container .price-range button:hover {
-            background-color: darkblue; }
+            background-color: #0aadfe; }
       main aside .aside-container .game-industries.active {
-        background-color: #cac7e2;
+        background-color: #263241;
         border-radius: 1rem;
         padding: 1.35rem;
-        height: auto;
-        font-weight: 500; }
+        height: auto; }
       main aside .aside-container .game-industries {
-        background-color: #cac7e2;
+        background-color: #263241;
         border-radius: 1rem;
         padding: 1rem;
         height: 5rem;
         overflow: hidden;
         position: relative;
-        transition: 0.5s; }
+        transition: 0.5s;
+        color: white; }
+        main aside .aside-container .game-industries h5 {
+          margin-bottom: 2rem; }
         main aside .aside-container .game-industries ul {
-          padding: 0.75rem 0 0 2.5rem; }
+          padding-bottom: 0.75rem;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 1rem; }
           main aside .aside-container .game-industries ul li {
+            padding: 0.4rem;
+            width: max-content;
+            line-height: 2rem;
+            text-align: center;
             transition: 0.15s;
-            cursor: pointer; }
+            cursor: pointer;
+            border-radius: 0.7rem;
+            background-color: #354658; }
             main aside .aside-container .game-industries ul li:hover {
               color: gray; }
 

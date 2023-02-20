@@ -1,14 +1,14 @@
 // HERO IMAGE BACKGROUNDS
 function heroBackground() {
   const listImages = [
-    '../assets/img/hero-background/crash.jpg',
-    '../assets/img/hero-background/ghost-of-tsushima.webp',
-    '../assets/img/hero-background/hogwarts-legacy.jpg',
-    '../assets/img/hero-background/starfield.jpg',
-    '../assets/img/hero-background/cod.jpg',
+    "../pp_ecommerce_front/assets/img/hero-background/hogwarts-legacy.jpg",
+    "../pp_ecommerce_front/assets/img/hero-background/ghost-of-tsushima.webp",
+    "../pp_ecommerce_front/assets/img/hero-background/hogwarts-legacy.jpg",
+    "../pp_ecommerce_front/assets/img/hero-background/starfield.jpg",
+    "../pp_ecommerce_front/assets/img/hero-background/cod.jpg",
   ];
 
-  const heroImage = document.querySelector('.js-hero-image');
+  const heroImage = document.querySelector(".js-hero-image");
   const changeImage = Math.floor(Math.random() * listImages.length);
 
   heroImage.src = listImages[changeImage];
