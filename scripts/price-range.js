@@ -1,9 +1,11 @@
-let priceRange = document.getElementById('price-range');
-let spanPrice = document.getElementById('price-span');
+let priceRange = document.getElementById("price-range");
+let spanPrice = document.getElementById("price-span");
 
-const showPrice = () => {
-  spanPrice.innerHTML = `R$ ${priceRange}`
+
+function showPrice() {
+  spanPrice.innerHTML = `R$ ${priceRange.value}`;
 }
+
 
 let button4 = document.getElementById("button4");
 
