@@ -53,22 +53,29 @@
         <a href="#"><img class="openModalSacola" src="./assets/img/header/cart-i.svg" alt="iconSacola"></a>
       </div>
 
+
+      <!--Modal Sacola-->
       <dialog class="modalPerfil" id="modalPerfil">
         <div class="container">
 
           <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
+            <label>First name:</label><br>
+            <input type="text" name="Nome"><br>
+            <label>Last name:</label><br>
             <input type="text" id="lname" name="lname">
+            <input type="submit" class="closeModalLogin btn">
           </form>
-
-          <div class="slide-info">
-            <a href="#" class="btn closeModalLogin">Comprar</a>
-          </div>
-
-        </div>
+      </dialog>
     </div>
+
+    <dialog class="modalSacola" id="modalSacola">
+      <div class="container">
+        <div class="slide-info">
+          <a href="#" class="btn closeModalSacola">Comprar</a>
+        </div>
+      </div>
+      
+    </dialog>
 
   </header>
 
@@ -744,14 +751,30 @@
 
       </div>
 
+      <!--Dialog Game-->
       <dialog class="modalGame" id="modalGame">
 
         <div class="items-list__item modalItemList">
-
-          <div class="items-list__item__image">
+          <div class="items-list__item__image modalHeader">
+            <span class=" close closeModalGame">&times;</span>
+            <h4><a href="#">Starfield</a></h4>
+            <p>adicionar as favoritas</p>
             <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
-            <a href="#"><img class="image-item" src="./assets/img/games/starfield.jpg" alt="Item Image"></a>
+            <input id="item-1" class="like-btn" type="checkbox">  
+            
+          <div class="clear"></div> 
+          </div>
+
+          <div class="items-list__item modalImage">
+            <div class="container">
+              <div class="first">
+                <a href="#"><img  src="./assets/img/games/starfield.jpg" alt="Item Image"></a>
+              </div>
+                  <a href="#"><img src="./assets/img/games/starfield.jpg" alt="Item Image"></a>
+                  <a href="#"><img src="./assets/img/games/starfield.jpg" alt="Item Image"></a>
+                  <a href="#"><img src="./assets/img/games/starfield.jpg" alt="Item Image"></a>
+            </div>
+            <div class="clear"></div>
           </div>
 
           <div class="items-list__item__info">
@@ -769,7 +792,7 @@
             </div>
           </div>
 
-          <a href="#" class="btn btn-product closeModalGame">Comprar</a>
+          <a href="#" class="btn btn-product">Comprar</a>
 
         </div>
 

@@ -842,4 +842,5 @@ main {
 .modalItemList {
   max-width: 80rem;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
