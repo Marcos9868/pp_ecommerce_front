@@ -59,11 +59,11 @@
         <div class="container">
 
           <form>
-            <label>First name:</label><br>
-            <input type="text" name="Nome"><br>
-            <label>Last name:</label><br>
-            <input type="text" id="lname" name="lname">
-            <input type="submit" class="closeModalLogin btn">
+            <label>Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label>Senha:</label><br>
+            <input type="password" id="password" name="password">
+            <input type="submit" class="closeModalLogin btn" onclick="login()">
           </form>
       </dialog>
     </div>
@@ -911,6 +911,7 @@
   <!-- SCRIPTS -->
   <script src="./scripts/base.js"></script>
   <script src="./scripts/modal.js"></script>
+  <script src="./scripts/login.js"></script>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
