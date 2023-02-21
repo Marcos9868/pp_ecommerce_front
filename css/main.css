@@ -982,17 +982,8 @@ dialog {
   .about-product .container {
     display: grid;
     grid-template-columns: 65% 35%;
-    grid-template-rows: 1fr 1fr 1fr;
     justify-content: space-between;
     row-gap: 2.4rem; }
-  .about-product .sinopse {
-    grid-row: 1 / 3;
-    color: #fff;
-    padding-right: 10rem; }
-    .about-product .sinopse h3 {
-      font-weight: 700;
-      font-size: 2.5rem;
-      margin-bottom: 2rem; }
   .about-product .product-price {
     width: 100%;
     background-color: #263241;
@@ -1052,13 +1043,29 @@ dialog {
     align-items: center;
     gap: 1.5rem;
     border-radius: .5rem; }
+  .about-product .sinopse-requirements, .about-product .price-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6.5rem;
+    width: 100%;
+    padding-right: 2.4rem; }
+  .about-product .sinopse {
+    grid-row: 1 / 3;
+    color: #fff; }
+    .about-product .sinopse h3 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 2rem; }
 
 .product-info {
   background-color: #263241;
   border-radius: 1.6rem;
   padding: 2rem;
   color: #fff;
-  grid-row: 2 / -1; }
+  grid-row: 2 / -1;
+  width: 100%; }
   .product-info .primary-info li {
     margin-bottom: 1rem; }
     .product-info .primary-info li h4 {
@@ -1074,6 +1081,13 @@ dialog {
       border-radius: .4rem; }
       .product-info .primary-info .categories ul li a {
         color: #fff; }
+  .product-info .primary-info .game-mode .mode {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem; }
   .product-info .languages li {
     display: flex;
     flex-direction: row;
@@ -1085,7 +1099,7 @@ dialog {
   padding: 2rem;
   border-radius: 1.6rem;
   color: #fff;
-  margin-right: 10rem; }
+  width: 100%; }
   .minimum-requirements h3 {
     display: flex;
     flex-direction: row;
