@@ -56,23 +56,9 @@
  .container {
   display: grid;
   grid-template-columns: 65% 35%;
-  grid-template-rows: 1fr 1fr 1fr;
   justify-content: space-between;
   row-gap: 2.4rem;
   
- }
-
- .sinopse {
-  grid-row: 1 / 3;
-  color: $brand-white;
-  padding-right: 10rem;
-  // padding-bottom: 6.5rem;
-  // border-bottom: 1px solid #354658;
-  h3 {
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
  }
 
  .product-price {
@@ -142,6 +128,24 @@
   gap: 1.5rem;
   border-radius: .5rem;
  }
+
+ .sinopse-requirements, .price-info {
+  @include flex(column, space-between, center);
+  gap: 6.5rem;
+  width: 100%;
+  padding-right: 2.4rem;
+ }
+
+ .sinopse {
+  grid-row: 1 / 3;
+  color: $brand-white;
+
+  h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+ }
 }
 
 .product-info {
@@ -150,6 +154,7 @@
   padding: 2rem;
   color: $brand-white;
   grid-row: 2 / -1;
+  width: 100%;
 
   .primary-info {
     li {
@@ -176,6 +181,14 @@
         }
       }
     }
+
+    .game-mode {
+      .mode {
+        @include flex(row, start, center);
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+    }
   }
 
   .languages {
@@ -191,7 +204,9 @@
   padding: 2rem;
   border-radius: 1.6rem;
   color: $brand-white;
-  margin-right: 10rem;
+  // margin-right: 10rem;
+  width: 100%;
+
   h3 {
     @include flex(row, space-between, center);
     font-weight: 700;
