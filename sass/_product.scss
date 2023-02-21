@@ -12,15 +12,14 @@
     }
 
     span {
-    @include flex(row, space-between, center);
-    gap: 1rem;
+      @include flex(row, space-between, center);
+      gap: 1rem;
     }
   }
 
   .product-images {
-    display:  grid;
+    display: grid;
     grid-template-columns: 75% 25%;
-
 
     .main-image {
       width: 100%;
@@ -35,7 +34,6 @@
       }
     }
 
-
     .image-list {
       @include flex(column, space-between, center);
       gap: 2rem;
@@ -46,106 +44,104 @@
         object-fit: cover;
       }
     }
-
   }
 }
 
 .about-product {
   width: 100%;
   margin-bottom: 10rem;
- .container {
-  display: grid;
-  grid-template-columns: 65% 35%;
-  justify-content: space-between;
-  row-gap: 2.4rem;
-  
- }
-
- .product-price {
-  width: 100%;
-  background-color: #263241;
-  border-radius: 1.6rem;
-  padding: 2rem;
-
-  .up {
-    @include flex(row, space-between, center);
-    margin-bottom: 3.2rem;
-    
-    .product-name {
-      
-      h4 {
-        font-weight: 500;
-        font-size: 2.5rem;
-        line-height: 3rem;
-        color: $brand-white;
-      }
-      span {
-        font-size: 1.5rem;
-        line-height: 1.8rem;
-        color: rgba(255, 255, 255, 0.51);
-        font-style: italic;
-      }
-    }
+  .container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    justify-content: space-between;
+    row-gap: 2.4rem;
   }
 
-  .down {
+  .product-price {
     width: 100%;
-    
-    .discount-price {
+    background-color: #263241;
+    border-radius: 1.6rem;
+    padding: 2rem;
+
+    .up {
       @include flex(row, space-between, center);
-      gap: 3.3rem;
       margin-bottom: 3.2rem;
-      .discount {
-        text-align: center;
-        width: 30%;
-        display: inline-block;
-        margin: 0;
-        padding: 1rem;
-        font-weight: 400;
-        font-size: 2rem;
-        line-height: 2.4rem;
-        color: $brand-white;
-        background-color: $brand-red;
-        border-radius: 0.5rem;
+
+      .product-name {
+        h4 {
+          font-weight: 500;
+          font-size: 2.5rem;
+          line-height: 3rem;
+          color: $brand-white;
+        }
+        span {
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+          color: rgba(255, 255, 255, 0.51);
+          font-style: italic;
+        }
       }
-      .price {
-        width: 70%;
-        padding: 1rem 3rem;
-        background-color: #364659;
-        border-radius: 0.5rem;
-        font-weight: 700;
-        font-size: 2rem;
-        line-height: 2.4rem;
-        text-align: center;
-        color: $brand-white;
+    }
+
+    .down {
+      width: 100%;
+
+      .discount-price {
+        @include flex(row, space-between, center);
+        gap: 3.3rem;
+        margin-bottom: 3.2rem;
+        .discount {
+          text-align: center;
+          width: 30%;
+          display: inline-block;
+          margin: 0;
+          padding: 1rem;
+          font-weight: 400;
+          font-size: 2rem;
+          line-height: 2.4rem;
+          color: $brand-white;
+          background-color: $brand-red;
+          border-radius: 0.5rem;
+        }
+        .price {
+          width: 70%;
+          padding: 1rem 3rem;
+          background-color: #364659;
+          border-radius: 0.5rem;
+          font-weight: 700;
+          font-size: 2rem;
+          line-height: 2.4rem;
+          text-align: center;
+          color: $brand-white;
+        }
       }
     }
   }
- }
 
- .btn-product {
-  @include flex(row, center, center);
-  gap: 1.5rem;
-  border-radius: .5rem;
- }
-
- .sinopse-requirements, .price-info {
-  @include flex(column, space-between, center);
-  gap: 6.5rem;
-  width: 100%;
-  padding-right: 2.4rem;
- }
-
- .sinopse {
-  grid-row: 1 / 3;
-  color: $brand-white;
-
-  h3 {
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+  .btn-product {
+    @include flex(row, center, center);
+    gap: 1.5rem;
+    border-radius: 0.5rem;
   }
- }
+
+  .sinopse-requirements,
+  .price-info {
+    @include flex(column, space-between, center);
+    gap: 6.5rem;
+    width: 100%;
+    padding-right: 2.4rem;
+  }
+
+  .sinopse {
+    grid-row: 1 / 3;
+    color: $brand-white;
+
+    h3 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 .product-info {
@@ -173,8 +169,8 @@
         li {
           display: inline-block;
           background-color: #354658;
-          padding: .3rem 1rem;
-          border-radius: .4rem;
+          padding: 0.3rem 1rem;
+          border-radius: 0.4rem;
           a {
             color: $brand-white;
           }
@@ -196,7 +192,6 @@
       @include flex(row, space-between, center);
     }
   }
-
 }
 
 .minimum-requirements {
