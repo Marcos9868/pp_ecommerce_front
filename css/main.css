@@ -735,10 +735,46 @@ main {
     grid-template-columns: 33.6rem 2fr;
     gap: 3rem; }
   main .pages-filter {
-    background-color: lightgrey;
+    background-color: #151D27;
     width: 100%;
-    height: 3rem;
-    margin-bottom: 2.6rem; }
+    height: 4rem;
+    margin-bottom: 2.6rem;
+    display: flex;
+    align-items: center;
+    position: relative; }
+    main .pages-filter .pages-number {
+      display: flex;
+      gap: 1.7rem;
+      position: absolute;
+      right: 2rem; }
+      main .pages-filter .pages-number span {
+        text-align: center;
+        padding: 0.7rem;
+        background-color: #1E1E1E;
+        border-radius: 1.3rem;
+        width: 4.8rem;
+        height: 3.5rem;
+        font-weight: 900;
+        color: white;
+        border: #0aadfe 1px solid; }
+      main .pages-filter .pages-number svg {
+        margin-top: 0.6rem; }
+      main .pages-filter .pages-number .recentes {
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        line-height: 1.8rem; }
+        main .pages-filter .pages-number .recentes h3 {
+          font-weight: 400; }
+        main .pages-filter .pages-number .recentes #more-recent {
+          background-color: #263241;
+          color: #9B9B9B;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          border: 1px solid #252525;
+          border-radius: 4px; }
   main section {
     padding: 3rem;
     margin-top: 5rem;
@@ -748,9 +784,19 @@ main {
       margin-right: 2rem; }
   main aside {
     width: 100%; }
-    main aside h3 {
-      margin-bottom: 1rem;
-      color: #0AAEFE; }
+    main aside .pages-order {
+      display: flex;
+      gap: 0.6rem; }
+      main aside .pages-order h3 {
+        margin-bottom: 1rem;
+        color: #756868;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px; }
+      main aside .pages-order h1 {
+        color: #0aadfe; }
+      main aside .pages-order span {
+        color: #fafafa; }
     main aside .aside-container {
       display: flex;
       flex-direction: column;
@@ -816,6 +862,43 @@ main {
             background-color: #354658; }
             main aside .aside-container .game-categories ul li:hover {
               color: gray; }
+      main aside .aside-container .slider {
+        height: 5px;
+        background: #45494e;
+        position: relative; }
+        main aside .aside-container .slider .progress {
+          height: 5px;
+          background-color: #0AAEFE;
+          border-radius: 0.5rem;
+          position: absolute; }
+      main aside .aside-container .range-input {
+        position: relative; }
+        main aside .aside-container .range-input input {
+          position: absolute;
+          top: -15px;
+          height: 5px;
+          width: 100%;
+          background: none;
+          pointer-events: none;
+          -webkit-appearance: none; }
+        main aside .aside-container .range-input input[type="range"]::-webkit-slider-thumb {
+          height: 17px;
+          width: 17px;
+          border-radius: 50%;
+          pointer-events: auto;
+          -webkit-appearance: none;
+          background-color: #0AAEFE; }
+        main aside .aside-container .range-input input[type="range"]::-moz-range-thumb {
+          height: 17px;
+          width: 17px;
+          border: none;
+          border-radius: 50%;
+          pointer-events: auto;
+          -moz-appearance: none;
+          background-color: #0AAEFE; }
+      main aside .aside-container .valores {
+        display: flex;
+        justify-content: space-evenly; }
       main aside .aside-container .price-range.active {
         background-color: #263241;
         border-radius: 1rem;
@@ -828,7 +911,7 @@ main {
       main aside .aside-container .price-range {
         background-color: #263241;
         border-radius: 1rem;
-        padding: 1rem;
+        padding: 1.2rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -838,14 +921,15 @@ main {
         transition: 0.5s;
         color: #FFF; }
         main aside .aside-container .price-range button {
-          height: 3.5rem;
+          height: 3rem;
           border: none;
           border-radius: 1rem;
           outline: none;
           cursor: pointer;
           transition: 0.2s;
           background-color: #0aadfec4;
-          color: whitesmoke; }
+          color: whitesmoke;
+          font-weight: 700; }
           main aside .aside-container .price-range button:hover {
             background-color: #0aadfe; }
       main aside .aside-container .game-industries.active {

@@ -67,7 +67,13 @@
       <aside>
 
         <div class="aside-container">
-          <h3>Início > PC</h3>
+         <div class="pages-order">
+          <h3>Início</h3>
+          <span>/</span>
+          <h3>Categorias</h3>
+          <span>/</span>
+          <h1>PC</h1>
+         </div>
           <div class="filter">
             <div class="filter-dropdown">
               <h5>Filtros Aplicados</h5>
@@ -95,6 +101,11 @@
               <li>Ação</li>
               <li>Aventura</li>
               <li>Corrida</li>
+              <li>Indie</li>
+              <li>Terror</li>
+              <li>Mundo aberto</li>
+              <li>Multiplayer</li>
+              <li>Fantasia</li>
             </ul>
           </div>
 
@@ -105,9 +116,22 @@
                 <img id="button4" src="../../assets/img/Vectorarrow.png" alt="">
               </span>
             </div>
-            <input type="range" name="price-range" id="price-range" min="5" max="500" onchange="showPrice()">
-            <span id="price-span"></span>
-            <button>Aplicar Filtro</button>
+            
+            <div class="slider">
+              <div class="progress"></div>
+            </div>  
+
+            <div class="range-input">
+            <input class="range-min"  type="range" name="price-range" id="price-range" min="5" max="500" step="5" value="200" onchange="showPrice()">
+            <input class="range-max" type="range" name="price-range" id="price-range2" min="5" max="500" step="5" value="300" onchange="showPrice()">
+           </div>
+            <div class="valores">
+              <span id="price-span"></span> 
+             -
+              <span id="price-span2"></span>
+            </div>
+
+            <button>APLICAR FILTRO</button>
           </div>
           <div class="game-industries">
             <div class="filter-dropdown">
@@ -121,7 +145,15 @@
               <li>Ubisoft</li>
               <li>EA Games</li>
               <li>Valve Corporation</li>
-              <li>Blizzard</li>
+              <li>Sony</li>
+              <li>Bioware</li>
+              <li>Nintendo</li>
+              <li>Square Enix</li>
+              <li>Sega</li>
+              <li>Konami</li>
+              <li>Bethesda Game Studios</li>
+
+
             </ul>
           </div>
           <div></div>
@@ -135,7 +167,26 @@
       <section>
         <!-- GRID PRODUTOS -->
         <div class="pages-filter">
+          <div class="pages-number">
+            <svg width="12" height="23" viewBox="0 0 12 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.6807 0.520136C11.8497 0.693151 11.9443 0.925409 11.9443 1.16726C11.9443 1.40911 11.8497 1.64137 11.6807 1.81439L2.2393 11.4999L11.6807 21.1836C11.8497 21.3566 11.9443 21.5888 11.9443 21.8307C11.9443 22.0726 11.8497 22.3048 11.6807 22.4778C11.5986 22.5622 11.5004 22.6292 11.3919 22.675C11.2834 22.7208 11.1669 22.7444 11.0491 22.7444C10.9314 22.7444 10.8148 22.7208 10.7063 22.675C10.5978 22.6292 10.4996 22.5622 10.4175 22.4778L0.377358 12.1761C0.201019 11.9952 0.102327 11.7526 0.102327 11.4999C0.102327 11.2473 0.201019 11.0047 0.377358 10.8238L10.4175 0.522074C10.4996 0.437709 10.5978 0.370654 10.7063 0.324868C10.8148 0.279082 10.9314 0.255493 11.0491 0.255493C11.1669 0.255493 11.2834 0.279082 11.3919 0.324868C11.5004 0.370654 11.5986 0.437709 11.6807 0.522074V0.520136Z" fill="white"/>
+            </svg>  
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>...</span>
+            <svg width="12" height="23" viewBox="0 0 12 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.319267 0.520136C0.150274 0.693151 0.0556641 0.925409 0.0556641 1.16726C0.0556641 1.40911 0.150274 1.64137 0.319267 1.81439L9.7607 11.4999L0.319267 21.1836C0.150274 21.3566 0.0556641 21.5888 0.0556641 21.8307C0.0556641 22.0726 0.150274 22.3048 0.319267 22.4778C0.401409 22.5622 0.499621 22.6292 0.608104 22.675C0.716586 22.7208 0.833142 22.7444 0.950891 22.7444C1.06864 22.7444 1.1852 22.7208 1.29368 22.675C1.40216 22.6292 1.50037 22.5622 1.58252 22.4778L11.6226 12.1761C11.799 11.9952 11.8977 11.7526 11.8977 11.4999C11.8977 11.2473 11.799 11.0047 11.6226 10.8238L1.58252 0.522074C1.50037 0.437709 1.40216 0.370654 1.29368 0.324868C1.1852 0.279082 1.06864 0.255493 0.950891 0.255493C0.833142 0.255493 0.716586 0.279082 0.608104 0.324868C0.499621 0.370654 0.401409 0.437709 0.319267 0.522074V0.520136Z" fill="white"/>
+            </svg>
+
           <!-- FILTRO DE PAGINAS -->
+            <div class="recentes">
+              <h3>ORDENAR POR: <span id="more-recent">Mais recentes</span></h3>
+            </div>
+          </div>
+         
+
         </div>
 
         <!-- LIST ONE -->
@@ -172,8 +223,8 @@
           <div class="items-list__item">
 
             <div class="items-list__item__image">
-              <label for="item-1"></label>
-              <input id="item-1" class="like-btn" type="checkbox">
+              <label for="item-2"></label>
+              <input id="item-2" class="like-btn" type="checkbox">
               <a href="#"><img class="image-item" src="../../assets/img/games/anno-1800.webp" alt="Item Image"></a>
             </div>
 
@@ -199,10 +250,9 @@
           <div class="items-list__item">
 
             <div class="items-list__item__image">
-              <label for="item-1"></label>
-              <input id="item-1" class="like-btn" type="checkbox">
-              <a href="#"><img class="image-item" src="../../assets/img/games/civilization-platinum-edition.jpg"
-                  alt="Item Image"></a>
+              <label for="item-3"></label>
+              <input id="item-3" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/civilization-platinum-edition.jpg" alt="Item Image"></a>
             </div>
 
             <div class="items-list__item__info">
@@ -227,8 +277,8 @@
           <div class="items-list__item">
 
             <div class="items-list__item__image">
-              <label for="item-1"></label>
-              <input id="item-1" class="like-btn" type="checkbox">
+              <label for="item-4"></label>
+              <input id="item-4" class="like-btn" type="checkbox">
               <a href="#"><img class="image-item" src="../../assets/img/games/crash-4.webp" alt="Item Image"></a>
             </div>
 
@@ -258,8 +308,8 @@
           <div class="items-list__item">
 
             <div class="items-list__item__image">
-              <label for="item-1"></label>
-              <input id="item-1" class="like-btn" type="checkbox">
+              <label for="item-5"></label>
+              <input id="item-5" class="like-btn" type="checkbox">
               <a href="#"><img class="image-item" src="../../assets/img/games/cod.jpg" alt="Item Image"></a>
             </div>
 
@@ -285,8 +335,8 @@
           <div class="items-list__item">
 
             <div class="items-list__item__image">
-              <label for="item-1"></label>
-              <input id="item-1" class="like-btn" type="checkbox">
+              <label for="item-6"></label>
+              <input id="item-6" class="like-btn" type="checkbox">
               <a href="#"><img class="image-item" src="../../assets/img/games/anno-1800.webp" alt="Item Image"></a>
             </div>
 
@@ -312,10 +362,9 @@
           <div class="items-list__item">
 
             <div class="items-list__item__image">
-              <label for="item-1"></label>
-              <input id="item-1" class="like-btn" type="checkbox">
-              <a href="#"><img class="image-item" src="../../assets/img/games/civilization-platinum-edition.jpg"
-                  alt="Item Image"></a>
+              <label for="item-7"></label>
+              <input id="item-7" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/civilization-platinum-edition.jpg" alt="Item Image"></a>
             </div>
 
             <div class="items-list__item__info">
@@ -340,8 +389,8 @@
           <div class="items-list__item">
 
             <div class="items-list__item__image">
-              <label for="item-1"></label>
-              <input id="item-1" class="like-btn" type="checkbox">
+              <label for="item-8"></label>
+              <input id="item-8" class="like-btn" type="checkbox">
               <a href="#"><img class="image-item" src="../../assets/img/games/crash-4.webp" alt="Item Image"></a>
             </div>
 
@@ -440,6 +489,7 @@
   </footer>
   <script src="../../scripts/price-range.js" defer></script>
   <script src="../../scripts/categoriesPC.js"></script>
+  
 </body>
 
 </html>
