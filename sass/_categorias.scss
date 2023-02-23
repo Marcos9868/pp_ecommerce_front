@@ -11,7 +11,7 @@ main {
   }
 
   .pages-filter {
-    background-color: #151D27;
+    background-color: #151d27;
     width: 100%;
     height: 4rem;
     margin-bottom: 2.6rem;
@@ -29,7 +29,7 @@ main {
       span {
         text-align: center;
         padding: 0.7rem;
-        background-color: #1E1E1E;
+        background-color: #1e1e1e;
         border-radius: 1.3rem;
         width: 4.8rem;
         height: 3.5rem;
@@ -45,7 +45,7 @@ main {
       .recentes {
         display: flex;
         align-items: center;
-        color: #FFFFFF;
+        color: #ffffff;
         font-size: 1.5rem;
         line-height: 1.8rem;
 
@@ -56,7 +56,7 @@ main {
         #more-recent {
           background-color: #263241;
 
-          color: #9B9B9B;
+          color: #9b9b9b;
           font-weight: 400;
           font-size: 12px;
 
@@ -103,8 +103,6 @@ main {
       }
     }
 
-
-
     .aside-container {
       display: flex;
       flex-direction: column;
@@ -126,8 +124,7 @@ main {
         overflow: hidden;
         position: relative;
         transition: 0.5s;
-        color: #FFF;
-
+        color: #fff;
 
         &-dropdown {
           display: flex;
@@ -137,7 +134,6 @@ main {
           .setinha SVG {
             width: 3rem;
           }
-
         }
 
         ul {
@@ -152,7 +148,6 @@ main {
             }
           }
         }
-
       }
 
       .game-categories.active {
@@ -170,7 +165,7 @@ main {
         overflow: hidden;
         position: relative;
         transition: 0.5s;
-        color: #FFF;
+        color: #fff;
 
         h5 {
           margin-bottom: 2rem;
@@ -207,7 +202,7 @@ main {
 
         .progress {
           height: 5px;
-          background-color: #0AAEFE;
+          background-color: #0aaefe;
           border-radius: 0.5rem;
           position: absolute;
         }
@@ -232,8 +227,7 @@ main {
           border-radius: 50%;
           pointer-events: auto;
           -webkit-appearance: none;
-          background-color: #0AAEFE;
-
+          background-color: #0aaefe;
         }
 
         input[type="range"]::-moz-range-thumb {
@@ -243,18 +237,15 @@ main {
           border-radius: 50%;
           pointer-events: auto;
           -moz-appearance: none;
-          background-color: #0AAEFE;
-
+          background-color: #0aaefe;
         }
       }
-
 
       .valores {
         display: flex;
 
         justify-content: space-evenly;
       }
-
 
       .price-range.active {
         background-color: #263241;
@@ -264,7 +255,7 @@ main {
         flex-direction: column;
         gap: 1rem;
         height: auto;
-        color: #FFF;
+        color: #fff;
       }
 
       .price-range {
@@ -278,9 +269,7 @@ main {
         overflow: hidden;
         position: relative;
         transition: 0.5s;
-        color: #FFF;
-
-
+        color: #fff;
 
         button {
           height: 3rem;
@@ -326,7 +315,6 @@ main {
           flex-wrap: wrap;
           justify-content: center;
           gap: 1rem;
-
 
           li {
             padding: 0.4rem;
