@@ -11,10 +11,61 @@ main {
   }
 
   .pages-filter {
-    background-color: lightgrey;
+    background-color: #151d27;
     width: 100%;
-    height: 3rem;
+    height: 4rem;
     margin-bottom: 2.6rem;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .pages-number {
+      display: flex;
+      gap: 1.7rem;
+      position: absolute;
+      right: 2rem;
+
+      span {
+        text-align: center;
+        padding: 0.7rem;
+        background-color: #1e1e1e;
+        border-radius: 1.3rem;
+        width: 4.8rem;
+        height: 3.5rem;
+        font-weight: 900;
+        color: white;
+        border: #0aadfe 1px solid;
+      }
+
+      svg {
+        margin-top: 0.6rem;
+      }
+
+      .recentes {
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+
+        h3 {
+          font-weight: 400;
+        }
+
+        #more-recent {
+          background-color: #263241;
+
+          color: #9b9b9b;
+          font-weight: 400;
+          font-size: 12px;
+
+          line-height: 14px;
+          border: 1px solid #252525;
+          border-radius: 4px;
+        }
+      }
+    }
   }
 
   section {
@@ -31,9 +82,25 @@ main {
   aside {
     width: 100%;
 
-    h3 {
-      margin-bottom: 1rem;
-      color: #0AAEFE;
+    .pages-order {
+      display: flex;
+      gap: 0.6rem;
+
+      h3 {
+        margin-bottom: 1rem;
+        color: #756868;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+      }
+
+      h1 {
+        color: #0aadfe;
+      }
+
+      span {
+        color: #fafafa;
+      }
     }
 
     .aside-container {
@@ -57,8 +124,7 @@ main {
         overflow: hidden;
         position: relative;
         transition: 0.5s;
-        color: #FFF;
-
+        color: #fff;
 
         &-dropdown {
           display: flex;
@@ -68,7 +134,6 @@ main {
           .setinha SVG {
             width: 3rem;
           }
-
         }
 
         ul {
@@ -82,7 +147,6 @@ main {
             }
           }
         }
-
       }
 
       .game-categories.active {
@@ -100,9 +164,9 @@ main {
         overflow: hidden;
         position: relative;
         transition: 0.5s;
-        color: #FFF;
+        color: #fff;
 
-        h5{
+        h5 {
           margin-bottom: 2rem;
         }
 
@@ -130,6 +194,58 @@ main {
         }
       }
 
+      .slider {
+        height: 5px;
+        background: #45494e;
+        position: relative;
+
+        .progress {
+          height: 5px;
+          background-color: #0aaefe;
+          border-radius: 0.5rem;
+          position: absolute;
+        }
+      }
+
+      .range-input {
+        position: relative;
+
+        input {
+          position: absolute;
+          top: -15px;
+          height: 5px;
+          width: 100%;
+          background: none;
+          pointer-events: none;
+          -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+          height: 17px;
+          width: 17px;
+          border-radius: 50%;
+          pointer-events: auto;
+          -webkit-appearance: none;
+          background-color: #0aaefe;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+          height: 17px;
+          width: 17px;
+          border: none;
+          border-radius: 50%;
+          pointer-events: auto;
+          -moz-appearance: none;
+          background-color: #0aaefe;
+        }
+      }
+
+      .valores {
+        display: flex;
+
+        justify-content: space-evenly;
+      }
+
       .price-range.active {
         background-color: #263241;
         border-radius: 1rem;
@@ -138,13 +254,13 @@ main {
         flex-direction: column;
         gap: 1rem;
         height: auto;
-        color: #FFF;
+        color: #fff;
       }
 
       .price-range {
         background-color: #263241;
         border-radius: 1rem;
-        padding: 1rem;
+        padding: 1.2rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -152,11 +268,10 @@ main {
         overflow: hidden;
         position: relative;
         transition: 0.5s;
-        color: #FFF;
-
+        color: #fff;
 
         button {
-          height: 3.5rem;
+          height: 3rem;
           border: none;
           border-radius: 1rem;
           outline: none;
@@ -164,6 +279,7 @@ main {
           transition: 0.2s;
           background-color: #0aadfec4;
           color: whitesmoke;
+          font-weight: 700;
 
           &:hover {
             background-color: #0aadfe;
@@ -188,7 +304,7 @@ main {
         transition: 0.5s;
         color: white;
 
-        h5{
+        h5 {
           margin-bottom: 2rem;
         }
 
@@ -198,7 +314,6 @@ main {
           flex-wrap: wrap;
           justify-content: center;
           gap: 1rem;
-
 
           li {
             padding: 0.4rem;
