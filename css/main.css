@@ -14,6 +14,9 @@
 
 html {
   font-size: 62.5%; }
+  @media screen and (max-width: 800px) {
+    html {
+      font-size: 50%; } }
 
 html,
 body {
@@ -347,6 +350,12 @@ img {
     bottom: 0; }
   .hero .btn {
     z-index: 5; }
+  @media screen and (max-width: 1250px) {
+    .hero {
+      height: 70rem; } }
+  @media screen and (max-width: 1000px) {
+    .hero {
+      height: 60rem; } }
 
 .carrossel .slide {
   position: relative;
@@ -461,6 +470,30 @@ img {
     stroke-dasharray: 125.6;
     transform: rotate(-90deg); }
 
+@media screen and (max-width: 800px) {
+  .carrossel .slide {
+    width: 100%; }
+    .carrossel .slide-images:after {
+      background: transparent; }
+    .carrossel .slide .slide-info {
+      max-width: 100%; }
+      .carrossel .slide .slide-info .slide-info__promotion {
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%); }
+      .carrossel .slide .slide-info .btn-buy {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%); }
+      .carrossel .slide .slide-info h2,
+      .carrossel .slide .slide-info p {
+        display: none; }
+    .carrossel .slide .arrows {
+      width: 100%;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%); } }
+
 .game-list h3,
 .game-list span {
   margin-bottom: 4rem;
@@ -500,7 +533,10 @@ img {
       font-weight: bolder;
       font-size: 3rem; }
     .promotions .banner img {
-      border-radius: 1.6rem; }
+      border-radius: 1.6rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
   .promotions .small-banner {
     position: relative;
     height: 54rem;
@@ -520,6 +556,7 @@ img {
       border-bottom-left-radius: 1rem;
       border-bottom-right-radius: 1rem;
       color: #fff;
+      text-align: center;
       font-family: "Inter";
       font-weight: 400;
       font-size: 2rem;
@@ -548,6 +585,24 @@ img {
     overflow-x: scroll; }
     .promotions .promotion__products::-webkit-scrollbar {
       display: none; }
+  @media screen and (max-width: 800px) {
+    .promotions .container {
+      display: flex;
+      flex-direction: column; }
+    .promotions .banner {
+      height: 36rem; }
+    .promotions .small-banner {
+      margin-right: 0;
+      height: 54.2rem;
+      margin-bottom: 3rem; } }
+  @media screen and (max-width: 450px) {
+    .promotions .banner {
+      height: 18.8rem; }
+    .promotions .small-banner {
+      height: 37.2rem; }
+    .promotions .promotion__products {
+      display: flex;
+      flex-direction: column; } }
 
 .game-recommends {
   margin-bottom: 7rem; }
@@ -646,19 +701,14 @@ header {
   position: absolute;
   width: 100%;
   padding: 3rem 0; }
+  header img {
+    max-width: initial; }
   header .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; }
-  header .logo-store h1 {
-    font-size: 3.6rem;
-    font-weight: 400; }
-    header .logo-store h1 a span {
-      font-size: 3.6rem;
-      font-weight: bold;
-      text-decoration: none;
-      color: black; }
+    align-items: center;
+    gap: 2rem; }
   header .category-devices ul {
     display: flex;
     flex-direction: row;
@@ -701,6 +751,16 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 2rem; }
+    header .menu-user .menu-mobile {
+      display: none; }
+  @media screen and (max-width: 680px) {
+    header .logo {
+      max-width: 13rem; }
+    header .search-container,
+    header .category-devices {
+      display: none; }
+    header .menu-user .menu-mobile {
+      display: block; } }
 
 .submenu {
   display: none;
@@ -732,9 +792,8 @@ main {
   margin-bottom: 41rem; }
   main .container {
     display: grid;
-    grid-template-columns: 1;
-    gap: 3rem;
-    }
+    grid-template-columns: 33.6rem 2fr;
+    gap: 3rem; }
   main .pages-filter {
     background-color: #151d27;
     width: 100%;
@@ -782,9 +841,7 @@ main {
     margin-right: 2rem; }
     main section .items-list {
       margin-top: 1rem;
-      margin-right: 2rem;
-      overflow-x: scroll;
-      }
+      margin-right: 2rem; }
   main aside {
     width: 100%; }
     main aside .pages-order {

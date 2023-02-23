@@ -4,25 +4,13 @@ header {
   position: absolute;
   width: 100%;
   padding: 3rem 0;
+  img {
+    max-width: initial;
+  }
 
   .container {
     @include flex(row, space-between, center);
-  }
-
-  .logo-store {
-    h1 {
-      font-size: 3.6rem;
-      font-weight: 400;
-
-      a {
-        span {
-          font-size: 3.6rem;
-          font-weight: bold;
-          text-decoration: none;
-          color: black;
-        }
-      }
-    }
+    gap: 2rem;
   }
 
   .category-devices {
@@ -76,6 +64,24 @@ header {
   .menu-user {
     @include flex(row, space-between, center);
     gap: 2rem;
+    .menu-mobile {
+      display: none;
+    }
+  }
+
+  @include responsive(680px) {
+    .logo {
+      max-width: 13rem;
+    }
+    .search-container,
+    .category-devices {
+      display: none;
+    }
+    .menu-user {
+      .menu-mobile {
+        display: block;
+      }
+    }
   }
 }
 
