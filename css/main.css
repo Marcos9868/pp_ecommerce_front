@@ -725,6 +725,52 @@ header {
         transform: scale(1.07);
         opacity: 0.6; }
 
+@media screen and (max-width: 375px) {
+  .js-header-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    position: absolute;
+    width: 377px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF; }
+    .js-header-bg .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px;
+      gap: 21px;
+      width: 331px;
+      height: 30px; }
+      .js-header-bg .container .logo-store {
+        width: 91.28px;
+        height: 30px;
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0; }
+      .js-header-bg .container .category-devices {
+        display: none; }
+      .js-header-bg .container .search-container {
+        display: none; }
+      .js-header-bg .container .menu-user {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        width: 90px;
+        height: 18px;
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0; } }
+
 main {
   width: 100%;
   height: 100vh;
@@ -965,6 +1011,27 @@ main {
             background-color: #354658; }
             main aside .aside-container .game-industries ul li:hover {
               color: gray; }
+
+@media screen and (max-width: 375px) {
+  main .container {
+    display: flex;
+    flex-direction: column; }
+    main .container section .pages-filter {
+      display: flex;
+      flex-direction: column; }
+    main .container section .items-list {
+      display: flex;
+      flex-direction: column; }
+  .container .up nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; }
+    .container .up nav ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem; } }
 
 dialog {
   margin: 10%;
