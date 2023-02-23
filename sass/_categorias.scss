@@ -1,6 +1,5 @@
 main {
   width: 100%;
-  height: 100vh;
   margin-top: 5rem;
   margin-bottom: 41rem;
 
@@ -18,13 +17,10 @@ main {
 
     display: flex;
     align-items: center;
-    position: relative;
 
     .pages-number {
       display: flex;
       gap: 1.7rem;
-      position: absolute;
-      right: 2rem;
 
       span {
         text-align: center;
@@ -41,29 +37,29 @@ main {
       svg {
         margin-top: 0.6rem;
       }
+    }
 
-      .recentes {
-        display: flex;
-        align-items: center;
-        color: #ffffff;
-        font-size: 1.5rem;
-        line-height: 1.8rem;
+    .recentes {
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      font-size: 1.5rem;
+      line-height: 1.8rem;
 
-        h3 {
-          font-weight: 400;
-        }
+      h3 {
+        font-weight: 400;
+      }
 
-        #more-recent {
-          background-color: #263241;
+      #more-recent {
+        background-color: #263241;
 
-          color: #9b9b9b;
-          font-weight: 400;
-          font-size: 12px;
+        color: #9b9b9b;
+        font-weight: 400;
+        font-size: 12px;
 
-          line-height: 14px;
-          border: 1px solid #252525;
-          border-radius: 4px;
-        }
+        line-height: 14px;
+        border: 1px solid #252525;
+        border-radius: 4px;
       }
     }
   }
@@ -344,17 +340,34 @@ main {
 
       section {
         .pages-filter {
+          background-color: blue;
           display: flex;
-          flex-direction: column;
+          margin: 0 auto;
+          flex-direction: row-reverse;
+
+          .pages-number {
+            display: flex;
+            margin-bottom: 5rem;
+          }
+
+          .recentes {
+            display: flex;
+            flex-direction: row;
+            margin-top: 6rem;
+            margin-bottom: 3rem;
+          }
         }
 
         .items-list {
           display: flex;
           flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
   }
+
   .container {
     .up {
       nav {
