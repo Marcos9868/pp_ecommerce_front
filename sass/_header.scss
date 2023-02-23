@@ -4,7 +4,7 @@ header {
   position: absolute;
   width: 100%;
   padding: 3rem 0;
-  
+
   .container {
     @include flex(row, space-between, center);
   }
@@ -31,6 +31,7 @@ header {
 
       font-size: 2rem;
       font-weight: 500;
+
       li {
         a {
           text-decoration: none;
@@ -54,6 +55,7 @@ header {
   .search-container {
     width: 100%;
     max-width: 56.6rem;
+
     input[type="search"] {
       background-color: $gray-100;
       padding: 2rem;
@@ -67,6 +69,7 @@ header {
       background-position: center right 2rem;
       padding-right: 30px;
       border-radius: 1rem;
+
       &::placeholder {
         color: rgba(0, 0, 0, 0.4);
       }
@@ -115,18 +118,87 @@ header {
   padding: 3rem 0;
   position: absolute;
   top: 11rem;
+
   .playstation-menu {
     width: 100%;
+
     ul {
-    @include flex(row, center, center);
-    gap: 7rem;
+      @include flex(row, center, center);
+      gap: 7rem;
     }
+
     img {
       padding: 2rem;
       transition: all .1s ease-in;
+
       &:hover {
         transform: scale(1.07);
         opacity: 0.6;
+      }
+    }
+  }
+}
+
+@include responsive(375px) {
+  .js-header-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    position: absolute;
+    width: 377px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px;
+      gap: 21px;
+
+      width: 331px;
+      height: 30px;
+
+      .logo-store {
+        width: 91.28px;
+        height: 30px;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+
+      .category-devices {
+        display: none;
+      }
+
+      .search-container {
+        display: none;
+      }
+
+      .menu-user {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+
+        width: 90px;
+        height: 18px;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
       }
     }
   }
