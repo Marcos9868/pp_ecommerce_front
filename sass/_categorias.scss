@@ -15,18 +15,18 @@ main {
     width: 100%;
     height: 4rem;
     margin-bottom: 2.6rem;
-    
+
     display: flex;
     align-items: center;
     position: relative;
 
-    .pages-number{
+    .pages-number {
       display: flex;
-      gap: 1.7rem;     
-      position: absolute; 
+      gap: 1.7rem;
+      position: absolute;
       right: 2rem;
 
-      span{
+      span {
         text-align: center;
         padding: 0.7rem;
         background-color: #1E1E1E;
@@ -38,22 +38,22 @@ main {
         border: #0aadfe 1px solid;
       }
 
-      svg{
+      svg {
         margin-top: 0.6rem;
       }
 
-      .recentes{
+      .recentes {
         display: flex;
         align-items: center;
         color: #FFFFFF;
         font-size: 1.5rem;
         line-height: 1.8rem;
 
-        h3{
+        h3 {
           font-weight: 400;
         }
 
-        #more-recent{
+        #more-recent {
           background-color: #263241;
 
           color: #9B9B9B;
@@ -81,8 +81,8 @@ main {
 
   aside {
     width: 100%;
-    
-    .pages-order{
+
+    .pages-order {
       display: flex;
       gap: 0.6rem;
 
@@ -93,17 +93,17 @@ main {
         font-size: 15px;
         line-height: 18px;
       }
-  
-      h1{
+
+      h1 {
         color: #0aadfe;
       }
-  
-      span{
+
+      span {
         color: #fafafa;
       }
     }
 
-    
+
 
     .aside-container {
       display: flex;
@@ -146,6 +146,7 @@ main {
           li {
             transition: 0.15s;
             cursor: pointer;
+
             &:hover {
               color: gray;
             }
@@ -171,7 +172,7 @@ main {
         transition: 0.5s;
         color: #FFF;
 
-        h5{
+        h5 {
           margin-bottom: 2rem;
         }
 
@@ -199,23 +200,23 @@ main {
         }
       }
 
-      .slider{
+      .slider {
         height: 5px;
         background: #45494e;
         position: relative;
 
-        .progress{
+        .progress {
           height: 5px;
           background-color: #0AAEFE;
           border-radius: 0.5rem;
           position: absolute;
         }
-      } 
+      }
 
-      .range-input{
+      .range-input {
         position: relative;
 
-        input{
+        input {
           position: absolute;
           top: -15px;
           height: 5px;
@@ -225,7 +226,7 @@ main {
           -webkit-appearance: none;
         }
 
-        input[type="range"]::-webkit-slider-thumb{
+        input[type="range"]::-webkit-slider-thumb {
           height: 17px;
           width: 17px;
           border-radius: 50%;
@@ -235,10 +236,10 @@ main {
 
         }
 
-        input[type="range"]::-moz-range-thumb{
+        input[type="range"]::-moz-range-thumb {
           height: 17px;
           width: 17px;
-          border: none ;
+          border: none;
           border-radius: 50%;
           pointer-events: auto;
           -moz-appearance: none;
@@ -247,13 +248,13 @@ main {
         }
       }
 
-      
-      .valores{
+
+      .valores {
         display: flex;
-        
+
         justify-content: space-evenly;
       }
-      
+
 
       .price-range.active {
         background-color: #263241;
@@ -279,8 +280,8 @@ main {
         transition: 0.5s;
         color: #FFF;
 
-      
-          
+
+
         button {
           height: 3rem;
           border: none;
@@ -315,7 +316,7 @@ main {
         transition: 0.5s;
         color: white;
 
-        h5{
+        h5 {
           margin-bottom: 2rem;
         }
 
@@ -336,6 +337,7 @@ main {
             cursor: pointer;
             border-radius: 0.7rem;
             background-color: #354658;
+
             &:hover {
               color: gray;
             }
@@ -344,4 +346,43 @@ main {
       }
     }
   }
+}
+
+@include responsive(375px) {
+  main {
+    .container {
+      display: flex;
+      flex-direction: column;
+
+      section {
+        .pages-filter {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .items-list {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .container {
+    .up {
+      nav {
+        ul {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+  }
+
 }
