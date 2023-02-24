@@ -76,7 +76,6 @@
       </div>
 
     </dialog>
-
   </header>
 
   <!-- HEADER SUBMENU-->
@@ -785,61 +784,8 @@
         </div>
 
       </div>
-
-      <!--Dialog Game-->
-      <dialog class="modalGame" id="modalGame">
-
-        <div class="modalItemList">
-          <div class="items-list__item__image modalHeader">
-            <span class=" close closeModalGame">&times;</span>
-            <h4><a href="#">Starfield</a></h4>
-            <p>adicionar as favoritas</p>
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
-
-            <div class="clear"></div>
-          </div>
-
-          <div class="items-list__item modalImage">
-            <div class="container">
-              <div class="first">
-                <img src="./assets/img/games/starfield.jpg" alt="Item Image">
-              </div>
-              <a href="#"><img src="./assets/img/games/starfield.jpg" alt="Item Image"></a>
-              <a href="#"><img src="./assets/img/games/starfield.jpg" alt="Item Image"></a>
-              <a href="#"><img src="./assets/img/games/starfield.jpg" alt="Item Image"></a>
-            </div>
-            <div class="clear"></div>
-          </div>
-
-          <div class="items-list__item__info">
-            <h4><a href="#">Starfield</a></h4>
-            <span class="publisher">Publisher Name</span>
-            <div class="platforms">
-              <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
-              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-              <img src="./assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
-            </div>
-
-            <div class="discount-price">
-              <span class="discount">-75%</span>
-              <del class="price">R$259</del>
-            </div>
-          </div>
-
-          <a href="./pages/categories/products/product.html" class="btn btn-product">Comprar
-            <img src="./assets/img/cart-buy-icon.svg" alt="Cart Buy Icon">
-          </a>
-
-        </div>
-
-    </div>
-
-    </dialog>
-
     </div>
   </section>
-
   <footer>
     <div class="container">
 
@@ -908,6 +854,46 @@
   </footer>
 
 
+    <!--Modal Game-->
+    <div class="overlay" id="overlay"> 
+      <div class="info-game">
+        <div class="container">
+          <div class="product-title">
+            <button class="close" id="closeMod">&times;</button>
+            <h2>God of War: Ragnarök</h2>
+            <span>Adicionar aos favoritos
+              <img src="../../../assets/img/heart-img.svg" alt="Hear Icon">
+            </span>
+          </div>
+  
+          <div class="product-images">
+            <div class="main-image">
+              <img src="../../../assets/img/games/gow.webp" alt="God of War Banner">
+            </div>
+  
+            <div class="image-list">
+              <img src="../../../assets/img/product-images/gow-01.jpg" alt="God of War Banner">
+              <img src="../../../assets/img/product-images/gow-02.webp" alt="God of War Banner">
+              <img src="../../../assets/img/product-images/gow-03.webp" alt="God of War Banner">
+            </div>
+          </div>
+  
+          <div class="items-list__item__info modal-info">
+            <h4><a href="#">God of War: Ragnarök</a></h4>
+            <span class="publisher">Publisher Name</span>
+            <div class="platforms">
+              <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+            </div>
+            <div class="discount-price">
+              <span class="discount">-75%</span>
+              <del class="price">R$259</del>
+              <a href="#" class="btn btn-product">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <!-- SCRIPTS -->
   <script src="./scripts/base.js"></script>
   <script src="./scripts/modal.js"></script>
@@ -943,7 +929,7 @@
       },
     });
   </script>
-
+</div>
 </body>
 
 </html>
