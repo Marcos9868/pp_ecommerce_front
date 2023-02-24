@@ -698,7 +698,7 @@ footer {
 header {
   background-color: #fff;
   z-index: 9999;
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding: 3rem 0; }
   header img {
@@ -787,12 +787,7 @@ header {
 
 main {
   width: 100%;
-<<<<<<< HEAD
   margin-top: 5rem; }
-=======
-  margin-top: 5rem;
-  margin-bottom: 41rem; }
->>>>>>> 813ef3bf191a2b6d7a175dcc38d8adf9bb7ce17d
   main .container {
     display: grid;
     grid-template-columns: 33.6rem 2fr;
@@ -1078,20 +1073,6 @@ main {
         main footer .container .up nav ul li {
           width: 100%; } }
 
-@media screen and (max-width: 1000px) {
-  footer .up nav {
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center; } }
-
-@media screen and (max-width: 600px) {
-  footer .container .up nav ul {
-    gap: 1rem;
-    flex-wrap: wrap;
-    text-align: center; }
-    footer .container .up nav ul li {
-      width: 100%; } }
-
 @media screen and (max-width: 375px) {
   main .container {
     display: flex;
@@ -1120,6 +1101,20 @@ main {
       justify-content: center;
       align-items: center;
       gap: 1rem; } }
+
+@media screen and (max-width: 1000px) {
+  footer .up nav {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center; } }
+
+@media screen and (max-width: 600px) {
+  footer .container .up nav ul {
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: center; }
+    footer .container .up nav ul li {
+      width: 100%; } }
 
 .overlay {
   width: 100vw;
@@ -1214,44 +1209,46 @@ main {
           font-size: 20px; }
 
 .modalPerfil {
-  width: 50vw;
-  height: 50vh;
+  width: 350px;
+  height: 350px;
   background-color: #263241;
   margin: 0 auto;
-  margin-top: 2%;
+  margin-top: 15%;
   border-radius: 10px;
-  max-width: 1100px; }
+  justify-content: center;
+  align-items: center;
+  z-index: 999; }
   .modalPerfil .closeSac {
     font-size: 28px;
     float: right;
     margin-top: -20rem;
     position: absolute;
     cursor: pointer;
-    margin-left: 67rem;
+    margin-left: 30rem;
     text-decoration: none;
     color: white; }
   .modalPerfil form {
     float: left;
-    max-width: 100%;
-    width: 60rem;
+    width: 350px;
     margin-top: 8rem;
     justify-items: center; }
     .modalPerfil form label {
       color: white;
       font-size: 20px;
-      margin-left: 5rem; }
+      margin-left: 2rem;
+      margin-bottom: 2rem; }
     .modalPerfil form input[type=email], .modalPerfil form input[type=password] {
       justify-items: center;
       border-radius: 8px;
-      width: 100%;
+      width: 280px;
       height: 3rem;
-      padding-top: 10px;
-      margin-left: 5rem;
-      text-align: center; }
-    .modalPerfil form input[type=submit] {
+      padding-left: 1rem;
+      margin-left: 2rem; }
+    .modalPerfil form .btn {
       max-width: 30%;
       padding: 1rem;
-      margin-left: 31rem; }
+      margin-top: 2rem;
+      margin-left: 35%; }
 
 .modalSacola {
   width: 30vw;
