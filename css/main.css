@@ -796,7 +796,6 @@ main {
   main .pages-filter {
     background-color: #151d27;
     width: 100%;
-    height: 4rem;
     margin-bottom: 2.6rem;
     display: flex;
     align-items: center; }
@@ -1027,18 +1026,14 @@ main {
     display: flex;
     flex-direction: column; }
     main .container section .pages-filter {
-      background-color: blue;
       display: flex;
-      margin: 0 auto;
-      flex-direction: row-reverse; }
+      flex-direction: column; }
       main .container section .pages-filter .pages-number {
         display: flex;
-        margin-bottom: 5rem; }
+        margin-bottom: 2rem; }
       main .container section .pages-filter .recentes {
         display: flex;
-        flex-direction: row;
-        margin-top: 6rem;
-        margin-bottom: 3rem; }
+        flex-direction: row; }
     main .container section .items-list {
       display: flex;
       flex-direction: column;
