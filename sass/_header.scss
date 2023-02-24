@@ -19,6 +19,7 @@ header {
 
       font-size: 2rem;
       font-weight: 500;
+
       li {
         a {
           text-decoration: none;
@@ -42,6 +43,7 @@ header {
   .search-container {
     width: 100%;
     max-width: 56.6rem;
+
     input[type="search"] {
       background-color: $gray-100;
       padding: 2rem;
@@ -55,6 +57,7 @@ header {
       background-position: center right 2rem;
       padding-right: 30px;
       border-radius: 1rem;
+
       &::placeholder {
         color: rgba(0, 0, 0, 0.4);
       }
@@ -94,12 +97,15 @@ header {
   padding: 3rem 0;
   position: absolute;
   top: 11rem;
+
   .playstation-menu {
     width: 100%;
+
     ul {
       @include flex(row, center, center);
       gap: 7rem;
     }
+
     img {
       padding: 2rem;
       transition: all 0.1s ease-in;

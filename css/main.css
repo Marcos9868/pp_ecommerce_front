@@ -787,7 +787,12 @@ header {
 
 main {
   width: 100%;
+<<<<<<< HEAD
   margin-top: 5rem; }
+=======
+  margin-top: 5rem;
+  margin-bottom: 41rem; }
+>>>>>>> 813ef3bf191a2b6d7a175dcc38d8adf9bb7ce17d
   main .container {
     display: grid;
     grid-template-columns: 33.6rem 2fr;
@@ -795,16 +800,12 @@ main {
   main .pages-filter {
     background-color: #151d27;
     width: 100%;
-    height: 4rem;
     margin-bottom: 2.6rem;
     display: flex;
-    align-items: center;
-    position: relative; }
+    align-items: center; }
     main .pages-filter .pages-number {
       display: flex;
-      gap: 1.7rem;
-      position: absolute;
-      right: 2rem; }
+      gap: 1.7rem; }
       main .pages-filter .pages-number span {
         text-align: center;
         padding: 0.7rem;
@@ -817,22 +818,22 @@ main {
         border: #0aadfe 1px solid; }
       main .pages-filter .pages-number svg {
         margin-top: 0.6rem; }
-      main .pages-filter .pages-number .recentes {
-        display: flex;
-        align-items: center;
-        color: #ffffff;
-        font-size: 1.5rem;
-        line-height: 1.8rem; }
-        main .pages-filter .pages-number .recentes h3 {
-          font-weight: 400; }
-        main .pages-filter .pages-number .recentes #more-recent {
-          background-color: #263241;
-          color: #9b9b9b;
-          font-weight: 400;
-          font-size: 12px;
-          line-height: 14px;
-          border: 1px solid #252525;
-          border-radius: 4px; }
+    main .pages-filter .recentes {
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      font-size: 1.5rem;
+      line-height: 1.8rem; }
+      main .pages-filter .recentes h3 {
+        font-weight: 400; }
+      main .pages-filter .recentes #more-recent {
+        background-color: #263241;
+        color: #9b9b9b;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        border: 1px solid #252525;
+        border-radius: 4px; }
   main section {
     padding: 3rem;
     margin-top: 5rem;
@@ -1091,57 +1092,221 @@ main {
     footer .container .up nav ul li {
       width: 100%; } }
 
-dialog {
-  margin: 10%;
+@media screen and (max-width: 375px) {
+  main .container {
+    display: flex;
+    flex-direction: column; }
+    main .container section .pages-filter {
+      display: flex;
+      flex-direction: column; }
+      main .container section .pages-filter .pages-number {
+        display: flex;
+        margin-bottom: 2rem; }
+      main .container section .pages-filter .recentes {
+        display: flex;
+        flex-direction: row; }
+    main .container section .items-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+  .container .up nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; }
+    .container .up nav ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem; } }
+
+.overlay {
   width: 100vw;
   height: 100vh;
-  margin-bottom: 40rem;
-  border-radius: 15px;
-  background-color: #263241; }
-  dialog .modalItemList {
-    max-width: 100%;
-    height: 100%; }
-    dialog .modalItemList .clear {
-      clear: both; }
-    dialog .modalItemList .modalHeader {
-      top: 30px; }
-      dialog .modalItemList .modalHeader p {
-        color: white;
-        font-size: 18px;
-        float: right;
-        margin-right: 20px;
-        margin-top: 42px; }
-      dialog .modalItemList .modalHeader .close {
-        float: right;
-        margin-right: 15px;
-        color: white;
-        font-size: 30px;
-        text-decoration: none;
-        margin-top: -8px;
-        cursor: pointer; }
-      dialog .modalItemList .modalHeader label, dialog .modalItemList .modalHeader input[type=checkbox] {
-        margin-top: 35px; }
-      dialog .modalItemList .modalHeader h4 a {
-        color: white;
-        font-size: 60px;
-        float: left;
-        padding-left: 15px;
-        text-decoration: none; }
-    dialog .modalItemList .modalImage {
-      max-width: 45rem; }
-      dialog .modalItemList .modalImage .container {
-        top: 30px; }
-        dialog .modalItemList .modalImage .container a img {
-          max-width: 20%;
-          border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  display: none; }
+  .overlay .info-game {
+    width: 82vw;
+    height: 93vh;
+    background-color: #263241;
+    margin: 0 auto;
+    margin-top: 2%;
+    border-radius: 10px; }
+    .overlay .info-game .container {
+      width: 100%;
+      max-width: 120.5rem;
+      padding: 0 5.5rem;
+      margin: 0 auto; }
+      .overlay .info-game .container .product-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        margin-bottom: 2.6rem; }
+        .overlay .info-game .container .product-title h2 {
+          font-size: 4rem;
+          margin-top: 2rem; }
+        .overlay .info-game .container .product-title span {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          gap: 1rem;
+          margin-top: 2rem; }
+        .overlay .info-game .container .product-title .close {
+          font-size: 35px;
           float: right;
-          padding: 10px; }
-        dialog .modalItemList .modalImage .container .first {
-          width: 86rem;
-          height: 47rem; }
-          dialog .modalItemList .modalImage .container .first img {
-            max-width: 100%;
-            float: left; }
+          position: absolute;
+          margin-left: 109rem;
+          margin-top: -38px;
+          cursor: pointer; }
+      .overlay .info-game .container .product-images {
+        display: grid;
+        grid-template-columns: 70% 19%; }
+        .overlay .info-game .container .product-images .main-image {
+          width: 100%;
+          height: 32.2rem;
+          padding-right: 2rem;
+          display: inline-block; }
+          .overlay .info-game .container .product-images .main-image img {
+            width: 120rem;
+            height: 38rem;
+            border-radius: 10px; }
+        .overlay .info-game .container .product-images .image-list {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          gap: 2rem; }
+          .overlay .info-game .container .product-images .image-list img {
+            border-radius: 6px; }
+      .overlay .info-game .container .modal-info {
+        width: 45%;
+        height: 17.2rem;
+        display: inline-block;
+        position: absolute;
+        border-right: 1px solid #fff;
+        margin-top: 2rem; }
+        .overlay .info-game .container .modal-info h4, .overlay .info-game .container .modal-info a {
+          font-size: 2rem; }
+        .overlay .info-game .container .modal-info .platforms {
+          float: right;
+          margin-top: -43px; }
+          .overlay .info-game .container .modal-info .platforms img {
+            width: 30px;
+            margin-right: 8rem; }
+        .overlay .info-game .container .modal-info .price {
+          width: 40rem;
+          text-align: center;
+          margin-right: 11rem; }
+        .overlay .info-game .container .modal-info .btn-product {
+          width: 80%;
+          position: absolute;
+          display: inline-block;
+          border-radius: 4px;
+          margin-top: 12rem; }
+        .overlay .info-game .container .modal-info a {
+          font-size: 20px; }
+
+.modalPerfil {
+  width: 50vw;
+  height: 50vh;
+  background-color: #263241;
+  margin: 0 auto;
+  margin-top: 2%;
+  border-radius: 10px; }
+  .modalPerfil .closeSac {
+    font-size: 28px;
+    float: right;
+    margin-top: -20rem;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 67rem;
+    text-decoration: none;
+    color: white; }
+  .modalPerfil form {
+    float: left;
+    max-width: 100%;
+    width: 60rem;
+    margin-top: 8rem;
+    justify-items: center; }
+    .modalPerfil form label {
+      color: white;
+      font-size: 20px;
+      margin-left: 5rem; }
+    .modalPerfil form input[type=email], .modalPerfil form input[type=password] {
+      justify-items: center;
+      border-radius: 8px;
+      width: 100%;
+      height: 3rem;
+      padding-top: 10px;
+      margin-left: 5rem;
+      text-align: center; }
+    .modalPerfil form input[type=submit] {
+      max-width: 30%;
+      padding: 1rem;
+      margin-left: 31rem; }
+
+.modalSacola {
+  width: 30vw;
+  height: 65vh;
+  background-color: #263241;
+  margin: 96rem;
+  margin-top: 5%;
+  border-radius: 10px;
+  position: absolute; }
+  .modalSacola .closeSac {
+    max-width: 10%;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 38rem;
+    top: -0.8rem; }
+  .modalSacola .header-title {
+    width: 300px;
+    display: flex; }
+    .modalSacola .header-title h1 {
+      color: white;
+      font-size: 4rem;
+      max-width: 100%;
+      margin-left: 12rem;
+      top: 8rem; }
+  .modalSacola .table-game {
+    margin: 0 auto;
+    width: 500px;
+    justify-self: center; }
+    .modalSacola .table-game #customers {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      max-width: 100%;
+      width: 40rem;
+      position: absolute;
+      right: 1.5rem;
+      top: 8rem; }
+      .modalSacola .table-game #customers td, .modalSacola .table-game #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        color: white;
+        text-align: center; }
+      .modalSacola .table-game #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #252c29;
+        color: white;
+        text-align: center; }
+  .modalSacola .btn {
+    width: 60%;
+    position: absolute;
+    border-radius: 4px;
+    margin-top: 20rem;
+    right: 8rem; }
 
 .products-images {
   padding-top: 15rem;
