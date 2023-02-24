@@ -29,19 +29,22 @@ closeModalSacola.addEventListener('click', ()=>{
 
 
 //MODAL GAME
-const modalGame = document.querySelector('#modalGame')
-const closeModalGame = document.querySelector('.closeModalGame')
 const imgGame = document.querySelectorAll('.image-item')
+const spn = document.querySelector('#closeMod');
+const openModalGame = document.querySelector('.overlay')
+
+console.log(spn)
 
 imgGame.forEach(function(item){
     item.addEventListener('click', (e)=>{
         e.preventDefault()
-        modalGame.showModal()
+        openModalGame.style.display = "block"
+
+        spn.addEventListener('click', function(){
+            openModalGame.style.display = "none"
+        })
     })
 })
 
+  
 
-closeModalGame.addEventListener('click', (e)=>{
-    e.preventDefault()
-    modalGame.close()
-})
