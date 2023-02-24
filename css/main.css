@@ -1148,7 +1148,8 @@ main {
   background-color: #263241;
   margin: 0 auto;
   margin-top: 2%;
-  border-radius: 10px; }
+  border-radius: 10px;
+  max-width: 1100px; }
   .modalPerfil .closeSac {
     font-size: 28px;
     float: right;
@@ -1188,7 +1189,8 @@ main {
   margin: 96rem;
   margin-top: 5%;
   border-radius: 10px;
-  position: absolute; }
+  position: absolute;
+  max-width: 1100px; }
   .modalSacola .closeSac {
     max-width: 10%;
     font-size: 28px;
