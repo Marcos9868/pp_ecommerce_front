@@ -1,10 +1,9 @@
-let email = document.getElementById('email').value;
-let password = document.getElementById('password').value;
-
-const login = () => {
-  if (email !== 'pixelplay@store.com' && password !== 123) {
-    alert('Invalid email or password')
+function login(email, password) {
+  if (email.value === 'pixelplay@store.com' && password.value === 123) {
+    window.location.href = 'index.html';
   } else {
-    alert('welcome back Pixel Play')
+    alert('Invalid email or password');
   }
+
+  return window.location.href = 'index.html';
 }
