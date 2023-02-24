@@ -59,12 +59,12 @@
       <dialog class="modalPerfil" id="modalPerfil">
         <div class="container">
           <span class="closeSac closeModalLogin" id="closeSac">&times;</span>
-          <form class="Login">
+          <form class="Login" method="POST">
             <label>Email:</label><br>
             <input type="email" id="email" name="email"><br>
             <label>Senha:</label><br>
             <input type="password" id="password" name="password">
-            <input type="submit" class="btn" value="Entrar" onclick="login()">
+            <button class="btn" onclick="login()">Entrar</button>
           </form>
       </dialog>
     </div>
