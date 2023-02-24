@@ -14,6 +14,9 @@
 
 html {
   font-size: 62.5%; }
+  @media screen and (max-width: 800px) {
+    html {
+      font-size: 50%; } }
 
 html,
 body {
@@ -347,6 +350,12 @@ img {
     bottom: 0; }
   .hero .btn {
     z-index: 5; }
+  @media screen and (max-width: 1250px) {
+    .hero {
+      height: 70rem; } }
+  @media screen and (max-width: 1000px) {
+    .hero {
+      height: 60rem; } }
 
 .carrossel .slide {
   position: relative;
@@ -461,6 +470,30 @@ img {
     stroke-dasharray: 125.6;
     transform: rotate(-90deg); }
 
+@media screen and (max-width: 800px) {
+  .carrossel .slide {
+    width: 100%; }
+    .carrossel .slide-images:after {
+      background: transparent; }
+    .carrossel .slide .slide-info {
+      max-width: 100%; }
+      .carrossel .slide .slide-info .slide-info__promotion {
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%); }
+      .carrossel .slide .slide-info .btn-buy {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%); }
+      .carrossel .slide .slide-info h2,
+      .carrossel .slide .slide-info p {
+        display: none; }
+    .carrossel .slide .arrows {
+      width: 100%;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%); } }
+
 .game-list h3,
 .game-list span {
   margin-bottom: 4rem;
@@ -500,7 +533,10 @@ img {
       font-weight: bolder;
       font-size: 3rem; }
     .promotions .banner img {
-      border-radius: 1.6rem; }
+      border-radius: 1.6rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
   .promotions .small-banner {
     position: relative;
     height: 54rem;
@@ -520,6 +556,7 @@ img {
       border-bottom-left-radius: 1rem;
       border-bottom-right-radius: 1rem;
       color: #fff;
+      text-align: center;
       font-family: "Inter";
       font-weight: 400;
       font-size: 2rem;
@@ -548,6 +585,24 @@ img {
     overflow-x: scroll; }
     .promotions .promotion__products::-webkit-scrollbar {
       display: none; }
+  @media screen and (max-width: 800px) {
+    .promotions .container {
+      display: flex;
+      flex-direction: column; }
+    .promotions .banner {
+      height: 36rem; }
+    .promotions .small-banner {
+      margin-right: 0;
+      height: 54.2rem;
+      margin-bottom: 3rem; } }
+  @media screen and (max-width: 450px) {
+    .promotions .banner {
+      height: 18.8rem; }
+    .promotions .small-banner {
+      height: 37.2rem; }
+    .promotions .promotion__products {
+      display: flex;
+      flex-direction: column; } }
 
 .game-recommends {
   margin-bottom: 7rem; }
@@ -646,19 +701,14 @@ header {
   position: absolute;
   width: 100%;
   padding: 3rem 0; }
+  header img {
+    max-width: initial; }
   header .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; }
-  header .logo-store h1 {
-    font-size: 3.6rem;
-    font-weight: 400; }
-    header .logo-store h1 a span {
-      font-size: 3.6rem;
-      font-weight: bold;
-      text-decoration: none;
-      color: black; }
+    align-items: center;
+    gap: 2rem; }
   header .category-devices ul {
     display: flex;
     flex-direction: row;
@@ -701,6 +751,16 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 2rem; }
+    header .menu-user .menu-mobile {
+      display: none; }
+  @media screen and (max-width: 680px) {
+    header .logo {
+      max-width: 13rem; }
+    header .search-container,
+    header .category-devices {
+      display: none; }
+    header .menu-user .menu-mobile {
+      display: block; } }
 
 .submenu {
   display: none;
@@ -720,14 +780,13 @@ header {
       gap: 7rem; }
     .submenu .playstation-menu img {
       padding: 2rem;
-      transition: all .1s ease-in; }
+      transition: all 0.1s ease-in; }
       .submenu .playstation-menu img:hover {
         transform: scale(1.07);
         opacity: 0.6; }
 
 main {
   width: 100%;
-  height: 100vh;
   margin-top: 5rem;
   margin-bottom: 41rem; }
   main .container {
@@ -735,22 +794,18 @@ main {
     grid-template-columns: 33.6rem 2fr;
     gap: 3rem; }
   main .pages-filter {
-    background-color: #151D27;
+    background-color: #151d27;
     width: 100%;
-    height: 4rem;
     margin-bottom: 2.6rem;
     display: flex;
-    align-items: center;
-    position: relative; }
+    align-items: center; }
     main .pages-filter .pages-number {
       display: flex;
-      gap: 1.7rem;
-      position: absolute;
-      right: 2rem; }
+      gap: 1.7rem; }
       main .pages-filter .pages-number span {
         text-align: center;
         padding: 0.7rem;
-        background-color: #1E1E1E;
+        background-color: #1e1e1e;
         border-radius: 1.3rem;
         width: 4.8rem;
         height: 3.5rem;
@@ -759,22 +814,22 @@ main {
         border: #0aadfe 1px solid; }
       main .pages-filter .pages-number svg {
         margin-top: 0.6rem; }
-      main .pages-filter .pages-number .recentes {
-        display: flex;
-        align-items: center;
-        color: #FFFFFF;
-        font-size: 1.5rem;
-        line-height: 1.8rem; }
-        main .pages-filter .pages-number .recentes h3 {
-          font-weight: 400; }
-        main .pages-filter .pages-number .recentes #more-recent {
-          background-color: #263241;
-          color: #9B9B9B;
-          font-weight: 400;
-          font-size: 12px;
-          line-height: 14px;
-          border: 1px solid #252525;
-          border-radius: 4px; }
+    main .pages-filter .recentes {
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      font-size: 1.5rem;
+      line-height: 1.8rem; }
+      main .pages-filter .recentes h3 {
+        font-weight: 400; }
+      main .pages-filter .recentes #more-recent {
+        background-color: #263241;
+        color: #9b9b9b;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        border: 1px solid #252525;
+        border-radius: 4px; }
   main section {
     padding: 3rem;
     margin-top: 5rem;
@@ -815,7 +870,7 @@ main {
         overflow: hidden;
         position: relative;
         transition: 0.5s;
-        color: #FFF; }
+        color: #fff; }
         main aside .aside-container .filter-dropdown {
           display: flex;
           align-items: center;
@@ -842,7 +897,7 @@ main {
         overflow: hidden;
         position: relative;
         transition: 0.5s;
-        color: #FFF; }
+        color: #fff; }
         main aside .aside-container .game-categories h5 {
           margin-bottom: 2rem; }
         main aside .aside-container .game-categories ul {
@@ -868,7 +923,7 @@ main {
         position: relative; }
         main aside .aside-container .slider .progress {
           height: 5px;
-          background-color: #0AAEFE;
+          background-color: #0aaefe;
           border-radius: 0.5rem;
           position: absolute; }
       main aside .aside-container .range-input {
@@ -887,7 +942,7 @@ main {
           border-radius: 50%;
           pointer-events: auto;
           -webkit-appearance: none;
-          background-color: #0AAEFE; }
+          background-color: #0aaefe; }
         main aside .aside-container .range-input input[type="range"]::-moz-range-thumb {
           height: 17px;
           width: 17px;
@@ -895,7 +950,7 @@ main {
           border-radius: 50%;
           pointer-events: auto;
           -moz-appearance: none;
-          background-color: #0AAEFE; }
+          background-color: #0aaefe; }
       main aside .aside-container .valores {
         display: flex;
         justify-content: space-evenly; }
@@ -907,7 +962,7 @@ main {
         flex-direction: column;
         gap: 1rem;
         height: auto;
-        color: #FFF; }
+        color: #fff; }
       main aside .aside-container .price-range {
         background-color: #263241;
         border-radius: 1rem;
@@ -919,7 +974,7 @@ main {
         overflow: hidden;
         position: relative;
         transition: 0.5s;
-        color: #FFF; }
+        color: #fff; }
         main aside .aside-container .price-range button {
           height: 3rem;
           border: none;
@@ -966,10 +1021,39 @@ main {
             main aside .aside-container .game-industries ul li:hover {
               color: gray; }
 
+@media screen and (max-width: 375px) {
+  main .container {
+    display: flex;
+    flex-direction: column; }
+    main .container section .pages-filter {
+      display: flex;
+      flex-direction: column; }
+      main .container section .pages-filter .pages-number {
+        display: flex;
+        margin-bottom: 2rem; }
+      main .container section .pages-filter .recentes {
+        display: flex;
+        flex-direction: row; }
+    main .container section .items-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+  .container .up nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; }
+    .container .up nav ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem; } }
+
 .overlay {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 99999;
   position: fixed;
   top: 0;
@@ -1057,6 +1141,101 @@ main {
           margin-top: 12rem; }
         .overlay .info-game .container .modal-info a {
           font-size: 20px; }
+
+.modalPerfil {
+  width: 50vw;
+  height: 50vh;
+  background-color: #263241;
+  margin: 0 auto;
+  margin-top: 2%;
+  border-radius: 10px; }
+  .modalPerfil .closeSac {
+    font-size: 28px;
+    float: right;
+    margin-top: -20rem;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 67rem;
+    text-decoration: none;
+    color: white; }
+  .modalPerfil form {
+    float: left;
+    max-width: 100%;
+    width: 60rem;
+    margin-top: 8rem;
+    justify-items: center; }
+    .modalPerfil form label {
+      color: white;
+      font-size: 20px;
+      margin-left: 5rem; }
+    .modalPerfil form input[type=email], .modalPerfil form input[type=password] {
+      justify-items: center;
+      border-radius: 8px;
+      width: 100%;
+      height: 3rem;
+      padding-top: 10px;
+      margin-left: 5rem;
+      text-align: center; }
+    .modalPerfil form input[type=submit] {
+      max-width: 30%;
+      padding: 1rem;
+      margin-left: 31rem; }
+
+.modalSacola {
+  width: 30vw;
+  height: 65vh;
+  background-color: #263241;
+  margin: 96rem;
+  margin-top: 5%;
+  border-radius: 10px;
+  position: absolute; }
+  .modalSacola .closeSac {
+    max-width: 10%;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 38rem;
+    top: -0.8rem; }
+  .modalSacola .header-title {
+    width: 300px;
+    display: flex; }
+    .modalSacola .header-title h1 {
+      color: white;
+      font-size: 4rem;
+      max-width: 100%;
+      margin-left: 12rem;
+      top: 8rem; }
+  .modalSacola .table-game {
+    margin: 0 auto;
+    width: 500px;
+    justify-self: center; }
+    .modalSacola .table-game #customers {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      max-width: 100%;
+      width: 40rem;
+      position: absolute;
+      right: 1.5rem;
+      top: 8rem; }
+      .modalSacola .table-game #customers td, .modalSacola .table-game #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        color: white;
+        text-align: center; }
+      .modalSacola .table-game #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #252c29;
+        color: white;
+        text-align: center; }
+  .modalSacola .btn {
+    width: 60%;
+    position: absolute;
+    border-radius: 4px;
+    margin-top: 20rem;
+    right: 8rem; }
 
 .products-images {
   padding-top: 15rem;
@@ -1166,8 +1345,9 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    border-radius: .5rem; }
-  .about-product .sinopse-requirements, .about-product .price-info {
+    border-radius: 0.5rem; }
+  .about-product .sinopse-requirements,
+  .about-product .price-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1201,8 +1381,8 @@ main {
     .product-info .primary-info .categories ul li {
       display: inline-block;
       background-color: #354658;
-      padding: .3rem 1rem;
-      border-radius: .4rem; }
+      padding: 0.3rem 1rem;
+      border-radius: 0.4rem; }
       .product-info .primary-info .categories ul li a {
         color: #fff; }
   .product-info .primary-info .game-mode .mode {

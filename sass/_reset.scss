@@ -15,6 +15,9 @@
 
 html {
   font-size: 62.5%;
+  @include responsive(800px) {
+    font-size: 50%;
+  }
 }
 
 html,

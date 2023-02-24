@@ -7,7 +7,7 @@
 
   img {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     object-fit: cover;
     object-position: center;
     position: absolute;
@@ -15,9 +15,8 @@
     animation-duration: 5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
-    transform: scale(1.10);
+    transform: scale(1.1);
   }
-
 
   &::after {
     content: "";
@@ -34,6 +33,13 @@
 
   .btn {
     z-index: 5;
+  }
+
+  @include responsive(1250px) {
+    height: 70rem;
+  }
+  @include responsive(1000px) {
+    height: 60rem;
   }
 }
 
@@ -132,13 +138,12 @@
     @include flex(row, space-between, center);
     gap: 5rem;
     cursor: pointer;
-  
+
     img {
       transition: all 0.2s ease-in;
       &:hover {
         filter: brightness(0%) saturate(0%) contrast(0%) invert(29%);
-        -webkit-filter: brightness(0%) saturate(0%) contrast(0%)
-          invert(29%);
+        -webkit-filter: brightness(0%) saturate(0%) contrast(0%) invert(29%);
         -moz-filter: brightness(0%) saturate(0%) contrast(0%) invert(29%);
       }
     }
@@ -156,7 +161,7 @@
     justify-content: center;
     font-weight: bold;
     color: $brand-blue;
-  
+
     & svg {
       --progress: 0;
       position: absolute;
@@ -171,6 +176,41 @@
       stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
       stroke-dasharray: 125.6;
       transform: rotate(-90deg);
+    }
+  }
+
+  @include responsive(800px) {
+    .slide {
+      width: 100%;
+      &-images {
+        &:after {
+          background: transparent;
+        }
+      }
+      .slide-info {
+        max-width: 100%;
+        .slide-info__promotion {
+          left: 50%;
+          position: relative;
+          transform: translateX(-50%);
+        }
+        .btn-buy {
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        h2,
+        p {
+          display: none;
+        }
+      }
+
+      .arrows {
+        width: 100%;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
   }
 }
@@ -227,6 +267,9 @@
 
     img {
       border-radius: 1.6rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
@@ -253,6 +296,7 @@
       border-bottom-left-radius: 1rem;
       border-bottom-right-radius: 1rem;
       color: $brand-white;
+      text-align: center;
 
       font-family: "Inter";
       font-weight: 400;
@@ -286,6 +330,34 @@
     overflow-x: scroll;
     &::-webkit-scrollbar {
       display: none;
+    }
+  }
+
+  @include responsive(800px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .banner {
+      height: 36rem;
+    }
+    .small-banner {
+      margin-right: 0;
+      height: 54.2rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  @include responsive(450px) {
+    .banner {
+      height: 18.8rem;
+    }
+    .small-banner {
+      height: 37.2rem;
+    }
+    .promotion__products {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

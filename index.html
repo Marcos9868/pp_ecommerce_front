@@ -27,11 +27,11 @@
     <div class="container">
 
       <!-- LOGO -->
-      <div class="logo-store">
-        <a href="./index.html">
-          <img src="./assets/img/header/logo-pixelplay.svg" alt="Logo PixelPlay">
-        </a>
-      </div>
+
+      <a href="./index.html">
+        <img class="logo" src="./assets/img/header/logo-pixelplay.svg" alt="Logo PixelPlay">
+      </a>
+
 
       <!-- MAIN MENU LINKS -->
       <div class="category-devices">
@@ -51,31 +51,55 @@
       <div class="menu-user">
         <a href="#"><img class="openModalLogin" src="./assets/img/header/user-i.svg" alt="iconPerfil"></a>
         <a href="#"><img class="openModalSacola" src="./assets/img/header/cart-i.svg" alt="iconSacola"></a>
+        <a href="#" class="menu-mobile"><img src="./assets/img/menu-mobile-i.svg" alt="Menu Mobile"></a>
       </div>
 
 
-      <!--Modal Sacola-->
+      <!--Modal Login-->
       <dialog class="modalPerfil" id="modalPerfil">
         <div class="container">
-
-          <form>
+          <span class="closeSac closeModalLogin" id="closeSac">&times;</span>
+          <form class="Login">
             <label>Email:</label><br>
-            <input type="text" id="email" name="email"><br>
+            <input type="email" id="email" name="email"><br>
             <label>Senha:</label><br>
             <input type="password" id="password" name="password">
-            <input type="submit" class="closeModalLogin btn" onclick="login()">
+            <input type="submit" class="btn" value="Entrar" onclick="login()">
           </form>
       </dialog>
     </div>
 
     <dialog class="modalSacola" id="modalSacola">
       <div class="container">
-        <div class="slide-info">
-          <a href="#" class="btn closeModalSacola">Comprar</a>
+        <span class="closeSac closeModalSacola" id="closeSac">&times;</span>
+        <div class="header-title">
+          <h1>Carrinho</h1>
+        </div>
+
+        <div class="table-game">
+          <table id="customers">
+              <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td>Anno 1800</td>
+                <td>1</td>
+                <td>R$259</td>
+              </tr>
+              <tr>
+                <td>Anno 1800</td>
+                <td>1</td>
+                <td>R$259</td>
+              </tr>
+          </table>
+          <input type="submit" class="btn" value="Comprar" onclick="login()">
         </div>
       </div>
 
     </dialog>
+
   </header>
 
   <!-- HEADER SUBMENU-->
@@ -134,9 +158,8 @@
                 <h2>SOBRE O JOGO:</h2>
                 <p>Ghost of Tsushima é um jogo de ação e aventura em mundo aberto no Japão feudal, onde o jogador assume o papel do samurai Jin Sakai que luta contra a invasão mongol em Tsushima. O jogo oferece opções para o jogador criar alianças, aprender novas habilidades e escolher entre ser um samurai ou um "fantasma" que utiliza táticas não convencionais para vencer.</p>
 
-                <div class="btn-arrows">
+                <div class="btn-buy">
                   <a href="#" class="btn">Comprar</a>
-
                 </div>
               </div>
             </div>
@@ -152,7 +175,7 @@
                 <h2>SOBRE O JOGO:</h2>
                 <p>Ghost of Tsushima é um jogo de ação e aventura em mundo aberto no Japão feudal, onde o jogador assume o papel do samurai Jin Sakai que luta contra a invasão mongol em Tsushima. O jogo oferece opções para o jogador criar alianças, aprender novas habilidades e escolher entre ser um samurai ou um "fantasma" que utiliza táticas não convencionais para vencer.</p>
 
-                <div class="btn-arrows">
+                <div class="btn-buy">
                   <a href="#" class="btn">Comprar</a>
 
                 </div>
@@ -170,7 +193,7 @@
                 <h2>SOBRE O JOGO:</h2>
                 <p>Ghost of Tsushima é um jogo de ação e aventura em mundo aberto no Japão feudal, onde o jogador assume o papel do samurai Jin Sakai que luta contra a invasão mongol em Tsushima. O jogo oferece opções para o jogador criar alianças, aprender novas habilidades e escolher entre ser um samurai ou um "fantasma" que utiliza táticas não convencionais para vencer.</p>
 
-                <div class="btn-arrows">
+                <div class="btn-buy">
                   <a href="#" class="btn">Comprar</a>
 
                 </div>
@@ -188,7 +211,7 @@
                 <h2>SOBRE O JOGO:</h2>
                 <p>Ghost of Tsushima é um jogo de ação e aventura em mundo aberto no Japão feudal, onde o jogador assume o papel do samurai Jin Sakai que luta contra a invasão mongol em Tsushima. O jogo oferece opções para o jogador criar alianças, aprender novas habilidades e escolher entre ser um samurai ou um "fantasma" que utiliza táticas não convencionais para vencer.</p>
 
-                <div class="btn-arrows">
+                <div class="btn-buy">
                   <a href="#" class="btn">Comprar</a>
 
                 </div>
@@ -210,20 +233,6 @@
           </svg>
           <span></span>
         </div>
-
-        <!-- <div class="slide-info">
-          <span class="slide-info__promotion">PROMOÇÃO <bold>50% OFF</bold></span>
-          <h2>SOBRE O JOGO:</h2>
-          <p>Ghost of Tsushima é um jogo de ação e aventura em mundo aberto no Japão feudal, onde o jogador assume o papel do samurai Jin Sakai que luta contra a invasão mongol em Tsushima. O jogo oferece opções para o jogador criar alianças, aprender novas habilidades e escolher entre ser um samurai ou um "fantasma" que utiliza táticas não convencionais para vencer.</p>
-
-          <div class="btn-arrows">
-            <a href="#" class="btn">Comprar</a>
-            <div class="arrows">
-              <img class="js-prevButton" src="./assets/img/arrow-left.svg" alt="Arrow left">
-              <img class="js-nextButton" src="./assets/img/arrow-right.svg" alt="Arrow Right">
-            </div>
-          </div>
-        </div> -->
       </div>
 
     </div>
@@ -859,7 +868,7 @@
       <div class="info-game">
         <div class="container">
           <div class="product-title">
-            <button class="close" id="closeMod">&times;</button>
+            <span class="close" id="closeMod">&times;</span>
             <h2>God of War: Ragnarök</h2>
             <span>Adicionar aos favoritos
               <img src="../../../assets/img/heart-img.svg" alt="Hear Icon">
@@ -929,7 +938,7 @@
       },
     });
   </script>
-</div>
+
 </body>
 
 </html>
