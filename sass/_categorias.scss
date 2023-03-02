@@ -14,6 +14,8 @@ main {
     margin-bottom: 2.6rem;
     display: flex;
     align-items: center;
+    gap: 5.4rem ;
+    margin-left: 25rem;
 
     .pages-number {
       display: flex;
@@ -28,7 +30,7 @@ main {
         height: 3.5rem;
         font-weight: 900;
         color: white;
-        border: #0aadfe 1px solid;
+        border: #03649C 1px solid;
       }
 
       svg {
@@ -49,6 +51,7 @@ main {
 
       #more-recent {
         background-color: #263241;
+        padding: 1rem 1rem 1rem 1rem  ;
 
         color: #9b9b9b;
         font-weight: 400;
@@ -57,6 +60,11 @@ main {
         line-height: 14px;
         border: 1px solid #252525;
         border-radius: 4px;
+        gap: 2rem;
+
+        svg{
+          margin-top: 0.4rem;
+        }
       }
     }
   }
@@ -327,39 +335,43 @@ main {
       }
     }
   }
+  
+  @include responsive(1335px){
+    .container{
+    grid-template-columns: 100%;
+
+    }
+  }
 
   @include responsive(1000px) {
     main {
       margin-bottom: 0;
     }
 
+    .pages-filter{
+      margin-bottom: 5rem;
+      margin-left: 17rem;
+      .recentes{
+        margin-top: 3rem;
+        margin-left: 6rem;
+      }
+    }
+
     .container {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr ;
       gap: 3rem;
     }
 
     section {
       .pages-filter {
         display: block;
-
-        .pages-number {
-          gap: 1rem;
-          position: absolute;
-          left: 6.3rem;
-          bottom: 1.5rem;
-        }
-
-        .recentes {
-          left: 12rem;
-          top: 3.2rem;
-          position: absolute;
-        }
       }
 
       .items-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-right: 16rem ;
       }
     }
   }
@@ -430,7 +442,10 @@ main {
       }
     }
   }
+
+
 }
+
 
 @include responsive(375px) {
   main {

@@ -72,7 +72,8 @@ img {
   max-width: 23rem;
   background-color: #263241;
   border-radius: 1rem;
-  height: 40.8rem; }
+  height: 40.8rem;
+  justify-self: center; }
   .items-list__item__image {
     margin-bottom: 1rem;
     overflow: hidden;
@@ -150,6 +151,9 @@ img {
     .items-list__item .btn-product img {
       display: inline-block;
       max-width: 1.8rem; }
+  @media screen and (max-width: 1000px) {
+    .items-list__item main section .items-list .items-list__item {
+      justify-self: center; } }
 
 .promotion__products .promotion__products__item {
   display: flex;
@@ -369,7 +373,8 @@ img {
       width: 100%;
       height: 55rem;
       object-fit: cover;
-      border-radius: 1.6rem; }
+      border-radius: 1.6rem;
+      opacity: 0.9; }
     .carrossel .slide-images::after {
       content: "";
       width: 70rem;
@@ -415,7 +420,7 @@ img {
     .carrossel .slide .slide-info p {
       font-family: "Inter";
       color: #fff;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 1.8rem;
       line-height: 2.2rem; }
     .carrossel .slide .slide-info .btn-arrows {
@@ -797,7 +802,9 @@ main {
     width: 100%;
     margin-bottom: 2.6rem;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    gap: 5.4rem;
+    margin-left: 25rem; }
     main .pages-filter .pages-number {
       display: flex;
       gap: 1.7rem; }
@@ -810,7 +817,7 @@ main {
         height: 3.5rem;
         font-weight: 900;
         color: white;
-        border: #0aadfe 1px solid; }
+        border: #03649C 1px solid; }
       main .pages-filter .pages-number svg {
         margin-top: 0.6rem; }
     main .pages-filter .recentes {
@@ -823,12 +830,16 @@ main {
         font-weight: 400; }
       main .pages-filter .recentes #more-recent {
         background-color: #263241;
+        padding: 1rem 1rem 1rem 1rem;
         color: #9b9b9b;
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
         border: 1px solid #252525;
-        border-radius: 4px; }
+        border-radius: 4px;
+        gap: 2rem; }
+        main .pages-filter .recentes #more-recent svg {
+          margin-top: 0.4rem; }
   main section {
     padding: 3rem;
     margin-top: 5rem;
@@ -1019,27 +1030,28 @@ main {
             background-color: #354658; }
             main aside .aside-container .game-industries ul li:hover {
               color: gray; }
+  @media screen and (max-width: 1335px) {
+    main .container {
+      grid-template-columns: 100%; } }
   @media screen and (max-width: 1000px) {
     main main {
       margin-bottom: 0; }
+    main .pages-filter {
+      margin-bottom: 5rem;
+      margin-left: 17rem; }
+      main .pages-filter .recentes {
+        margin-top: 3rem;
+        margin-left: 6rem; }
     main .container {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 3rem; }
     main section .pages-filter {
       display: block; }
-      main section .pages-filter .pages-number {
-        gap: 1rem;
-        position: absolute;
-        left: 6.3rem;
-        bottom: 1.5rem; }
-      main section .pages-filter .recentes {
-        left: 12rem;
-        top: 3.2rem;
-        position: absolute; }
     main section .items-list {
       display: grid;
-      grid-template-columns: 1fr 1fr; } }
+      grid-template-columns: 1fr 1fr;
+      margin-right: 16rem; } }
   @media screen and (max-width: 850px) {
     main main {
       margin-bottom: 0; }

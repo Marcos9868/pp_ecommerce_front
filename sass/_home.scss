@@ -58,6 +58,7 @@
         height: 55rem;
         object-fit: cover;
         border-radius: 1.6rem;
+        opacity: 0.9;
       }
       &::after {
         content: "";
@@ -116,10 +117,14 @@
       p {
         font-family: "Inter";
         color: $brand-white;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 1.8rem;
         line-height: 2.2rem;
+
+       
       }
+
+    
 
       // BOTÂO COMPRAR E SETAS DO SLIDES
       .btn-arrows {
@@ -217,6 +222,8 @@
 
 // PRODUCTS LIST SECTION
 .game-list {
+
+
   h3,
   span {
     margin-bottom: 4rem;

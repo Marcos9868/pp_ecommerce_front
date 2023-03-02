@@ -6,6 +6,7 @@
   background-color: #263241;
   border-radius: 1rem;
   height: 40.8rem;
+  justify-self: center;
 
   &__image {
     margin-bottom: 1rem;
@@ -97,6 +98,18 @@
     img {
       display:  inline-block;
       max-width: 1.8rem;
+    }
+  }
+
+  @include responsive(1000px){
+    main{
+      section{
+        .items-list{
+          .items-list__item{
+            justify-self: center;
+          }
+        }
+      }
     }
   }
 }
