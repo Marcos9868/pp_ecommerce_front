@@ -1086,7 +1086,7 @@ main {
           width: 100%; } }
   @media screen and (max-width: 500px) {
     main .pages-filter {
-      margin-left: 4rem; } }
+      margin-left: 1rem; } }
 
 @media screen and (max-width: 375px) {
   main .container {
