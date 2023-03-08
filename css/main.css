@@ -1084,25 +1084,34 @@ main {
         gap: 1rem; }
         main footer .container .up nav ul li {
           width: 100%; } }
+  @media screen and (max-width: 500px) {
+    main .pages-filter {
+      margin-left: 4rem; } }
 
 @media screen and (max-width: 375px) {
   main .container {
     display: flex;
     flex-direction: column; }
-    main .container section .pages-filter {
-      display: flex;
-      flex-direction: column; }
-      main .container section .pages-filter .pages-number {
+    main .container section {
+      padding: 0; }
+      main .container section .pages-filter {
         display: flex;
-        margin-bottom: 2rem; }
-      main .container section .pages-filter .recentes {
+        flex-direction: column; }
+        main .container section .pages-filter .pages-number {
+          display: flex;
+          margin-bottom: 2rem; }
+        main .container section .pages-filter .recentes {
+          display: flex;
+          flex-direction: row;
+          margin-top: 0;
+          margin-left: 0; }
+      main .container section .items-list {
         display: flex;
-        flex-direction: row; }
-    main .container section .items-list {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10rem;
+        width: fit-content; }
   .container .up nav {
     flex-direction: column;
     justify-content: center;

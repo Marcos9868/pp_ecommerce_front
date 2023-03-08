@@ -443,6 +443,11 @@ main {
     }
   }
 
+  @include responsive(500px){
+    .pages-filter{
+      margin-left: 4rem;
+    }
+  }
 
 }
 
@@ -454,6 +459,8 @@ main {
       flex-direction: column;
 
       section {
+        padding: 0;
+
         .pages-filter {
           display: flex;
           flex-direction: column;
@@ -466,6 +473,8 @@ main {
           .recentes {
             display: flex;
             flex-direction: row;
+            margin-top: 0;
+            margin-left: 0;
           }
         }
 
@@ -474,6 +483,9 @@ main {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          margin-left: 10rem;
+          width: fit-content;
+      
         }
       }
     }
