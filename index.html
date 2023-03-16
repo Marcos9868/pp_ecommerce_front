@@ -60,12 +60,13 @@
         <div class="container">
           <span class="closeSac closeModalLogin" id="closeSac">&times;</span>
           <form class="Login" method="post">
-            <label>Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label>Senha:</label><br>
-            <input type="password" id="password" name="password">
-            <input type="submit" class="btn" value="Entrar" onclick="login()">
-          </form>
+            <form class="Login" method="POST">
+              <label>Email:</label><br>
+              <input type="email" id="email" name="email"><br>
+              <label>Senha:</label><br>
+              <input type="password" id="password" name="password">
+              <button class="btn" onclick="login()">Entrar</button>
+            </form>
       </dialog>
     </div>
 
@@ -94,6 +95,22 @@
         </ul>
 
 
+        <div class="container">
+          <span class="closeSac closeModalSacola" id="closeSac">&times;</span>
+          <div class="header-title">
+            <h1>Carrinho</h1>
+          </div>
+          <div class="lista-game">
+            <ul class="lista-game-sacola">
+              <li class="img-list-sacola"><img src="../../../assets/img/games/gow.webp" alt="God of War Banner"></li>
+              <li>
+                <h4>God of War: Ragnarök</h4>
+              </li>
+              <li><span>R$259</span></li>
+            </ul>
+          </div>
+          <input type="submit" class="btn" value="Comprar" onclick="login()">
+        </div>
       </div>
     </dialog>
 
@@ -170,7 +187,7 @@
               <div class="slide-info">
                 <span class="slide-info__promotion">PROMOÇÃO <bold>50% OFF</bold></span>
                 <h2>SOBRE O JOGO:</h2>
-                <p>Ghost of Tsushima é um jogo de ação e aventura em mundo aberto no Japão feudal, onde o jogador assume o papel do samurai Jin Sakai que luta contra a invasão mongol em Tsushima. O jogo oferece opções para o jogador criar alianças, aprender novas habilidades e escolher entre ser um samurai ou um "fantasma" que utiliza táticas não convencionais para vencer.</p>
+                <p id="codP">Call of Duty Modern Warfare II é um jogo de tiro em primeira pessoa que se passa em um mundo fictício, onde o jogador assume o papel de um soldado de elite em uma missão perigosa e emocionante para salvar o mundo do terrorismo global. Com uma história envolvente, personagens cativantes e ação intensa em todas as etapas, o jogo oferece uma experiência única e emocionante de combate.</p>
 
                 <div class="btn-buy">
                   <a href="#" class="btn">Comprar</a>
@@ -188,7 +205,7 @@
               <div class="slide-info">
                 <span class="slide-info__promotion">PROMOÇÃO <bold>50% OFF</bold></span>
                 <h2>SOBRE O JOGO:</h2>
-                <p>Ghost of Tsushima é um jogo de ação e aventura em mundo aberto no Japão feudal, onde o jogador assume o papel do samurai Jin Sakai que luta contra a invasão mongol em Tsushima. O jogo oferece opções para o jogador criar alianças, aprender novas habilidades e escolher entre ser um samurai ou um "fantasma" que utiliza táticas não convencionais para vencer.</p>
+                <p>Crash Bandicoot 4: It's About Time é um jogo de plataforma em que o jogador assume o papel do carismático Crash Bandicoot em uma jornada emocionante para salvar o multiverso do malvado Dr. Neo Cortex e sua equipe de vilões. Com gráficos incríveis em 3D e jogabilidade desafiadora, o jogo traz de volta a nostalgia dos jogos originais da série, enquanto adiciona novos elementos e recursos para uma experiência moderna e emocionante.</p>
 
                 <div class="btn-buy">
                   <a href="#" class="btn">Comprar</a>
@@ -206,7 +223,7 @@
               <div class="slide-info">
                 <span class="slide-info__promotion">PROMOÇÃO <bold>50% OFF</bold></span>
                 <h2>SOBRE O JOGO:</h2>
-                <p>Ghost of Tsushima é um jogo de ação e aventura em mundo aberto no Japão feudal, onde o jogador assume o papel do samurai Jin Sakai que luta contra a invasão mongol em Tsushima. O jogo oferece opções para o jogador criar alianças, aprender novas habilidades e escolher entre ser um samurai ou um "fantasma" que utiliza táticas não convencionais para vencer.</p>
+                <p>Starfield é um jogo de RPG de ficção científica ambientado em um universo vasto e imersivo. Desenvolvido pela Bethesda Game Studios, os criadores de títulos populares como Fallout e The Elder Scrolls, Starfield promete ser um jogo épico que levará os jogadores em uma jornada através do espaço, explorando planetas distantes, descobrindo novas civilizações e enfrentando perigos desconhecidos.</p>
 
                 <div class="btn-buy">
                   <a href="#" class="btn">Comprar</a>
@@ -255,7 +272,7 @@
 
           <div class="items-list__item__info">
             <h4><a href="#">Call of Duty - Modern Warf...</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">Activision</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -279,14 +296,14 @@
         <div class="items-list__item">
 
           <div class="items-list__item__image">
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
+            <label for="item-2"></label>
+            <input id="item-2" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/anno-1800.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Anno 1800</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">Ubisoft</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -309,14 +326,14 @@
         <div class="items-list__item">
 
           <div class="items-list__item__image">
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
+            <label for="item-3"></label>
+            <input id="item-3" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/civilization-platinum-edition.jpg" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Civilization lV</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">2K Games</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -339,14 +356,14 @@
         <div class="items-list__item">
 
           <div class="items-list__item__image">
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
+            <label for="item-4"></label>
+            <input id="item-4" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/crash-4.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Crash Bandicoot 4 - I'ts Ab...</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">Activision</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -369,14 +386,14 @@
         <div class="items-list__item">
 
           <div class="items-list__item__image">
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
+            <label for="item-5"></label>
+            <input id="item-5" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/death-strading.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Death Stranding</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">Sony</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -404,14 +421,14 @@
         <div class="items-list__item">
 
           <div class="items-list__item__image">
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
+            <label for="item-6"></label>
+            <input id="item-6" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/elden-ring.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Elden Ring</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">Bandai Namco</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -434,14 +451,14 @@
         <div class="items-list__item">
 
           <div class="items-list__item__image">
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
+            <label for="item-7"></label>
+            <input id="item-7" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/ghostoftsushima.jpg" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Ghost of Tsushima</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">Sony</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -464,14 +481,14 @@
         <div class="items-list__item">
 
           <div class="items-list__item__image">
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
+            <label for="item-8"></label>
+            <input id="item-8" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/gow.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">God Of War: Ragnarök</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">Sony</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -494,14 +511,14 @@
         <div class="items-list__item">
 
           <div class="items-list__item__image">
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
+            <label for="item-9"></label>
+            <input id="item-9" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/hife-rush.jpg" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Hi-Fi Rush</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">Bethesda</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -524,14 +541,14 @@
         <div class="items-list__item">
 
           <div class="items-list__item__image">
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
+            <label for="item-10"></label>
+            <input id="item-10" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/limbo.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Limbo</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">Microsoft</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -571,14 +588,14 @@
         <div class="promotion__products__item">
 
           <div class="promotion__products__item__image">
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
+            <label for="item-11"></label>
+            <input id="item-11" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/spiderman-miles-morales.webp" alt="Item Image"></a>
           </div>
 
           <div class="promotion__products__item__info">
             <h4><a href="#">Spider Man - Miles...</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">Sony</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -601,14 +618,14 @@
         <div class="promotion__products__item">
 
           <div class="promotion__products__item__image">
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
+            <label for="item-12"></label>
+            <input id="item-12" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/no-mans-sky.jpg" alt="Item Image"></a>
           </div>
 
           <div class="promotion__products__item__info">
             <h4><a href="#">No Man's Sky</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">Hello Games</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -643,14 +660,14 @@
         <div class="items-list__item">
 
           <div class="items-list__item__image">
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
+            <label for="item-13"></label>
+            <input id="item-13" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/little-nightmares.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Little Nightmares</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">Bandai Namco</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -673,14 +690,14 @@
         <div class="items-list__item">
 
           <div class="items-list__item__image">
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
+            <label for="item-14"></label>
+            <input id="item-14" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/naruto-ninja-storm-4.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Naruto: Ultimate Ninja S. 4</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">Bandai Namco</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -703,14 +720,14 @@
         <div class="items-list__item">
 
           <div class="items-list__item__image">
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
+            <label for="item-15"></label>
+            <input id="item-15" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/no-mans-sky.jpg" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">No Man's Sky</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">Hello Games</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -733,14 +750,14 @@
         <div class="items-list__item">
 
           <div class="items-list__item__image">
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
+            <label for="item-16"></label>
+            <input id="item-16" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/resident-evil-4-remae.webp" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Resident Evil 4 Remake</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">CAPCOM</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -763,14 +780,14 @@
         <div class="items-list__item">
 
           <div class="items-list__item__image">
-            <label for="item-1"></label>
-            <input id="item-1" class="like-btn" type="checkbox">
+            <label for="item-17"></label>
+            <input id="item-17" class="like-btn" type="checkbox">
             <a href="#"><img class="image-item" src="./assets/img/games/starfield.jpg" alt="Item Image"></a>
           </div>
 
           <div class="items-list__item__info">
             <h4><a href="#">Starfield</a></h4>
-            <span class="publisher">Publisher Name</span>
+            <span class="publisher">Bethesda</span>
             <div class="platforms">
               <img src="./assets/img/platforms/windows-i.svg" alt="Windows Icon">
               <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
@@ -862,44 +879,52 @@
 
   <!--Modal Game-->
   <div class="overlay" id="overlay">
+
     <div class="info-game">
-      <div class="container">
-        <div class="product-title">
-          <span class="close" id="closeMod">&times;</span>
-          <h2>God of War: Ragnarök</h2>
-          <span>Adicionar aos favoritos
-            <img src="../../../assets/img/heart-img.svg" alt="Hear Icon">
-          </span>
+      <span class="close" id="closeMod">&times;</span>
+
+      <div class="product-title">
+        <h2>God of War: Ragnarök</h2>
+        <span class="favoritos">Adicionar aos favoritos
+          <img src="../../../assets/img/heart-img.svg" alt="Hear Icon">
+        </span>
+      </div>
+
+      <div class="product-images">
+        <div class="main-image">
+          <img src="../../../assets/img/games/gow.webp" alt="God of War Banner">
         </div>
 
-        <div class="product-images">
-          <div class="main-image">
-            <img src="../../../assets/img/games/gow.webp" alt="God of War Banner">
-          </div>
-
-          <div class="image-list">
-            <img src="../../../assets/img/product-images/gow-01.jpg" alt="God of War Banner">
-            <img src="../../../assets/img/product-images/gow-02.webp" alt="God of War Banner">
-            <img src="../../../assets/img/product-images/gow-03.webp" alt="God of War Banner">
-          </div>
+        <div class="image-list">
+          <img src="../../../assets/img/product-images/gow-01.jpg" alt="God of War Banner">
+          <img src="../../../assets/img/product-images/gow-02.webp" alt="God of War Banner">
+          <img src="../../../assets/img/product-images/gow-03.webp" alt="God of War Banner">
         </div>
+      </div>
 
+      <div class="indicacao-price-info">
         <div class="items-list__item__info modal-info">
-          <h4><a href="#">God of War: Ragnarök</a></h4>
-          <span class="publisher">Publisher Name</span>
-          <div class="platforms">
-            <img src="./assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
-          </div>
           <div class="discount-price">
             <span class="discount">-75%</span>
             <del class="price">R$259</del>
-            <a href="#" class="btn btn-product">Comprar</a>
           </div>
+          <a href="./pages/categories/products/product.html" class="btn btn-product">DETALHES</a>
         </div>
+
+        <div class="analise">
+
+          <div class="text">
+            <p>CLASSIFICAÇÃO INDICATIVA</p>
+            <span class="classificativos">VIOLÊNCIA FANTASIOSA</span>
+            <span class="classificativos">USO DE ÁLCOOL</span>
+          </div>
+          <span class="idade">12</span>
+        </div>
+
       </div>
+
     </div>
   </div>
-
   <!-- SCRIPTS -->
   <script src="./scripts/base.js"></script>
   <script src="./scripts/modal.js"></script>

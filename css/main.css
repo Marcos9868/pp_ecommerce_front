@@ -72,7 +72,8 @@ img {
   max-width: 23rem;
   background-color: #263241;
   border-radius: 1rem;
-  height: 40.8rem; }
+  height: 40.8rem;
+  justify-self: center; }
   .items-list__item__image {
     margin-bottom: 1rem;
     overflow: hidden;
@@ -150,6 +151,9 @@ img {
     .items-list__item .btn-product img {
       display: inline-block;
       max-width: 1.8rem; }
+  @media screen and (max-width: 1000px) {
+    .items-list__item main section .items-list .items-list__item {
+      justify-self: center; } }
 
 .promotion__products .promotion__products__item {
   display: flex;
@@ -369,7 +373,8 @@ img {
       width: 100%;
       height: 55rem;
       object-fit: cover;
-      border-radius: 1.6rem; }
+      border-radius: 1.6rem;
+      opacity: 0.9; }
     .carrossel .slide-images::after {
       content: "";
       width: 70rem;
@@ -415,7 +420,7 @@ img {
     .carrossel .slide .slide-info p {
       font-family: "Inter";
       color: #fff;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 1.8rem;
       line-height: 2.2rem; }
     .carrossel .slide .slide-info .btn-arrows {
@@ -698,7 +703,7 @@ footer {
 header {
   background-color: #fff;
   z-index: 9999;
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding: 3rem 0; }
   header img {
@@ -797,7 +802,9 @@ main {
     width: 100%;
     margin-bottom: 2.6rem;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    gap: 5.4rem;
+    margin-left: 25rem; }
     main .pages-filter .pages-number {
       display: flex;
       gap: 1.7rem; }
@@ -810,7 +817,7 @@ main {
         height: 3.5rem;
         font-weight: 900;
         color: white;
-        border: #0aadfe 1px solid; }
+        border: #03649C 1px solid; }
       main .pages-filter .pages-number svg {
         margin-top: 0.6rem; }
     main .pages-filter .recentes {
@@ -823,12 +830,16 @@ main {
         font-weight: 400; }
       main .pages-filter .recentes #more-recent {
         background-color: #263241;
+        padding: 1rem 1rem 1rem 1rem;
         color: #9b9b9b;
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
         border: 1px solid #252525;
-        border-radius: 4px; }
+        border-radius: 4px;
+        gap: 2rem; }
+        main .pages-filter .recentes #more-recent svg {
+          margin-top: 0.4rem; }
   main section {
     padding: 3rem;
     margin-top: 5rem;
@@ -897,14 +908,13 @@ main {
         position: relative;
         transition: 0.5s;
         color: #fff; }
-        main aside .aside-container .game-categories h5 {
-          margin-bottom: 2rem; }
         main aside .aside-container .game-categories ul {
           padding-bottom: 0.75rem;
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          gap: 1rem; }
+          gap: 1rem;
+          margin-top: 1rem; }
           main aside .aside-container .game-categories ul li {
             padding: 0.4rem;
             width: max-content;
@@ -965,10 +975,10 @@ main {
       main aside .aside-container .price-range {
         background-color: #263241;
         border-radius: 1rem;
-        padding: 1.2rem;
+        padding: 1rem;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.3rem;
         height: 4.7rem;
         overflow: hidden;
         position: relative;
@@ -1000,14 +1010,13 @@ main {
         position: relative;
         transition: 0.5s;
         color: white; }
-        main aside .aside-container .game-industries h5 {
-          margin-bottom: 2rem; }
         main aside .aside-container .game-industries ul {
           padding-bottom: 0.75rem;
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          gap: 1rem; }
+          gap: 1rem;
+          margin-top: 1rem; }
           main aside .aside-container .game-industries ul li {
             padding: 0.4rem;
             width: max-content;
@@ -1019,27 +1028,28 @@ main {
             background-color: #354658; }
             main aside .aside-container .game-industries ul li:hover {
               color: gray; }
+  @media screen and (max-width: 1335px) {
+    main .container {
+      grid-template-columns: 100%; } }
   @media screen and (max-width: 1000px) {
     main main {
       margin-bottom: 0; }
+    main .pages-filter {
+      margin-bottom: 5rem;
+      margin-left: 17rem; }
+      main .pages-filter .recentes {
+        margin-top: 3rem;
+        margin-left: 6rem; }
     main .container {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 3rem; }
     main section .pages-filter {
       display: block; }
-      main section .pages-filter .pages-number {
-        gap: 1rem;
-        position: absolute;
-        left: 6.3rem;
-        bottom: 1.5rem; }
-      main section .pages-filter .recentes {
-        left: 12rem;
-        top: 3.2rem;
-        position: absolute; }
     main section .items-list {
       display: grid;
-      grid-template-columns: 1fr 1fr; } }
+      grid-template-columns: 1fr 1fr;
+      margin-right: 16rem; } }
   @media screen and (max-width: 850px) {
     main main {
       margin-bottom: 0; }
@@ -1072,25 +1082,34 @@ main {
         gap: 1rem; }
         main footer .container .up nav ul li {
           width: 100%; } }
+  @media screen and (max-width: 500px) {
+    main .pages-filter {
+      margin-left: 1rem; } }
 
 @media screen and (max-width: 375px) {
   main .container {
     display: flex;
     flex-direction: column; }
-    main .container section .pages-filter {
-      display: flex;
-      flex-direction: column; }
-      main .container section .pages-filter .pages-number {
+    main .container section {
+      padding: 0; }
+      main .container section .pages-filter {
         display: flex;
-        margin-bottom: 2rem; }
-      main .container section .pages-filter .recentes {
+        flex-direction: column; }
+        main .container section .pages-filter .pages-number {
+          display: flex;
+          margin-bottom: 2rem; }
+        main .container section .pages-filter .recentes {
+          display: flex;
+          flex-direction: row;
+          margin-top: 0;
+          margin-left: 0; }
+      main .container section .items-list {
         display: flex;
-        flex-direction: row; }
-    main .container section .items-list {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10rem;
+        width: fit-content; }
   .container .up nav {
     flex-direction: column;
     justify-content: center;
@@ -1125,214 +1144,236 @@ main {
   top: 0;
   display: none; }
   .overlay .info-game {
-    width: 82vw;
-    height: 93vh;
+    width: 100%;
+    max-width: 70%;
+    height: 70rem;
     background-color: #263241;
-    margin: 0 auto;
-    margin-top: 2%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
     border-radius: 10px; }
-    .overlay .info-game .container {
+    .overlay .info-game .close {
+      font-size: 4rem;
+      cursor: pointer;
+      margin-top: -1.3rem;
+      background-color: #fff;
+      padding: 0 1.5rem;
+      position: absolute;
+      right: -2rem;
+      border-radius: 0.4rem; }
+    .overlay .info-game .product-title {
+      justify-content: space-between;
+      align-items: flex-start;
+      color: #fff;
       width: 100%;
-      max-width: 120.5rem;
-      padding: 0 5.5rem;
-      margin: 0 auto; }
-      .overlay .info-game .container .product-title {
+      padding: 2rem; }
+      .overlay .info-game .product-title h2 {
+        font-size: 4rem;
+        float: left;
+        padding-right: 15rem; }
+      .overlay .info-game .product-title span {
+        display: flex;
+        gap: 1rem;
+        float: right;
+        margin-top: 2rem;
+        margin-left: 10rem; }
+    .overlay .info-game .product-images {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+      padding: 2rem;
+      width: 100%; }
+      .overlay .info-game .product-images .main-image {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        color: #fff;
-        margin-bottom: 2.6rem; }
-        .overlay .info-game .container .product-title h2 {
-          font-size: 4rem;
-          margin-top: 2rem; }
-        .overlay .info-game .container .product-title span {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          gap: 1rem;
-          margin-top: 2rem; }
-        .overlay .info-game .container .product-title .close {
-          font-size: 35px;
-          float: right;
-          position: absolute;
-          margin-left: 109rem;
-          margin-top: -38px;
-          cursor: pointer; }
-      .overlay .info-game .container .product-images {
-        display: grid;
-        grid-template-columns: 70% 19%; }
-        .overlay .info-game .container .product-images .main-image {
+        width: 100%;
+        height: 35rem;
+        max-width: 78%;
+        padding-right: 2rem;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 1rem; }
+        .overlay .info-game .product-images .main-image img {
           width: 100%;
-          height: 32.2rem;
-          padding-right: 2rem;
-          display: inline-block; }
-          .overlay .info-game .container .product-images .main-image img {
-            width: 120rem;
-            height: 38rem;
-            border-radius: 10px; }
-        .overlay .info-game .container .product-images .image-list {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center;
-          gap: 2rem; }
-          .overlay .info-game .container .product-images .image-list img {
-            border-radius: 6px; }
-      .overlay .info-game .container .modal-info {
-        width: 45%;
-        height: 17.2rem;
-        display: inline-block;
-        position: absolute;
-        border-right: 1px solid #fff;
-        margin-top: 2rem; }
-        .overlay .info-game .container .modal-info h4,
-        .overlay .info-game .container .modal-info a {
+          border-radius: 1rem; }
+      .overlay .info-game .product-images .image-list {
+        width: 100%;
+        max-width: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%; }
+        .overlay .info-game .product-images .image-list img {
+          width: 100%;
+          border-radius: 0.5rem; }
+    .overlay .info-game .indicacao-price-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 2rem; }
+      .overlay .info-game .indicacao-price-info .modal-info {
+        width: 50%; }
+        .overlay .info-game .indicacao-price-info .modal-info h4,
+        .overlay .info-game .indicacao-price-info .modal-info a {
           font-size: 2rem; }
-        .overlay .info-game .container .modal-info .platforms {
-          float: right;
-          margin-top: -43px; }
-          .overlay .info-game .container .modal-info .platforms img {
-            width: 30px;
-            margin-right: 8rem; }
-        .overlay .info-game .container .modal-info .price {
-          width: 40rem;
-          text-align: center;
-          margin-right: 11rem; }
-        .overlay .info-game .container .modal-info .btn-product {
-          width: 80%;
+        .overlay .info-game .indicacao-price-info .modal-info .platforms img {
+          margin-left: -10rem;
+          width: 3rem;
           position: absolute;
-          display: inline-block;
+          margin-bottom: 2rem; }
+        .overlay .info-game .indicacao-price-info .modal-info .discount-price {
+          width: 100%;
+          display: flex;
+          gap: 2rem; }
+          .overlay .info-game .indicacao-price-info .modal-info .discount-price .price {
+            width: 100%;
+            display: inline-block;
+            text-align: center; }
+        .overlay .info-game .indicacao-price-info .modal-info .btn-product {
           border-radius: 4px;
-          margin-top: 12rem; }
-        .overlay .info-game .container .modal-info a {
+          justify-content: center;
+          display: inline-block; }
+        .overlay .info-game .indicacao-price-info .modal-info a {
           font-size: 20px; }
+      .overlay .info-game .indicacao-price-info .analise {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem; }
+        .overlay .info-game .indicacao-price-info .analise .idade {
+          background-color: #0095da;
+          border-radius: 0.6rem;
+          padding: 1rem;
+          color: #ffffff;
+          font-weight: bolder;
+          margin-left: 0.5rem;
+          font-size: 3rem; }
+        .overlay .info-game .indicacao-price-info .analise .classificativos {
+          font-weight: lighter;
+          font-size: small;
+          color: #c6d4df; }
 
 .modalPerfil {
-  width: 50vw;
-  height: 50vh;
+  width: 350px;
+  height: 350px;
   background-color: #263241;
   margin: 0 auto;
-  margin-top: 2%;
+  margin-top: 15%;
   border-radius: 10px;
-  max-width: 1100px; }
+  justify-content: center;
+  align-items: center;
+  z-index: 999; }
   .modalPerfil .closeSac {
     font-size: 28px;
     float: right;
     margin-top: -20rem;
     position: absolute;
     cursor: pointer;
-    margin-left: 67rem;
+    margin-left: 30rem;
     text-decoration: none;
     color: white; }
   .modalPerfil form {
     float: left;
-    max-width: 100%;
-    width: 60rem;
+    width: 350px;
     margin-top: 8rem;
     justify-items: center; }
     .modalPerfil form label {
       color: white;
       font-size: 20px;
-      margin-left: 5rem; }
+      margin-left: 2rem;
+      margin-bottom: 2rem; }
     .modalPerfil form input[type="email"],
     .modalPerfil form input[type="password"] {
       justify-items: center;
       border-radius: 8px;
-      width: 100%;
+      width: 280px;
       height: 3rem;
-      padding-top: 10px;
-      margin-left: 5rem;
-      text-align: center; }
-    .modalPerfil form input[type="submit"] {
+      padding-left: 1rem;
+      margin-left: 2rem; }
+    .modalPerfil form .btn {
       max-width: 30%;
       padding: 1rem;
-      margin-left: 31rem; }
+      margin-top: 2rem;
+      margin-left: 35%; }
 
 .modalSacola {
-  width: 30vw;
-  height: 65vh;
+  width: 450px;
+  height: 450px;
   background-color: #263241;
-  margin: 96rem;
-  margin-top: 5%;
+  margin: 0 auto;
+  top: 13%;
+  left: 60%;
   border-radius: 10px;
-  max-width: 1100px;
-  position: relative; }
-  .modalSacola .sacola-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center; }
-    .modalSacola .sacola-container h5 {
-      color: white;
-      font-size: 3rem;
-      margin: 2rem 0;
-      text-transform: uppercase; }
-    .modalSacola .sacola-container ul {
-      padding: 0 4rem; }
-      .modalSacola .sacola-container ul li {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 2rem; }
-        .modalSacola .sacola-container ul li img {
-          width: 100%;
-          max-width: 15rem;
-          border-radius: 1.6rem; }
-        .modalSacola .sacola-container ul li span {
-          color: white;
-          font-size: 2.5rem; }
+  justify-content: center;
+  align-items: center;
+  z-index: 999; }
   .modalSacola .closeSac {
-    max-width: 10%;
     font-size: 28px;
-    color: white;
-    cursor: pointer;
+    float: right;
     position: absolute;
-    top: 1rem;
-    right: 2rem;
-    padding: 0.3rem 0.7rem;
-    color: black;
-    background-color: white; }
+    cursor: pointer;
+    top: 4px;
+    left: 41rem;
+    text-decoration: none;
+    color: white; }
   .modalSacola .header-title {
-    width: 300px;
-    display: flex; }
+    float: left;
+    width: 100%;
+    margin-top: 4rem;
+    justify-items: center; }
     .modalSacola .header-title h1 {
       color: white;
       font-size: 4rem;
-      max-width: 100%;
-      margin-left: 12rem;
-      top: 8rem; }
-  .modalSacola .table-game {
-    margin: 0 auto;
-    width: 500px;
-    justify-self: center; }
-    .modalSacola .table-game #customers {
-      font-family: Arial, Helvetica, sans-serif;
-      border-collapse: collapse;
-      max-width: 100%;
-      width: 40rem;
-      position: absolute;
-      right: 1.5rem;
-      top: 8rem; }
-      .modalSacola .table-game #customers td,
-      .modalSacola .table-game #customers th {
-        border: 1px solid #ddd;
-        padding: 8px;
+      text-align: center;
+      border-bottom: 1px solid white; }
+  .modalSacola .lista-game {
+    width: 30rem;
+    max-width: 100%;
+    top: 13rem;
+    position: absolute; }
+    .modalSacola .lista-game .lista-game-sacola {
+      justify-items: flex-start;
+      padding: 0 5%; }
+      .modalSacola .lista-game .lista-game-sacola .img-list-sacola img {
+        width: 6rem;
+        max-width: 50%;
+        border-radius: 2rem;
+        display: inline-block;
+        position: absolute; }
+      .modalSacola .lista-game .lista-game-sacola li h4 {
         color: white;
-        text-align: center; }
-      .modalSacola .table-game #customers th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
-        background-color: #252c29;
+        font-size: 1.7rem;
+        text-align: center;
+        padding-left: 8.5rem;
+        padding-top: 2rem;
+        float: left; }
+      .modalSacola .lista-game .lista-game-sacola li span {
         color: white;
-        text-align: center; }
+        font-size: 2rem;
+        text-align: center;
+        float: right;
+        position: absolute;
+        margin-top: 1.6rem;
+        margin-left: 5rem; }
   .modalSacola .btn {
-    width: 60%;
+    width: 50%;
     position: absolute;
     border-radius: 4px;
-    margin-top: 20rem;
-    right: 8rem; }
+    top: 38rem;
+    right: 11rem; }
 
 .products-images {
   padding-top: 15rem;
