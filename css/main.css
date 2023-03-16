@@ -1157,8 +1157,13 @@ main {
     border-radius: 10px; }
     .overlay .info-game .container {
       width: 100%;
+<<<<<<< HEAD
       padding: 5.5rem;
       margin: auto; }
+=======
+      padding: 0 5.5rem;
+      margin: 0 auto; }
+>>>>>>> 712efbb8a34a07337270f78b64cbc88ec29db6af
       .overlay .info-game .container .product-title {
         justify-content: space-between;
         align-items: flex-start;
@@ -1188,9 +1193,14 @@ main {
           padding-right: 2rem;
           margin-top: 2rem; }
           .overlay .info-game .container .product-images .main-image img {
+<<<<<<< HEAD
             object-fit: cover;
             width: 100%;
             height: 160%;
+=======
+            width: 70rem;
+            height: 32rem;
+>>>>>>> 712efbb8a34a07337270f78b64cbc88ec29db6af
             border-radius: 10px; }
         .overlay .info-game .container .product-images .image-list {
           display: flex;
@@ -1198,14 +1208,20 @@ main {
           justify-content: space-between;
           align-items: center;
           gap: 2rem;
+<<<<<<< HEAD
           margin-top: -15rem; }
           .overlay .info-game .container .product-images .image-list img {
             object-fit: cover;
             width: 100%;
+=======
+          margin-top: -14rem; }
+          .overlay .info-game .container .product-images .image-list img {
+>>>>>>> 712efbb8a34a07337270f78b64cbc88ec29db6af
             border-radius: 6px;
             width: 16rem;
             margin-left: 65rem; }
       .overlay .info-game .container .modal-info {
+<<<<<<< HEAD
         width: 45%;
         height: 17.2rem;
         display: inline-block;
@@ -1220,12 +1236,35 @@ main {
           margin-bottom: 4rem; }
         .overlay .info-game .container .modal-info .price {
           width: 100%;
+=======
+        max-width: 70%;
+        width: 65rem;
+        height: 10rem;
+        display: block;
+        margin-top: 2.5rem;
+        margin-bottom: 2rem; }
+        .overlay .info-game .container .modal-info h4, .overlay .info-game .container .modal-info a {
+          font-size: 2rem; }
+        .overlay .info-game .container .modal-info .platforms {
+          float: right;
+          margin-top: -43px;
+          margin-right: 10rem; }
+          .overlay .info-game .container .modal-info .platforms img {
+            width: 2rem;
+            margin-right: 6rem; }
+        .overlay .info-game .container .modal-info .price {
+          width: 63%;
+>>>>>>> 712efbb8a34a07337270f78b64cbc88ec29db6af
           text-align: center;
           display: flex;
           justify-content: center;
           margin-right: 25%; }
         .overlay .info-game .container .modal-info .btn-product {
+<<<<<<< HEAD
           width: 73%;
+=======
+          width: 34.5%;
+>>>>>>> 712efbb8a34a07337270f78b64cbc88ec29db6af
           position: absolute;
           border-radius: 4px;
           margin-top: 12rem;
