@@ -1145,7 +1145,7 @@ main {
   display: none; }
   .overlay .info-game {
     width: 100%;
-    max-width: 70%;
+    max-width: 50%;
     background-color: #263241;
     position: absolute;
     top: 50%;
