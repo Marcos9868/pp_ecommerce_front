@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,113 +10,196 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" />
   <link rel="stylesheet" href="../../css/main.css" />
-  <title>Pixel Play Store - Xbox</title>
+  <link rel="icon" href="../../favicon.png" type="image">
+
+  <title>Pixel Play Store - PC</title>
 </head>
+
 <body>
-  <header>
+  <header class="js-header-bg">
     <div class="container">
-      <div class="container-box">
-        <!-- LOGO -->
-        <div class="logo-store">
-          <a href="../../index.html">
-            <img src="../../assets/img/header/logo-pixelplay.svg" alt="Logo PixelPlay">
-          </a>
-        </div>
 
-        <!-- MAIN MENU LINKS -->
-        <div class="category-devices">
-          <ul>
-            <li><a href="./pages/categories/pc.html">PC</a></li>
-            <li><a href="/pages/categories/xbox.html">Xbox</a></li>
-            <li><a href="/pages/categories/playstation.html">Playstation</a></li>
-          </ul>
+      <!-- LOGO -->
+      <div class="logo-store">
+        <a href="../../index.html">
+          <img src="../../assets/img/header/logo-pixelplay.svg" alt="Logo PixelPlay">
+        </a>
+      </div>
 
-        </div>
+      <!-- MAIN MENU LINKS -->
+      <div class="category-devices">
+        <ul>
+          <li><a href="../../pages/categories/pc.html">PC</a></li>
+          <li><a href="../../pages/categories/xbox.html">Xbox</a></li>
+          <li><a href="../../pages/categories/playstation.html">Playstation</a></li>
+        </ul>
 
-        <!-- SEARCH BAR -->
-        <div class="search-container">
-          <input type="search" name="search-bar" id="search-bar" placeholder="Pesquisar">
-        </div>
-        <!-- CART AND LOGIN ICONS -->
-        <div class="menu-user">
-          <a href="#"><img class="openModalLogin" src="../../assets/img/header/user-i.svg" alt="iconPerfil"></a>
-          <a href="#"><img class="openModalSacola" src="../../assets/img/header/cart-i.svg" alt="iconSacola"></a>
-        </div>
+      </div>
 
-        <dialog class="modalPerfil" id="modalPerfil">
+      <!-- SEARCH BAR -->
+      <div class="search-container">
+        <input type="search" name="search-bar" id="search-bar" placeholder="Pesquisar">
+      </div>
+      <!-- CART AND LOGIN ICONS -->
+      <div class="menu-user">
+        <a href="#"><img class="openModalLogin" src="../../assets/img/header/user-i.svg" alt="iconPerfil"></a>
+        <a href="#"><img class="openModalSacola" src="../../assets/img/header/cart-i.svg" alt="iconSacola"></a>
+        <a href="#" class="menu-mobile"><img src="../../assets/img/menu-mobile-i.svg" alt="Menu Mobile"></a>
+
+      </div>
+
+      <dialog class="modalPerfil" id="modalPerfil">
+        <div class="container">
+
           <form>
-            <label for="fname">Login:</label><br>
-            <input type="text" id="fname" name="login"><br>
-            <label for="lname">Senha:</label><br>
-            <input type="password" id="lname" name="senha">
-            <button class="closeModalLogin">Close</button>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
           </form>
 
-          <dialog class="modalSacola" id="modalSacola">
-            <h2>Aqui ficarão os itens da sacola</h2>
-            <p>compra, quantidade e produto</p>
-            <button class="closeModalSacola">Fechar</button>
-          </dialog>
+          <div class="slide-info">
+            <a href="#" class="btn closeModalLogin">Comprar</a>
+          </div>
 
-        </dialog>
-        <dialog class="modalSacola" id="modalSacola"></dialog>
-      </div>
-        <!-- Check-out button -->
-        <a href="#" class="btn btn-primary">Conferir</a>
-      </div>
+        </div>
     </div>
   </header>
   <main>
     <div class="container">
 
       <aside>
-        <h3>Início > Xbox</h3>
+
         <div class="aside-container">
+          <div class="pages-order">
+            <h3>Início</h3>
+            <span>/</span>
+            <h3>Categorias</h3>
+            <span>/</span>
+            <h1>Xbox</h1>
+          </div>
           <div class="filter">
-            <h5>Filtros Aplicados</h5>
+            <div class="filter-dropdown">
+              <h5>Filtros Aplicados</h5>
+
+              <span class="setinha">
+                <svg id="button" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.908 15.879C5.47058 15.3166 6.23351 15.0006 7.029 15.0006C7.82449 15.0006 8.58742 15.3166 9.15 15.879L24 30.729L38.85 15.879C39.4158 15.3325 40.1736 15.0301 40.9602 15.037C41.7468 15.0438 42.4992 15.3593 43.0555 15.9155C43.6117 16.4718 43.9272 17.2242 43.934 18.0108C43.9409 18.7974 43.6385 19.5552 43.092 20.121L26.121 37.092C25.5584 37.6544 24.7955 37.9704 24 37.9704C23.2045 37.9704 22.4416 37.6544 21.879 37.092L4.908 20.121C4.34559 19.5584 4.02964 18.7955 4.02964 18C4.02964 17.2045 4.34559 16.4416 4.908 15.879Z" fill="white" />
+                </svg>
+              </span>
+
+            </div>
             <ul>
               <li>Gênero</li>
               <li>Menor Preço</li>
               <li>Mais Votados</li>
             </ul>
           </div>
+
           <div class="game-categories">
-            <h5>Categorias</h5>
+            <div class="filter-dropdown">
+              <h5>Categorias</h5>
+              <span class="setinha">
+                <svg id="button2" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.908 15.879C5.47058 15.3166 6.23351 15.0006 7.029 15.0006C7.82449 15.0006 8.58742 15.3166 9.15 15.879L24 30.729L38.85 15.879C39.4158 15.3325 40.1736 15.0301 40.9602 15.037C41.7468 15.0438 42.4992 15.3593 43.0555 15.9155C43.6117 16.4718 43.9272 17.2242 43.934 18.0108C43.9409 18.7974 43.6385 19.5552 43.092 20.121L26.121 37.092C25.5584 37.6544 24.7955 37.9704 24 37.9704C23.2045 37.9704 22.4416 37.6544 21.879 37.092L4.908 20.121C4.34559 19.5584 4.02964 18.7955 4.02964 18C4.02964 17.2045 4.34559 16.4416 4.908 15.879Z" fill="white" />
+                </svg>
+              </span>
+            </div>
             <ul>
               <li>RPG</li>
               <li>FPS</li>
               <li>Ação</li>
               <li>Aventura</li>
               <li>Corrida</li>
+              <li>Indie</li>
+              <li>Terror</li>
+              <li>Mundo aberto</li>
+              <li>Multiplayer</li>
+              <li>Fantasia</li>
             </ul>
           </div>
+
           <div class="price-range">
-            <h5>Preço</h5>
-            <input type="range" name="price-range" id="price-range" min="5" max="500" onchange="showPrice()">
-            <span>R$:</span>
-            <button>Aplicar Filtro</button>
+            <div class="filter-dropdown">
+              <h5>Preço</h5>
+              <span class="setinha">
+                <svg id="button4" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.908 15.879C5.47058 15.3166 6.23351 15.0006 7.029 15.0006C7.82449 15.0006 8.58742 15.3166 9.15 15.879L24 30.729L38.85 15.879C39.4158 15.3325 40.1736 15.0301 40.9602 15.037C41.7468 15.0438 42.4992 15.3593 43.0555 15.9155C43.6117 16.4718 43.9272 17.2242 43.934 18.0108C43.9409 18.7974 43.6385 19.5552 43.092 20.121L26.121 37.092C25.5584 37.6544 24.7955 37.9704 24 37.9704C23.2045 37.9704 22.4416 37.6544 21.879 37.092L4.908 20.121C4.34559 19.5584 4.02964 18.7955 4.02964 18C4.02964 17.2045 4.34559 16.4416 4.908 15.879Z" fill="white" />
+                </svg>
+              </span>
+            </div>
+
+            <div class="slider">
+              <div class="progress"></div>
+            </div>
+
+            <div class="range-input">
+              <input class="range-min" type="range" name="price-range" id="price-range" min="5" max="500" step="5" value="200" onchange="showPrice()">
+              <input class="range-max" type="range" name="price-range" id="price-range2" min="5" max="500" step="5" value="300" onchange="showPrice()">
+            </div>
+            <div class="valores">
+              <span id="price-span"></span>
+              -
+              <span id="price-span2"></span>
+            </div>
+
+            <button>APLICAR FILTRO</button>
           </div>
           <div class="game-industries">
-            <h5>Desenvolvedoras</h5>
+            <div class="filter-dropdown">
+              <h5>Desenvolvedoras</h5>
+              <span class="setinha">
+                <svg id="button3" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.908 15.879C5.47058 15.3166 6.23351 15.0006 7.029 15.0006C7.82449 15.0006 8.58742 15.3166 9.15 15.879L24 30.729L38.85 15.879C39.4158 15.3325 40.1736 15.0301 40.9602 15.037C41.7468 15.0438 42.4992 15.3593 43.0555 15.9155C43.6117 16.4718 43.9272 17.2242 43.934 18.0108C43.9409 18.7974 43.6385 19.5552 43.092 20.121L26.121 37.092C25.5584 37.6544 24.7955 37.9704 24 37.9704C23.2045 37.9704 22.4416 37.6544 21.879 37.092L4.908 20.121C4.34559 19.5584 4.02964 18.7955 4.02964 18C4.02964 17.2045 4.34559 16.4416 4.908 15.879Z" fill="white" />
+                </svg>
+              </span>
+            </div>
             <ul>
               <li>Activision</li>
               <li>Ubisoft</li>
               <li>EA Games</li>
               <li>Valve Corporation</li>
+              <li>Sony</li>
+              <li>Bioware</li>
+              <li>Nintendo</li>
+              <li>Square Enix</li>
+              <li>Sega</li>
+              <li>Konami</li>
+              <li>Bethesda Game Studios</li>
+
+
             </ul>
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+
         </div>
       </aside>
 
       <section>
         <!-- GRID PRODUTOS -->
         <div class="pages-filter">
-          <!-- FILTRO DE PAGINAS -->
+          <div class="pages-number">
+            <svg width="12" height="23" viewBox="0 0 12 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.6807 0.520136C11.8497 0.693151 11.9443 0.925409 11.9443 1.16726C11.9443 1.40911 11.8497 1.64137 11.6807 1.81439L2.2393 11.4999L11.6807 21.1836C11.8497 21.3566 11.9443 21.5888 11.9443 21.8307C11.9443 22.0726 11.8497 22.3048 11.6807 22.4778C11.5986 22.5622 11.5004 22.6292 11.3919 22.675C11.2834 22.7208 11.1669 22.7444 11.0491 22.7444C10.9314 22.7444 10.8148 22.7208 10.7063 22.675C10.5978 22.6292 10.4996 22.5622 10.4175 22.4778L0.377358 12.1761C0.201019 11.9952 0.102327 11.7526 0.102327 11.4999C0.102327 11.2473 0.201019 11.0047 0.377358 10.8238L10.4175 0.522074C10.4996 0.437709 10.5978 0.370654 10.7063 0.324868C10.8148 0.279082 10.9314 0.255493 11.0491 0.255493C11.1669 0.255493 11.2834 0.279082 11.3919 0.324868C11.5004 0.370654 11.5986 0.437709 11.6807 0.522074V0.520136Z" fill="white" />
+            </svg>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>...</span>
+            <svg width="12" height="23" viewBox="0 0 12 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.319267 0.520136C0.150274 0.693151 0.0556641 0.925409 0.0556641 1.16726C0.0556641 1.40911 0.150274 1.64137 0.319267 1.81439L9.7607 11.4999L0.319267 21.1836C0.150274 21.3566 0.0556641 21.5888 0.0556641 21.8307C0.0556641 22.0726 0.150274 22.3048 0.319267 22.4778C0.401409 22.5622 0.499621 22.6292 0.608104 22.675C0.716586 22.7208 0.833142 22.7444 0.950891 22.7444C1.06864 22.7444 1.1852 22.7208 1.29368 22.675C1.40216 22.6292 1.50037 22.5622 1.58252 22.4778L11.6226 12.1761C11.799 11.9952 11.8977 11.7526 11.8977 11.4999C11.8977 11.2473 11.799 11.0047 11.6226 10.8238L1.58252 0.522074C1.50037 0.437709 1.40216 0.370654 1.29368 0.324868C1.1852 0.279082 1.06864 0.255493 0.950891 0.255493C0.833142 0.255493 0.716586 0.279082 0.608104 0.324868C0.499621 0.370654 0.401409 0.437709 0.319267 0.522074V0.520136Z" fill="white" />
+            </svg>
+
+            <!-- FILTRO DE PAGINAS -->
+          </div>
+          <div class="recentes">
+            <h3>ORDENAR POR: <span id="more-recent">Mais recentes  <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.1861 0.993111L5.50045 5.56061L0.814828 0.993111C0.731111 0.91134 0.618728 0.865561 0.501703 0.865561C0.384677 0.865561 0.272295 0.91134 0.188578 0.993111C0.148042 1.03283 0.115839 1.08023 0.093855 1.13255C0.0718706 1.18487 0.0605469 1.24105 0.0605469 1.2978C0.0605469 1.35455 0.0718706 1.41073 0.093855 1.46305C0.115839 1.51536 0.148042 1.56277 0.188578 1.60249L5.17327 6.46249C5.2608 6.54781 5.37821 6.59557 5.50045 6.59557C5.6227 6.59557 5.7401 6.54781 5.82764 6.46249L10.8123 1.60342C10.8532 1.56368 10.8856 1.51616 10.9078 1.46366C10.9299 1.41117 10.9413 1.35477 10.9413 1.2978C10.9413 1.24082 10.9299 1.18442 10.9078 1.13193C10.8856 1.07944 10.8532 1.03192 10.8123 0.992173C10.7286 0.910402 10.6162 0.864624 10.4992 0.864624C10.3822 0.864624 10.2698 0.910402 10.1861 0.992173V0.993111Z" fill="#0AAEFE"/>
+              </svg></span></h3>
+
+            
+          </div>
+
         </div>
 
         <!-- LIST ONE -->
@@ -123,6 +207,7 @@
 
           <!-- ITEM 1 -->
           <div class="items-list__item">
+
             <div class="items-list__item__image">
               <label for="item-1"></label>
               <input id="item-1" class="like-btn" type="checkbox">
@@ -130,129 +215,215 @@
             </div>
 
             <div class="items-list__item__info">
-              <h3>
-                <a href="#">Call of Duty</a>
-              </h3>
+              <h4><a href="#">Call of Duty - Modern Warf...</a></h4>
               <span class="publisher">Publisher Name</span>
-              <span class="price">R$300</span>
+              <div class="platforms">
+                <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+                <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+                <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              </div>
+
+              <div class="discount-price">
+                <span class="discount">-75%</span>
+                <del class="price">R$259</del>
+              </div>
             </div>
+
+            <a href="#" class="btn btn-product">Comprar</a>
+
           </div>
           <!-- ITEM 2 -->
           <div class="items-list__item">
+
             <div class="items-list__item__image">
               <label for="item-2"></label>
               <input id="item-2" class="like-btn" type="checkbox">
-              <a href="#"><img class="image-item" src="../../assets/img/games/gow.webp" alt="Item Image"></a>
+              <a href="#"><img class="image-item" src="../../assets/img/games/anno-1800.webp" alt="Item Image"></a>
             </div>
 
             <div class="items-list__item__info">
-              <h3>
-                <a href="#">God Of War: Ragnarök</a>
-              </h3>
+              <h4><a href="#">Anno 1800</a></h4>
               <span class="publisher">Publisher Name</span>
-              <span class="price">R$300</span>
+              <div class="platforms">
+                <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+                <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+                <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              </div>
+
+              <div class="discount-price">
+                <span class="discount">-75%</span>
+                <del class="price">R$259</del>
+              </div>
             </div>
+
+            <a href="#" class="btn btn-product">Comprar</a>
+
           </div>
           <!-- ITEM 3 -->
           <div class="items-list__item">
+
             <div class="items-list__item__image">
               <label for="item-3"></label>
               <input id="item-3" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/civilization-platinum-edition.jpg" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h4><a href="#">Civilization lV</a></h4>
+              <span class="publisher">Publisher Name</span>
+              <div class="platforms">
+                <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+                <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+                <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              </div>
+
+              <div class="discount-price">
+                <span class="discount">-75%</span>
+                <del class="price">R$259</del>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-product">Comprar</a>
+
+          </div>
+          <!-- ITEM 4 -->
+          <div class="items-list__item">
+
+            <div class="items-list__item__image">
+              <label for="item-4"></label>
+              <input id="item-4" class="like-btn" type="checkbox">
               <a href="#"><img class="image-item" src="../../assets/img/games/crash-4.webp" alt="Item Image"></a>
             </div>
 
             <div class="items-list__item__info">
-              <h3>
-                <a href="#">Crash Bandicoot 4 ...</a>
-              </h3>
+              <h4><a href="#">Crash Bandicoot 4 - I'ts Ab...</a></h4>
               <span class="publisher">Publisher Name</span>
-              <span class="price">R$300</span>
-            </div>
-          </div>
-          <!-- ITEM 4 -->
-          <div class="items-list__item">
-            <div class="items-list__item__image">
-              <label for="item-4"></label>
-              <input id="item-4" class="like-btn" type="checkbox">
-              <a href="#"><img class="image-item" src="../../assets/img/games/elden-ring.webp" alt="Item Image"></a>
+              <div class="platforms">
+                <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+                <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+                <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              </div>
+
+              <div class="discount-price">
+                <span class="discount">-75%</span>
+                <del class="price">R$259</del>
+              </div>
             </div>
 
-            <div class="items-list__item__info">
-              <h3>
-                <a href="#">Elden Ring</a>
-              </h3>
-              <span class="publisher">Publisher Name</span>
-              <span class="price">R$300</span>
-            </div>
-          </div>
+            <a href="#" class="btn btn-product">Comprar</a>
 
+          </div>
         </div>
         <!-- LIST TWO -->
         <div class="items-list">
 
           <!-- ITEM 1 -->
           <div class="items-list__item">
+
             <div class="items-list__item__image">
-              <label for="item-1"></label>
-              <input id="item-1" class="like-btn" type="checkbox">
+              <label for="item-5"></label>
+              <input id="item-5" class="like-btn" type="checkbox">
               <a href="#"><img class="image-item" src="../../assets/img/games/cod.jpg" alt="Item Image"></a>
             </div>
 
             <div class="items-list__item__info">
-              <h3>
-                <a href="#">Call of Duty</a>
-              </h3>
+              <h4><a href="#">Call of Duty - Modern Warf...</a></h4>
               <span class="publisher">Publisher Name</span>
-              <span class="price">R$300</span>
+              <div class="platforms">
+                <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+                <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+                <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              </div>
+
+              <div class="discount-price">
+                <span class="discount">-75%</span>
+                <del class="price">R$259</del>
+              </div>
             </div>
+
+            <a href="#" class="btn btn-product">Comprar</a>
+
           </div>
           <!-- ITEM 2 -->
           <div class="items-list__item">
+
             <div class="items-list__item__image">
-              <label for="item-2"></label>
-              <input id="item-2" class="like-btn" type="checkbox">
-              <a href="#"><img class="image-item" src="../../assets/img/games/gow.webp" alt="Item Image"></a>
+              <label for="item-6"></label>
+              <input id="item-6" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/anno-1800.webp" alt="Item Image"></a>
             </div>
 
             <div class="items-list__item__info">
-              <h3>
-                <a href="#">God Of War: Ragnarök</a>
-              </h3>
+              <h4><a href="#">Anno 1800</a></h4>
               <span class="publisher">Publisher Name</span>
-              <span class="price">R$300</span>
+              <div class="platforms">
+                <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+                <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+                <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              </div>
+
+              <div class="discount-price">
+                <span class="discount">-75%</span>
+                <del class="price">R$259</del>
+              </div>
             </div>
+
+            <a href="#" class="btn btn-product">Comprar</a>
+
           </div>
           <!-- ITEM 3 -->
           <div class="items-list__item">
+
             <div class="items-list__item__image">
-              <label for="item-3"></label>
-              <input id="item-3" class="like-btn" type="checkbox">
+              <label for="item-7"></label>
+              <input id="item-7" class="like-btn" type="checkbox">
+              <a href="#"><img class="image-item" src="../../assets/img/games/civilization-platinum-edition.jpg" alt="Item Image"></a>
+            </div>
+
+            <div class="items-list__item__info">
+              <h4><a href="#">Civilization lV</a></h4>
+              <span class="publisher">Publisher Name</span>
+              <div class="platforms">
+                <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+                <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+                <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              </div>
+
+              <div class="discount-price">
+                <span class="discount">-75%</span>
+                <del class="price">R$259</del>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-product">Comprar</a>
+
+          </div>
+          <!-- ITEM 4 -->
+          <div class="items-list__item">
+
+            <div class="items-list__item__image">
+              <label for="item-8"></label>
+              <input id="item-8" class="like-btn" type="checkbox">
               <a href="#"><img class="image-item" src="../../assets/img/games/crash-4.webp" alt="Item Image"></a>
             </div>
 
             <div class="items-list__item__info">
-              <h3>
-                <a href="#">Crash Bandicoot 4 ...</a>
-              </h3>
+              <h4><a href="#">Crash Bandicoot 4 - I'ts Ab...</a></h4>
               <span class="publisher">Publisher Name</span>
-              <span class="price">R$300</span>
-            </div>
-          </div>
-          <!-- ITEM 4 -->
-          <div class="items-list__item">
-            <div class="items-list__item__image">
-              <label for="item-4"></label>
-              <input id="item-4" class="like-btn" type="checkbox">
-              <a href="#"><img class="image-item" src="../../assets/img/games/elden-ring.webp" alt="Item Image"></a>
+              <div class="platforms">
+                <img src="../../assets/img/platforms/windows-i.svg" alt="Windows Icon">
+                <img src="../../assets/img/platforms/playstation-i.svg" alt="Playstation Icon">
+                <img src="../../assets/img/platforms/xbox-i.svg" alt="Xbox Icon">
+              </div>
+
+              <div class="discount-price">
+                <span class="discount">-75%</span>
+                <del class="price">R$259</del>
+              </div>
             </div>
 
-            <div class="items-list__item__info">
-              <h3>
-                <a href="#">Elden Ring</a>
-              </h3>
-              <span class="publisher">Publisher Name</span>
-              <span class="price">R$300</span>
-            </div>
+            <a href="#" class="btn btn-product">Comprar</a>
+
           </div>
 
         </div>
@@ -279,7 +450,7 @@
 
           <div class="language">
             <img src="../../assets/img/language-selector-i.svg" alt="language Icon">
-            <p>Portugês</p>
+            <p>Português</p>
             <img src="../../assets/img/arrow-down-i.svg" alt="language Arrow Down Icon">
           </div>
         </nav>
@@ -331,5 +502,7 @@
   </footer>
   <script src="../../scripts/price-range.js" defer></script>
   <script src="../../scripts/categoriesPC.js"></script>
+
 </body>
+
 </html>
