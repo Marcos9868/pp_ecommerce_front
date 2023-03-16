@@ -787,12 +787,7 @@ header {
 
 main {
   width: 100%;
-<<<<<<< HEAD
   margin-top: 5rem; }
-=======
-  margin-top: 5rem;
-  margin-bottom: 41rem; }
->>>>>>> 813ef3bf191a2b6d7a175dcc38d8adf9bb7ce17d
   main .container {
     display: grid;
     grid-template-columns: 33.6rem 2fr;
@@ -1078,20 +1073,6 @@ main {
         main footer .container .up nav ul li {
           width: 100%; } }
 
-@media screen and (max-width: 1000px) {
-  footer .up nav {
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center; } }
-
-@media screen and (max-width: 600px) {
-  footer .container .up nav ul {
-    gap: 1rem;
-    flex-wrap: wrap;
-    text-align: center; }
-    footer .container .up nav ul li {
-      width: 100%; } }
-
 @media screen and (max-width: 375px) {
   main .container {
     display: flex;
@@ -1120,6 +1101,20 @@ main {
       justify-content: center;
       align-items: center;
       gap: 1rem; } }
+
+@media screen and (max-width: 1000px) {
+  footer .up nav {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center; } }
+
+@media screen and (max-width: 600px) {
+  footer .container .up nav ul {
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: center; }
+    footer .container .up nav ul li {
+      width: 100%; } }
 
 .overlay {
   width: 100vw;
@@ -1192,7 +1187,8 @@ main {
         position: absolute;
         border-right: 1px solid #fff;
         margin-top: 2rem; }
-        .overlay .info-game .container .modal-info h4, .overlay .info-game .container .modal-info a {
+        .overlay .info-game .container .modal-info h4,
+        .overlay .info-game .container .modal-info a {
           font-size: 2rem; }
         .overlay .info-game .container .modal-info .platforms {
           float: right;
@@ -1240,7 +1236,8 @@ main {
       color: white;
       font-size: 20px;
       margin-left: 5rem; }
-    .modalPerfil form input[type=email], .modalPerfil form input[type=password] {
+    .modalPerfil form input[type="email"],
+    .modalPerfil form input[type="password"] {
       justify-items: center;
       border-radius: 8px;
       width: 100%;
@@ -1248,7 +1245,7 @@ main {
       padding-top: 10px;
       margin-left: 5rem;
       text-align: center; }
-    .modalPerfil form input[type=submit] {
+    .modalPerfil form input[type="submit"] {
       max-width: 30%;
       padding: 1rem;
       margin-left: 31rem; }
@@ -1260,16 +1257,42 @@ main {
   margin: 96rem;
   margin-top: 5%;
   border-radius: 10px;
-  position: absolute;
-  max-width: 1100px; }
+  max-width: 1100px;
+  position: relative; }
+  .modalSacola .sacola-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .modalSacola .sacola-container h5 {
+      color: white;
+      font-size: 3rem;
+      margin: 2rem 0;
+      text-transform: uppercase; }
+    .modalSacola .sacola-container ul {
+      padding: 0 4rem; }
+      .modalSacola .sacola-container ul li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem; }
+        .modalSacola .sacola-container ul li img {
+          width: 100%;
+          max-width: 15rem;
+          border-radius: 1.6rem; }
+        .modalSacola .sacola-container ul li span {
+          color: white;
+          font-size: 2.5rem; }
   .modalSacola .closeSac {
     max-width: 10%;
     font-size: 28px;
     color: white;
     cursor: pointer;
     position: absolute;
-    margin-left: 38rem;
-    top: -0.8rem; }
+    top: 1rem;
+    right: 2rem;
+    padding: 0.3rem 0.7rem;
+    color: black;
+    background-color: white; }
   .modalSacola .header-title {
     width: 300px;
     display: flex; }
@@ -1291,7 +1314,8 @@ main {
       position: absolute;
       right: 1.5rem;
       top: 8rem; }
-      .modalSacola .table-game #customers td, .modalSacola .table-game #customers th {
+      .modalSacola .table-game #customers td,
+      .modalSacola .table-game #customers th {
         border: 1px solid #ddd;
         padding: 8px;
         color: white;
