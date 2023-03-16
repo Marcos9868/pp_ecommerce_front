@@ -29,9 +29,9 @@ closeModalSacola.addEventListener('click', ()=>{
 
 
 //MODAL GAME
-const imgGame = document.querySelectorAll('.image-item')
+const imgGame = document.querySelectorAll('.image-item');
 const spn = document.querySelector('#closeMod');
-const openModalGame = document.querySelector('.overlay')
+const openModalGame = document.querySelector('.overlay');
 
 console.log(spn)
 
