@@ -40,11 +40,7 @@ Here we have a login modal, made in a simple way to simulate the user login.
 
 When you click on the desired game image, it will open a modal with the game description, some images and a button to insert into the cart.
 
-
-
 And if you want to open the cart by the button itself, it will display all the games inserted in it.
-
-
 
 ## Used Stacks:
 
@@ -62,4 +58,4 @@ And if you want to open the cart by the button itself, it will display all the g
 
 ## Stay in Touch:
 
-- Discord: 
+- Discord: https://discord.gg/eXsrCJWV
